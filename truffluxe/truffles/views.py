@@ -3,11 +3,15 @@ from rest_framework.response import Response    # Sends back a response
 from rest_framework import status               # Sends back a status HTTP code
 from rest_framework.exceptions import NotFound  # Handling Errors
 
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
+
 from .models import Truffle
 from .serializers.common import ProductSerializer
 from .serializers.populated import PopulatedProductSerializer
 
 class ProductListView(APIView):
+    permission_classes = (IsAuthenticatedOrReadOnly, )
+
     # GET request all
     def get(self, _request):
         products = Truffle.objects.all()
@@ -16,6 +20,7 @@ class ProductListView(APIView):
     
     # POST request
     def post(self, request):
+        request.data['owner'] = request.user.id
         product_to_add = ProductSerializer(data=request.data)
         if product_to_add.is_valid():
             product_to_add.save()
@@ -23,6 +28,7 @@ class ProductListView(APIView):
         return Response(product_to_add.data, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
 class ProductDetailView(APIView):
+    permission_classes = (IsAuthenticatedOrReadOnly, )
 
     def get_product(self, pk):
         try:
