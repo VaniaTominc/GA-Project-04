@@ -12,6 +12,7 @@
     "ingredients": "100% White Truffle",
     "alergies": "None",
     "life": "Within 7 day of delivery",
+    "availability": "Winter",
     "images": "beli_tartuf.png"
   }
 },
@@ -28,6 +29,7 @@
     "ingredients": "100% Fresh Black Summer Truffles",
     "alergies": "None",
     "life": "Within 7 day of delivery",
+    "availability": "Summer",
     "images": "crni_poletni_tartuf.png"
   }
 }

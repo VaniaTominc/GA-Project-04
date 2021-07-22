@@ -11,7 +11,7 @@ class Truffle(models.Model):
     alergies = models.CharField(max_length=500, default=None)
     life = models.CharField(max_length=50, default=None)
     images = models.CharField(max_length=100, default=None)
-    # availability = models.TextField(default=None)
+    availability = models.TextField(default=None)
     categories = models.ManyToManyField(
         "categories.Category",
         related_name = "truffles"

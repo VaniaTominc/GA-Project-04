@@ -1,0 +1,79 @@
+[
+{
+  "model": "categories.category",
+  "pk": 1,
+  "fields": {
+    "name": "alcohol"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 2,
+  "fields": {
+    "name": "fresh-products"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 3,
+  "fields": {
+    "name": "cheeses-meat"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 4,
+  "fields": {
+    "name": "whole-sliced-minced"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 5,
+  "fields": {
+    "name": "olive-oil"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 6,
+  "fields": {
+    "name": "condiments"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 7,
+  "fields": {
+    "name": "black-truffle"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 8,
+  "fields": {
+    "name": "white-truffle"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 9,
+  "fields": {
+    "name": "gifts"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 10,
+  "fields": {
+    "name": "spreads"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 11,
+  "fields": {
+    "name": "sauces"
+  }
+}
+]
