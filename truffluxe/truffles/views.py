@@ -13,7 +13,7 @@ class ProductListView(APIView):
         serialized_products = ProductSerializer(products, many=True)
         return Response(serialized_products.data, status=status.HTTP_200_OK)
     
-    #POST request
+    # POST request
     def post(self, request):
         product_to_add = ProductSerializer(data=request.data)
         if product_to_add.is_valid():
@@ -29,15 +29,24 @@ class ProductDetailView(APIView):
         except:
             raise NotFound(detail="🆘 Can't find that underground 💎.")
 
-    #GET request for one
+    # GET request for one
     def get(self, _request, pk):
         product = self.get_product(pk=pk)
         serialized_product = ProductSerializer(product)
         return Response(serialized_product.data, status=status.HTTP_200_OK)
     
-    #DELETE request for one
+    # DELETE request for one
     def delete(self, request, pk):
         product_to_delete = self.get_product(pk=pk)
         product_to_delete.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+    
+    # EDIT request for one
+    def put(self, request, pk):
+        product_to_update = self.get_product(pk=pk)
+        updated_product = ProductSerializer(product_to_update, data=request.data)
+        if updated_product.is_valid():
+            updated_product.save()
+            return Response(updated_product.data, status=status.HTTP_202_ACCEPTED)
+        return Response(updated_product.data, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
     
