@@ -4,13 +4,14 @@ from rest_framework import status               # Sends back a status HTTP code
 from rest_framework.exceptions import NotFound  # Handling Errors
 
 from .models import Truffle
-from .serializers.serializers import ProductSerializer
+from .serializers.common import ProductSerializer
+from .serializers.populated import PopulatedProductSerializer
 
 class ProductListView(APIView):
     # GET request all
     def get(self, _request):
         products = Truffle.objects.all()
-        serialized_products = ProductSerializer(products, many=True)
+        serialized_products = PopulatedProductSerializer(products, many=True)            # Originally ProductSerializer
         return Response(serialized_products.data, status=status.HTTP_200_OK)
     
     # POST request
@@ -32,7 +33,7 @@ class ProductDetailView(APIView):
     # GET request for one
     def get(self, _request, pk):
         product = self.get_product(pk=pk)
-        serialized_product = ProductSerializer(product)
+        serialized_product = PopulatedProductSerializer(product)                         # Originally ProductSerializer
         return Response(serialized_product.data, status=status.HTTP_200_OK)
     
     # DELETE request for one

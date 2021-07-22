@@ -7,7 +7,7 @@ class Opinion(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     truffle = models.ForeignKey(
         "truffles.Truffle",
-        related_name = "comments",
+        related_name = "opinions",
         on_delete = models.CASCADE
     )
 
