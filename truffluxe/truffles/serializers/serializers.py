@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Truffle
+from ..models import Truffle
 
 class ProductSerializer(serializers.ModelSerializer):
 

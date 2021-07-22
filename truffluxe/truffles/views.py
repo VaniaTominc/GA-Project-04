@@ -4,7 +4,7 @@ from rest_framework import status               # Sends back a status HTTP code
 from rest_framework.exceptions import NotFound  # Handling Errors
 
 from .models import Truffle
-from .serializers import ProductSerializer
+from .serializers.serializers import ProductSerializer
 
 class ProductListView(APIView):
     # GET request all
