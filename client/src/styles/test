@@ -136,7 +136,7 @@ section .container.active .signupBox {
 }
 
 section .container .signupBox .formBox {
-  top: 100%;
+  top: 0;
 }
 
 section .container.active .signupBox .formBox {
@@ -144,7 +144,7 @@ section .container.active .signupBox .formBox {
 }
 
 section .container .signupBox .imageBox {
-  top: -100%;
+  top: 0%;
   transition: .5s;
 }
 

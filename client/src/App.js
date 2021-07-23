@@ -1,7 +1,11 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
+// import Navbar from './Components/Navbar'
 import Home from './Components/Home'
+// import About from './Components/About'
+import Login from './Components/Authentication/Login'
+import Register from './Components/Authentication/Register'
 
 const App = () => {
   
@@ -9,12 +13,21 @@ const App = () => {
     
     <BrowserRouter>
 
-      <Navbar />
+      {/* <Navbar /> */}
 
       <Switch>
-        <Route path='/about'>
-          <About />
+
+        <Route path='/register'>
+          <Register />
         </Route>
+
+        <Route path='/login'>
+          <Login />
+        </Route>
+
+        {/* <Route path='/about'>
+          <About />
+        </Route> */}
 
         <Route path='/home'>
           <Home />

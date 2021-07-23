@@ -26,7 +26,7 @@ class ProductListView(APIView):
         if product_to_add.is_valid():
             product_to_add.save()
             return Response(product_to_add.data, status=status.HTTP_201_CREATED)
-        return Response(product_to_add.data, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+        return Response(product_to_add.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
 class ProductDetailView(APIView):
     permission_classes = (IsAuthenticatedOrReadOnly, )

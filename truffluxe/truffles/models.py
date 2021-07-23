@@ -14,7 +14,8 @@ class Truffle(models.Model):
     availability = models.TextField(default=None)
     categories = models.ManyToManyField(
         "categories.Category",
-        related_name = "truffles"
+        related_name = "truffles",
+        blank=True
     )
     owner = models.ForeignKey(
         "jwt_auth.User",
@@ -23,7 +24,8 @@ class Truffle(models.Model):
     )
     photos = models.ManyToManyField(
         "images.Image",
-        related_name = "truffles"
+        related_name = "truffles",
+        blank=True
     )
 
     def __str__(self):
