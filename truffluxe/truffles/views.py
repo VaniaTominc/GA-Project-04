@@ -4,6 +4,7 @@ from rest_framework import status               # Sends back a status HTTP code
 from rest_framework.exceptions import NotFound  # Handling Errors
 
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
+from rest_framework.exceptions import PermissionDenied
 
 from .models import Truffle
 from .serializers.common import ProductSerializer
@@ -45,15 +46,21 @@ class ProductDetailView(APIView):
     # DELETE request for one
     def delete(self, request, pk):
         product_to_delete = self.get_product(pk=pk)
+        if product_to_delete.owner != request.user:
+            raise PermissionDenied()
         product_to_delete.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
     
     # EDIT request for one
     def put(self, request, pk):
         product_to_update = self.get_product(pk=pk)
+
+        if product_to_update.owner != request.user:
+            raise PermissionDenied()
+
         updated_product = ProductSerializer(product_to_update, data=request.data)
         if updated_product.is_valid():
             updated_product.save()
             return Response(updated_product.data, status=status.HTTP_202_ACCEPTED)
-        return Response(updated_product.data, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+        return Response(updated_product.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
     
