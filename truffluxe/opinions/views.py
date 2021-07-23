@@ -7,6 +7,7 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 
 from .serializers.common import OpinionSerializer
+from .serializers.populated import PopulatedOpinionSerializer
 from opinions.models import Opinion
 
 
@@ -16,7 +17,7 @@ class OpinionListView(APIView):
     # GET request all
     def get(self, _request):
         opinions = Opinion.objects.all()
-        serialized_opinions = OpinionSerializer(opinions, many=True)
+        serialized_opinions = PopulatedOpinionSerializer(opinions, many=True)
         return Response(serialized_opinions.data, status=status.HTTP_200_OK)
 
     # POST request
@@ -42,7 +43,7 @@ class OpinionDetailView(APIView):
     def get(self, _request, pk):
 
         opinion = self.get_opinion(pk=pk)
-        serialized_opinion = OpinionSerializer(opinion)
+        serialized_opinion = PopulatedOpinionSerializer(opinion)
         return Response(serialized_opinion.data, status=status.HTTP_200_OK)
 
     # EDIT request

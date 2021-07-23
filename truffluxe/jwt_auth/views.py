@@ -10,6 +10,7 @@ from django.conf import settings
 import jwt
 
 from .serializers.common import UserSerializer
+from .serializers.populated import PopulatedUserSerializer
 
 User = get_user_model()
 
@@ -49,7 +50,7 @@ class ProfileListView(APIView):
     # GET request all
     def get(self, _request):
         profiles = User.objects.all()
-        serialized_profiles = UserSerializer(profiles, many=True)
+        serialized_profiles = PopulatedUserSerializer(profiles, many=True)
         return Response(serialized_profiles.data, status=status.HTTP_200_OK)
 
 class ProfileDetailView(APIView):
@@ -64,7 +65,7 @@ class ProfileDetailView(APIView):
     def get(self, _request, pk):
 
         profile = self.get_user(pk=pk)
-        serialized_profile = UserSerializer(profile)
+        serialized_profile = PopulatedUserSerializer(profile)
         return Response(serialized_profile.data, status=status.HTTP_200_OK)
     
     # EDIT request
