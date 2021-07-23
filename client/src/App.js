@@ -1,16 +1,33 @@
-import React, { useEffect } from 'react'
+import React from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+
+import Home from './Components/Home'
 
 const App = () => {
-  useEffect(() => {
-    const getData = async () => {
-      const res = await fetch('/api/truffles') // * <-- replace with your endpoint
-      const data = await res.json()
-      console.log(data)
-    }
-    getData()
-  })
+  
+  return (
+    
+    <BrowserRouter>
 
-  return <h1>Hello World</h1>
+      <Navbar />
+
+      <Switch>
+        <Route path='/about'>
+          <About />
+        </Route>
+
+        <Route path='/home'>
+          <Home />
+        </Route>
+
+        <Route path='/'>
+
+        </Route>
+      </Switch>
+
+    </BrowserRouter>
+
+  )
 }
 
 export default App
