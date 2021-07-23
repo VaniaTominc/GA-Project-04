@@ -1,0 +1,9 @@
+[
+{
+  "model": "images.image",
+  "pk": 1,
+  "fields": {
+    "imageurl": "https://i2.wp.com/tartuf.com/wp-content/uploads/2018/01/Lombary-Gourmet-Summer-Truffle-Black1.jpg"
+  }
+}
+]

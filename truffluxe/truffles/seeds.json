@@ -12,25 +12,62 @@
     "ingredients": "100% White Truffle",
     "alergies": "None",
     "life": "Within 7 day of delivery",
+    "images": "beli_tartuf.png",
     "availability": "Winter",
-    "images": "beli_tartuf.png"
+    "owner": 1,
+    "categories": [
+      8,
+      2
+    ],
+    "photos": []
   }
 },
 {
   "model": "truffles.truffle",
   "pk": 2,
   "fields": {
-    "name": "Black summer truffle (Tuber aestivum vitt.)",
+    "name": "White truffle (Tuber magnatum pico)",
     "taste": "LOREIPSUM DOLORIT",
     "description": "Tuber magantum pico is definitely the most expensive and most prized mushroom in the whole world. Its appearance is mostly irregular in shape to completely round. It is yellowish in color, and its smell and taste are unique, which is why it captivates kitchens around the world. Harvest season: Mid-September to late December.",
     "volume": "100 g",
     "price": 250,
     "use": "Suitable on any dish! They are best sliced if used raw, or grated if cooked. Largely used in Italian cuisine in stuffed pasta or in meat roulade sauces. They are however, fabulous on a slice of bread with a little extra virgin olive oil and a pinch of salt.",
+    "ingredients": "100% White Truffle",
+    "alergies": "None",
+    "life": "Within 7 day of delivery",
+    "images": "beli_tartuf.png",
+    "availability": "Winter",
+    "owner": 1,
+    "categories": [
+      2,
+      7
+    ],
+    "photos": [
+      1
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 5,
+  "fields": {
+    "name": "CATEGORIES",
+    "taste": "LOREIPSUM DOLORIT",
+    "description": "💎",
+    "volume": "100 g",
+    "price": 250,
+    "use": "😎",
     "ingredients": "100% Fresh Black Summer Truffles",
     "alergies": "None",
     "life": "Within 7 day of delivery",
-    "availability": "Summer",
-    "images": "crni_poletni_tartuf.png"
+    "images": "crni_poletni_tartuf.png",
+    "availability": "Winter",
+    "owner": 1,
+    "categories": [
+      1,
+      2
+    ],
+    "photos": []
   }
 }
 ]
