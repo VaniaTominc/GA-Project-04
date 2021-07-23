@@ -21,5 +21,6 @@ urlpatterns = [
     path('api/truffles/', include('truffles.urls')),
     path('api/opinions/', include('opinions.urls')),
     path('api/categories/', include('categories.urls')),
+    path('api/images/', include('images.urls')),
     path('api/auth/', include('jwt_auth.urls'))
 ]

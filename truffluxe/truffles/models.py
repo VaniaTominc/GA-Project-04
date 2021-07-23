@@ -21,6 +21,10 @@ class Truffle(models.Model):
         related_name = "truffles",
         on_delete = models.CASCADE
     )
+    photos = models.ManyToManyField(
+        "images.Image",
+        related_name = "truffles"
+    )
 
     def __str__(self):
         return f"{self.name}"               # add category later

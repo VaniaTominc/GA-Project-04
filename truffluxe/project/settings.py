@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'truffles',
     'opinions',
     'categories',
-    'jwt_auth'
+    'jwt_auth',
+    'images'
 ]
 
 MIDDLEWARE = [
