@@ -3,10 +3,15 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.exceptions import NotFound
 
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
+from rest_framework.exceptions import PermissionDenied
+
 from .serializers.common import OpinionSerializer
 from opinions.models import Opinion
 
+
 class OpinionListView(APIView):
+    permission_classes = (IsAuthenticatedOrReadOnly, )
 
     # GET request all
     def get(self, _request):
@@ -16,6 +21,7 @@ class OpinionListView(APIView):
 
     # POST request
     def post(self, request):
+        request.data["owner"] = request.user.id
 
         opinion_to_create = OpinionSerializer(data=request.data)
 
@@ -43,15 +49,21 @@ class OpinionDetailView(APIView):
     def put(self, request, pk):
 
         opinion_to_edit = self.get_opinion(pk=pk)
+
+        if opinion_to_edit.owner != request.user:
+            raise PermissionDenied()
+
         updated_opinion = OpinionSerializer(opinion_to_edit, data=request.data)
         if updated_opinion.is_valid():
             updated_opinion.save()
             return Response(updated_opinion.data, status=status.HTTP_202_ACCEPTED)
-        return Response(updated_opinion.data, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+        return Response(updated_opinion.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
     # DELETE request
     def delete(self, request, pk):
 
         opinion_to_delete = self.get_opinion(pk=pk)
+        if opinion_to_delete.owner != request.user:
+            raise PermissionDenied()
         opinion_to_delete.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)

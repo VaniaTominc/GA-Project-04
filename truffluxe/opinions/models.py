@@ -10,6 +10,11 @@ class Opinion(models.Model):
         related_name = "opinions",
         on_delete = models.CASCADE
     )
+    owner = models.ForeignKey(
+        "jwt_auth.User",
+        related_name="opinions",
+        on_delete = models.CASCADE              # Potencially I could leave this out. 
+    )
 
     def __str__(self):
         return f"{self.truffle} - {self.rating}"               

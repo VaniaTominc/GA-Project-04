@@ -16,6 +16,11 @@ class Truffle(models.Model):
         "categories.Category",
         related_name = "truffles"
     )
+    owner = models.ForeignKey(
+        "jwt_auth.User",
+        related_name = "truffles",
+        on_delete = models.CASCADE
+    )
 
     def __str__(self):
         return f"{self.name}"               # add category later
