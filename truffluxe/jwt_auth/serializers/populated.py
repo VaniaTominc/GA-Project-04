@@ -1,5 +1,5 @@
-from opinions.serializers.common import OpinionSerializer
+from opinions.serializers.populated import PopulatedOpinionSerializer
 from .common import UserSerializer
 
 class PopulatedUserSerializer(UserSerializer):
-    opinions = OpinionSerializer(many=True)
+    opinions = PopulatedOpinionSerializer(many=True)
