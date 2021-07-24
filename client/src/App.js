@@ -9,6 +9,9 @@ import Register from './Components/Authentication/Register'
 
 import ProductsShowAll from './Components/Products/ProductsShowAll'
 
+// Mockup component
+import Categories from './Components/MockUpComponents/Categories'
+
 
 const App = () => {
   
@@ -19,6 +22,10 @@ const App = () => {
       <Navbar />
 
       <Switch>
+
+        <Route path='/categories'>
+          <Categories />
+        </Route>
 
         <Route path='/shop'>
           <ProductsShowAll />

@@ -64,6 +64,11 @@ const Navbar = () => {
         <li>
           <Link to='#' className='nav-links-style'>Basket</Link>
         </li>
+
+        {/* Mockup link, just to see how it works */}
+        <li>
+          <Link to='/categories' className='nav-links-style'>Categories</Link>
+        </li>
       </ul>
 
       <div className='burger'>
