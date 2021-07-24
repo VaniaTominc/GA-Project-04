@@ -17,19 +17,18 @@ const Categories = () => {
       setErrors(false)
 
       try {
-        const { data } = await axios.get('/api/categories/')
-        // console.log('DATA FROM CATEGORIES >>>', data[0].name)
+        const { data } = await axios.get('/api/categories/12/')
+        console.log('DATA FROM CATEGORIES >>>', data)
 
-        const categoriesNameArray = []
+        const categoryData = []
 
-        data.map(item => {
-          if (categoriesNameArray.indexOf(item.name) < 0) {
-            categoriesNameArray.push(item)
+        data.truffles.map(item => {
+          if (categoryData.indexOf(item.name) < 0) {
+            categoryData.push(item)
           }
         })
 
-        setCategories(categoriesNameArray)
-
+        setCategories(categoryData)
 
       } catch (err) {
         console.log(err.message)
@@ -40,19 +39,17 @@ const Categories = () => {
     getData()
   }, [])
 
-  // console.log('CATEGORIES >>>', categories[0].name)
 
-  console.log('CATEGORIES >>>', categories)
+
 
 
   return (
 
     <>
       <h1>Categories</h1>
-
+      <h2>{categories.name}</h2>
       {categories.length > 0 &&
         categories.map(item => {
-          console.log('ITEM >>>', item)
           return (
             <h1 key={item.id}>
               <a href={`/categories/${item.id}`}>{item.name}</a>

@@ -11,7 +11,7 @@ import ProductsShowAll from './Components/Products/ProductsShowAll'
 
 // Mockup component
 import Categories from './Components/MockUpComponents/Categories'
-import CategoriesCard from './Components/MockUpComponents/CategoriesCard'
+import FilteredByCategory from './Components/MockUpComponents/FilteredByCategory'
 
 
 const App = () => {
@@ -24,11 +24,11 @@ const App = () => {
 
       <Switch>
 
-        <Route path='/categories/:name'>
-          <CategoriesCard />
+        <Route path='/categories/:id'>
+          <FilteredByCategory />
         </Route>
 
-        <Route path='/categories'>
+        <Route path='/categories/'>
           <Categories />
         </Route>
 
