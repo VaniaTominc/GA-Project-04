@@ -73,6 +73,7 @@ const Login = () => {
 
   // ! Creating toggle on click to change the view.
   const toggleForm = () => {
+    document.querySelector('section').classList.toggle('active')
     document.querySelector('.container').classList.toggle('active')
   }
 
@@ -90,7 +91,7 @@ const Login = () => {
             <div className='formBox'>
               <form onSubmit={submitLogin}>
 
-                <h2>Sing in</h2>
+                <h2>Sign in</h2>
 
                 <input 
                   name='email'
