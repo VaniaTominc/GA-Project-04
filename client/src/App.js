@@ -7,6 +7,9 @@ import Home from './Components/Home'
 import Login from './Components/Authentication/Login'
 import Register from './Components/Authentication/Register'
 
+import ProductsShowAll from './Components/Products/ProductsShowAll'
+
+
 const App = () => {
   
   return (
@@ -16,6 +19,10 @@ const App = () => {
       <Navbar />
 
       <Switch>
+
+        <Route path='/shop'>
+          <ProductsShowAll />
+        </Route>
 
         <Route path='/register'>
           <Register />
