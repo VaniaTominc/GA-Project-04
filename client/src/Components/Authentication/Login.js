@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import { useHistory } from 'react-router-dom'
+// import { useHistory } from 'react-router-dom'
 
 const Login = () => {
 
-  const history = useHistory()
+  // const history = useHistory()
 
   const setToken = (token) => {
     window.localStorage.setItem('token', token)
@@ -32,7 +32,7 @@ const Login = () => {
     try {
       const { data } = await axios.post('/api/auth/login/', dataFromLogin)
       setToken(data.token)
-      history.push('/home')
+      location.assign('/home')      // Had to use this one instead of history.push because when redirected navbar did not close if it was opened.
     } catch (err) {
       console.log(err)
       setErrors(true)
@@ -63,7 +63,7 @@ const Login = () => {
 
     try {
       await axios.post('/api/auth/register/', registerData)
-      history.push('/home')
+      location.assign('/home')
     } catch (err) {
       console.log(err)
       window.alert('Your email or username is already in use.')

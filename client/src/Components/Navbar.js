@@ -36,13 +36,13 @@ const Navbar = () => {
   //   // document.querySelector('.container').classList.toggle('active')
   // }
 
-  window.onload = function () {
-    navbarSlide()
-  }
+  // window.onload = function () {
+  //   navbarSlide()
+  // }
 
   return (
 
-    <nav>
+    <nav onClick={navbarSlide}>
       <div className='logo'>
         <Link to='/' className='logo-link-style'>
           <h4>The nav</h4>

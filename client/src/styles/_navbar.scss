@@ -4,7 +4,7 @@ nav {
   align-items: center;
   min-height: 8vh;
   background-color: #5d4954;
-  opacity: .5;
+  // opacity: .5;
 }
 
 .logo {
@@ -42,6 +42,10 @@ nav {
   display: none;
   cursor: pointer;
 }
+
+// .burger {
+//   width: 25px;
+// }
 
 .burger div {
   width: 25px;
