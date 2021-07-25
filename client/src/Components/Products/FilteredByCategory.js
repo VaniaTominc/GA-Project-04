@@ -23,14 +23,6 @@ const FilteredByCategory = () => {
 
         setCategories(data.truffles)
 
-        // const trufflesArray = []
-        // data.map(item => {
-        //   trufflesArray.push(item.truffles[1].name)
-
-        // }) 
-        
-        // setTruffles(trufflesArray)
-
       } catch (err) {
         console.log(err.message)
         setErrors(true)
@@ -40,13 +32,6 @@ const FilteredByCategory = () => {
     getData()
   }, [id])
 
-  const VAJA = categories.map(item => {
-    return item
-  }, [id])
-
-
-  // console.log('TRUFFLES ARRAY >>>', truffles)
-  console.log('categories >>>', categories)
 
   return (
 
@@ -56,11 +41,11 @@ const FilteredByCategory = () => {
       {categories.length > 0 &&
         categories.map(item => {
           return (
-            <h1 key={item.id}>
-              <h2>{item.name}</h2>
+            <h2 key={item.id}>
+              <h3>{item.name}</h3>
               <img src={item.images} />
               <p>{item.description}</p>
-            </h1>
+            </h2>
           )
         })
       

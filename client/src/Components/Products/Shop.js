@@ -2,10 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
-// The stuff in this component is later going to be inside Shop component
-import FilteredByCategoryCard from './FilteredByCategoryCard'
-
-const Categories = () => {
+const Shop = () => {
 
   const [categories, setCategories] = useState([])
   const [errors, setErrors] = useState(false)
@@ -17,18 +14,19 @@ const Categories = () => {
       setErrors(false)
 
       try {
-        const { data } = await axios.get('/api/categories/12/')
-        console.log('DATA FROM CATEGORIES >>>', data)
+        const { data } = await axios.get('/api/categories/')
+        // console.log('DATA FROM CATEGORIES >>>', data[0].name)
 
-        const categoryData = []
+        const categoriesNameArray = []
 
-        data.truffles.map(item => {
-          if (categoryData.indexOf(item.name) < 0) {
-            categoryData.push(item)
+        data.map(item => {
+          if (categoriesNameArray.indexOf(item.name) < 0) {
+            categoriesNameArray.push(item)
           }
         })
 
-        setCategories(categoryData)
+        setCategories(categoriesNameArray)
+
 
       } catch (err) {
         console.log(err.message)
@@ -40,16 +38,14 @@ const Categories = () => {
   }, [])
 
 
-
-
-
   return (
 
     <>
       <h1>Categories</h1>
-      <h2>{categories.name}</h2>
+
       {categories.length > 0 &&
         categories.map(item => {
+          console.log('ITEM >>>', item)
           return (
             <h1 key={item.id}>
               <a href={`/categories/${item.id}`}>{item.name}</a>
@@ -63,4 +59,4 @@ const Categories = () => {
   )
 }
 
-export default Categories
+export default Shop

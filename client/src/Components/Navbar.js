@@ -53,7 +53,7 @@ const Navbar = () => {
           <Link to='/home' className='nav-links-style'>Home</Link>
         </li>
         <li>
-          <Link to='#' className='nav-links-style'>Shop</Link>
+          <Link to='/shop' className='nav-links-style'>Shop</Link>
         </li>
         <li>
           <Link to='#' className='nav-links-style'>About</Link>
@@ -63,11 +63,6 @@ const Navbar = () => {
         </li>
         <li>
           <Link to='#' className='nav-links-style'>Basket</Link>
-        </li>
-
-        {/* Mockup link, just to see how it works */}
-        <li>
-          <Link to='/categories' className='nav-links-style'>Categories</Link>
         </li>
       </ul>
 
