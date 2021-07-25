@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import Navbar from './Components/Navbar'
-import Home from './Components/Home'
+// import Home from './Components/Home'
 // import About from './Components/About'
 
 // Authentication components
@@ -16,6 +16,7 @@ import FilteredByCategory from './Components/Products/FilteredByCategory'
 // Dummy commponent
 import ProductsInfoPage from './Components/Products/ProductsInfoPage'
 import ProfileEditDelete from './Components/Authentication/ProfileEditDelete'
+import AddComments from './Components/Comments/AddComments'
 
 const App = () => {
   
@@ -56,7 +57,7 @@ const App = () => {
         </Route>
 
         <Route path='/home'>
-          <Home />
+          <AddComments />
         </Route>
 
         <Route path='/'>
