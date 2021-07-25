@@ -49,7 +49,7 @@ const FilteredByCategory = () => {
                     <p>RATING</p>
                     <img src={item.images} alt={item.name}/>
                     <p>{item.price}</p>
-                    <a href='#'>SHOW MORE</a>
+                    <a href={`/categories/product/${id}`}>SHOW MORE</a>
                     <p>BASKET</p>
                   </div>
                 )

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { convertAmericanDate } from '../ExtraFunctions/ReusableFunctions.js'
-// import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 // Component showing individual product for sell
 
@@ -12,7 +12,7 @@ const ProductsInfoPage = () => {
   // const [productComments, setProductComments] = useState([])
   // const [populateCommentOwner, setPopulateCommentOwner] = useState([])
 
-  // const { id } = useParams()
+  const { id } = useParams()
 
 
   useEffect(() => {
@@ -21,8 +21,8 @@ const ProductsInfoPage = () => {
 
       try {
 
-        // const { data } = await axios.get(`/api/truffles/${id}/`)
-        const { data } = await axios.get('/api/truffles/1/')
+        const { data } = await axios.get(`/api/truffles/${id}/`)
+        // const { data } = await axios.get('/api/truffles/1/')
         // console.log('INCOMING DATA >>>', data)
         // console.log('OPINIONS >>>', data.opinions)               // The lenght of the opinion array
 

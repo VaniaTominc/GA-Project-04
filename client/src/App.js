@@ -31,16 +31,16 @@ const App = () => {
           <ProfileEditDelete />
         </Route>
 
-        <Route path='/profile/'>
-          <ProfilePage />
-        </Route>
-
         <Route path='/categories/product/:id'>
-
+          <ProductsInfoPage />
         </Route>
 
         <Route path='/categories/:id'>
           <FilteredByCategory />
+        </Route>
+
+        <Route path='/profile/'>
+          <ProfilePage />
         </Route>
 
         <Route path='/shop'>
@@ -52,7 +52,7 @@ const App = () => {
         </Route>
 
         <Route path='/about'>
-          <ProductsInfoPage />
+
         </Route>
 
         <Route path='/home'>
