@@ -35,7 +35,7 @@ export const getCurrentUser = async () => {
   const { data } = await axios.get(`/api/auth/profiles/${currentUserId}`,
     {
       headers: {
-        Authorizations: `Bearer ${getTokenFromStorage()}`,
+        Authorization: `Bearer ${getTokenFromStorage()}`,
       },
     }
   )
