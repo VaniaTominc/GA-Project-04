@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 // import React from 'react'
 import React, { useState, useEffect } from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import { useHistory, useParams } from 'react-router-dom'
 import { getCurrentUser, getPayload, checkUserIsAuthenticated } from './auth'
 import { convertAmericanDate } from '../ExtraFunctions/ReusableFunctions.js'
 
@@ -10,6 +10,7 @@ import { convertAmericanDate } from '../ExtraFunctions/ReusableFunctions.js'
 const ProfilePage = () => {
 
   const history = useHistory()
+  const { id } = useParams()
 
   const [currentUser, setCurrentUser] = useState(null)
 
@@ -26,7 +27,7 @@ const ProfilePage = () => {
     
     const getCurrentUserData = async () => {
       const currentUserData = await getCurrentUser()
-      // console.log(currentUserData.opinions)
+      console.log('INCOMING ID >>>', currentUserData.id)
 
       setCurrentUser(currentUserData)
     }
@@ -58,7 +59,11 @@ const ProfilePage = () => {
               <p>First Name: {currentUser.first_name}</p>
               <p>Last Name: {currentUser.last_name}</p>
 
-              <h3>EDIT / DELETE YOUR PROFILE</h3>
+              <a href={`profile/${currentUserId}`}>
+                <h3>
+                  EDIT / DELETE YOUR PROFILE
+                </h3>
+              </a>
               
               <div>
                 { currentUser.opinions &&

@@ -60,20 +60,22 @@ const ProfileEditDelete = () => {
     }
   }
 
+  const handleLogout = () => {
+    window.localStorage.removeItem('token')
+    location.assign('/home')
+  }
+
   const deleteUser = async () => {
     try {
       await axios.delete(`/api/auth/profiles/${id}/`, {
         headers: {
           Authorization: `Bearer ${getTokenFromStorage()}` },
       })
-      location.assign('/home')
+      handleLogout()
     } catch (err) {
       console.log(err)
     }
   }
-
-  console.log('CHANGED DATA >>>', userToEdit)
-  console.log('ERRORS >>>', errors)
 
   return (
 

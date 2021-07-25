@@ -7,7 +7,6 @@ import Home from './Components/Home'
 
 // Authentication components
 import Login from './Components/Authentication/Login'
-import Register from './Components/Authentication/Register'
 import ProfilePage from './Components/Authentication/ProfilePage'
 
 // Proper components
@@ -46,10 +45,6 @@ const App = () => {
 
         <Route path='/shop'>
           <Shop />
-        </Route>
-
-        <Route path='/register'>
-          <Register />
         </Route>
 
         <Route path='/login'>
