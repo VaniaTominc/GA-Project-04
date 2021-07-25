@@ -27,7 +27,7 @@ const ProductsInfoPage = () => {
 
         setTruffle(data)    
 
-
+        console.log('ratings >>>', data.opinions.rating)
 
 
       } catch (err) {

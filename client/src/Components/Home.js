@@ -1,41 +1,44 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+import React from 'react'
+// import React, { useState, useEffect } from 'react'
+// import axios from 'axios'
 
 const Home = () => {
 
-  const [truffles, setTruffles] = useState([])
+  // const [truffles, setTruffles] = useState([])
   // const [errors, setErrors] = useState(false)
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    const getData = async () => {
-      // setErrors(true)
+  //   const getData = async () => {
+  //     // setErrors(true)
       
-      try {
+  //     try {
 
-        const { data } = await axios.get('/api/truffles/')
-        setTruffles(data)
-        console.log('DATA >>>', data)
+  //       const { data } = await axios.get('/api/truffles/')
+  //       setTruffles(data)
+  //       console.log('DATA >>>', data)
 
-      } catch (err) {
-        // setErrors(true)
-        console.log(err.message)
-      }
-    }
+  //     } catch (err) {
+  //       // setErrors(true)
+  //       console.log(err.message)
+  //     }
+  //   }
 
-    getData()
+  //   getData()
 
-  }, [])
+  // }, [])
 
   return (
     <>
-    
-      <div>
+
+      <h1>Truffles&apos; world</h1>
+
+      {/* <div>
         {truffles.map(item => 
           <h1 key={item.id}>
             {item.name}
           </h1>)}
-      </div>
+      </div> */}
 
     </>
 

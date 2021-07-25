@@ -1,9 +1,30 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import React, { useEffect, useState } from 'react'
+import { Link, useHistory } from 'react-router-dom'
+import { getPayload } from './Authentication/auth'
+
 
 const Navbar = () => {
 
-  const navbarSlide = () => {
+  const history = useHistory()
+  // const location = useLocation()
+
+  const checkIfUserIsAuthenticated = () => {
+    const payload = getPayload()
+
+    if (!payload) return
+    
+    const currentTime = Math.round(Date.now() / 1000)
+    return currentTime < payload.exp
+  }
+
+  const handleLogout = () => {
+    window.localStorage.removeItem('token')
+    history.push('/home')
+    location.pathname
+  }
+
+  const toggleBurger = () => {
     // const burger = document.querySelector('.burger')
     // const navbar = document.querySelector('.nav-links')
     // const navLinks = document.querySelectorAll('.nav-links li')
@@ -42,7 +63,7 @@ const Navbar = () => {
 
   return (
 
-    <nav onClick={navbarSlide}>
+    <nav onClick={toggleBurger}>
       <div className='logo'>
         <Link to='/' className='logo-link-style'>
           <h4>The nav</h4>
@@ -58,9 +79,27 @@ const Navbar = () => {
         <li>
           <Link to='about' className='nav-links-style'>About</Link>
         </li>
-        <li>
-          <Link to='/login' className='nav-links-style'>Login</Link>
-        </li>
+
+        { checkIfUserIsAuthenticated() ?
+
+          <li>
+            <Link
+              to='/home'
+              onClick={handleLogout}
+              className='nav-links-style'
+            >
+              Log Out
+            </Link>
+          </li>
+
+          :
+
+          <li>
+            <Link to='/login' className='nav-links-style'>Login</Link>
+          </li>
+
+        }
+
         <li>
           <Link to='#' className='nav-links-style'>Basket</Link>
         </li>

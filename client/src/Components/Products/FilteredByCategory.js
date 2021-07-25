@@ -32,7 +32,6 @@ const FilteredByCategory = () => {
     getData()
   }, [id])
 
-
   return (
 
     <>
