@@ -36,22 +36,34 @@ const FilteredByCategory = () => {
   return (
 
     <>
-      <h1>PRIKAZANA KATEGORIJA</h1>
+      { categories ? 
+        <>
+          <h1>PRIKAZANA KATEGORIJA</h1>
 
-      {categories.length > 0 &&
-        categories.map(item => {
-          return (
-            <div className='product-card-border' key={item.id}>
-              <h3>{item.name}</h3>
-              <p>RATING</p>
-              <img src={item.images} alt={item.name}/>
-              <p>{item.price}</p>
-              <a href='#'>SHOW MORE</a>
-              <p>BASKET</p>
-            </div>
-          )
-        })
-      
+          <div>
+
+            {categories &&
+              categories.map(item => {
+                return (
+                  <div className='product-card-border' key={item.id}>
+                    <h3>{item.name}</h3>
+                    <p>RATING</p>
+                    <img src={item.images} alt={item.name}/>
+                    <p>{item.price}</p>
+                    <a href='#'>SHOW MORE</a>
+                    <p>BASKET</p>
+                  </div>
+                )
+              })
+            }
+
+          </div>
+        </>
+        :
+        <>
+          <h1>Something has gone wrong ...</h1>
+        </>
+          
       }
 
     </>
