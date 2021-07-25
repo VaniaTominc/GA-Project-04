@@ -4,8 +4,11 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Navbar from './Components/Navbar'
 import Home from './Components/Home'
 // import About from './Components/About'
+
+// Authentication components
 import Login from './Components/Authentication/Login'
 import Register from './Components/Authentication/Register'
+import ProfilePage from './Components/Authentication/ProfilePage'
 
 // Proper components
 import Shop from './Components/Products/Shop'
@@ -23,6 +26,10 @@ const App = () => {
       <Navbar />
 
       <Switch>
+
+        <Route path='/profile/'>
+          <ProfilePage />
+        </Route>
 
         <Route path='/categories/product/:id'>
 

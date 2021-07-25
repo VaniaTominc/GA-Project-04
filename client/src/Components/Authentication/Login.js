@@ -32,7 +32,7 @@ const Login = () => {
     try {
       const { data } = await axios.post('/api/auth/login/', dataFromLogin)
       setToken(data.token)
-      location.assign('/home')      // Had to use this one instead of history.push because when redirected navbar did not close if it was opened.
+      location.assign('/profile')      // Had to use this one instead of history.push because when redirected navbar did not close if it was opened.
     } catch (err) {
       console.log(err)
       setErrors(true)
@@ -63,7 +63,7 @@ const Login = () => {
 
     try {
       await axios.post('/api/auth/register/', registerData)
-      location.assign('/home')
+      location.assign('/profile')
     } catch (err) {
       console.log(err)
       window.alert('Your email or username is already in use.')

@@ -1,13 +1,11 @@
 import React from 'react'
-// import React, { useEffect, useState } from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { getPayload } from './Authentication/auth'
 
 
 const Navbar = () => {
 
-  const history = useHistory()
-  // const location = useLocation()
+  // const history = useHistory()
 
   const checkIfUserIsAuthenticated = () => {
     const payload = getPayload()
@@ -20,8 +18,9 @@ const Navbar = () => {
 
   const handleLogout = () => {
     window.localStorage.removeItem('token')
-    history.push('/home')
-    location.pathname
+    location.assign('/home')
+    // history.push('/home')
+    // location.pathname
   }
 
   const toggleBurger = () => {
@@ -82,15 +81,23 @@ const Navbar = () => {
 
         { checkIfUserIsAuthenticated() ?
 
-          <li>
-            <Link
-              to='/home'
-              onClick={handleLogout}
-              className='nav-links-style'
-            >
-              Log Out
-            </Link>
-          </li>
+          <>
+
+            <li>
+              <Link to='/profile' className='nav-links-style'>Profile</Link>
+            </li>
+
+            <li>
+              <Link
+                to='/home'
+                onClick={handleLogout}
+                className='nav-links-style'
+              >
+                Log Out
+              </Link>
+            </li>
+
+          </>
 
           :
 
