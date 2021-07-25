@@ -64,7 +64,7 @@ const Login = () => {
     try {
       await axios.post('/api/auth/register/', registerData)
       // history.push('/profile')
-      location.assign('/home')
+      location.assign('/login')
       
     } catch (err) {
       console.log(err)

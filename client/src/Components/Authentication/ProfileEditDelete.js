@@ -53,7 +53,7 @@ const ProfileEditDelete = () => {
             Authorization: `Bearer ${getTokenFromStorage()}` },
         }
       )
-      history.push('/home')
+      history.push('/profile')
     } catch (err) {
       console.log('ERROR MESSAGE >>>', err)
       setErrors(err.response.data.errors)

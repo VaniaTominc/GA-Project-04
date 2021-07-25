@@ -16,6 +16,9 @@ const ProfilePage = () => {
 
   const [currentUserId, setCurrentUserId] = useState(null)
 
+  const [populateProductName, setPopulateProductName] = useState([])
+
+
   useEffect(() => {
     if (getPayload()) {
       setCurrentUserId(getPayload().sub)
@@ -27,7 +30,8 @@ const ProfilePage = () => {
     
     const getCurrentUserData = async () => {
       const currentUserData = await getCurrentUser()
-      console.log('INCOMING ID >>>', currentUserData.id)
+      // console.log('INCOMING ID >>>', currentUserData.id)
+      console.log('OPINIONS >>>', currentUserData.opinions[0].truffle.name)
 
       setCurrentUser(currentUserData)
     }
@@ -44,13 +48,11 @@ const ProfilePage = () => {
      
 
       <>
-      
-        <h1>Profile page</h1>
 
         { currentUser && 
 
             <>
-              <p>Welcome back <strong>{currentUser.username}</strong></p>
+              <h1>Welcome back {currentUser.username}</h1>
               <p>Member since: {convertAmericanDate(currentUser.date_joined.slice(0, 10))}</p>
 
               <h3>YOUR INFO</h3>
@@ -74,6 +76,9 @@ const ProfilePage = () => {
                       currentUser.opinions.map(item => {
                         return (
                           <div key={item.id}>
+                            <a href={`/categories/product/${item.truffle.id}`}> 
+                              <h4>{item.truffle.name}</h4>
+                            </a>
                             <p>{item.owner.username}</p>
                             <p>{convertAmericanDate(item.created_at.slice(11, 19))} {convertAmericanDate(item.created_at.slice(0, 10))}</p>
                             <p>{item.rating}</p>
