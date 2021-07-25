@@ -40,7 +40,7 @@ export const getCurrentUser = async () => {
     }
   )
 
-  console.log('Incoming user data >>>', data)
+  // console.log('Incoming user data >>>', data)
 
   return data
 

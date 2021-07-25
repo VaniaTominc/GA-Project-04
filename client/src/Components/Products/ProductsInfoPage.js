@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import { convertAmericanDate } from '../ExtraFunctions/ReusableFunctions.js'
 // import { useParams } from 'react-router-dom'
 
 // Component showing individual product for sell
@@ -39,10 +40,6 @@ const ProductsInfoPage = () => {
     getData()
   
   }, [])
-
-  function convertAmericanDate(string) {
-    return string.split('-').reverse().join('/')
-  }
 
   return (
 
