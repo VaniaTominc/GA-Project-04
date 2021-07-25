@@ -41,11 +41,14 @@ const FilteredByCategory = () => {
       {categories.length > 0 &&
         categories.map(item => {
           return (
-            <h2 key={item.id}>
+            <div className='product-card-border' key={item.id}>
               <h3>{item.name}</h3>
-              <img src={item.images} />
-              <p>{item.description}</p>
-            </h2>
+              <p>RATING</p>
+              <img src={item.images} alt={item.name}/>
+              <p>{item.price}</p>
+              <a href='#'>SHOW MORE</a>
+              <p>BASKET</p>
+            </div>
           )
         })
       

@@ -7,11 +7,12 @@ import Home from './Components/Home'
 import Login from './Components/Authentication/Login'
 import Register from './Components/Authentication/Register'
 
-// Mockup component
-import FilteredByCategory from './Components/Products/FilteredByCategory'
-
 // Proper components
 import Shop from './Components/Products/Shop'
+import FilteredByCategory from './Components/Products/FilteredByCategory'
+
+// Dummy commponent
+import ProductsInfoPage from './Components/Products/ProductsInfoPage'
 
 const App = () => {
   
@@ -22,6 +23,10 @@ const App = () => {
       <Navbar />
 
       <Switch>
+
+        <Route path='/categories/product/:id'>
+
+        </Route>
 
         <Route path='/categories/:id'>
           <FilteredByCategory />
@@ -39,9 +44,9 @@ const App = () => {
           <Login />
         </Route>
 
-        {/* <Route path='/about'>
-          <About />
-        </Route> */}
+        <Route path='/about'>
+          <ProductsInfoPage />
+        </Route>
 
         <Route path='/home'>
           <Home />

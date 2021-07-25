@@ -45,7 +45,6 @@ const Shop = () => {
 
       {categories.length > 0 &&
         categories.map(item => {
-          console.log('ITEM >>>', item)
           return (
             <h1 key={item.id}>
               <a href={`/categories/${item.id}`}>{item.name}</a>

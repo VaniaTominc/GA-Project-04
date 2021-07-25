@@ -56,7 +56,7 @@ const Navbar = () => {
           <Link to='/shop' className='nav-links-style'>Shop</Link>
         </li>
         <li>
-          <Link to='#' className='nav-links-style'>About</Link>
+          <Link to='about' className='nav-links-style'>About</Link>
         </li>
         <li>
           <Link to='/login' className='nav-links-style'>Login</Link>
