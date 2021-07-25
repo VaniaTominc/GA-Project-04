@@ -40,13 +40,13 @@ const ProfilePage = () => {
     
     <>
 
-      { currentUserId ?
+     
 
-        <>
+      <>
       
-          <h1>Profile page</h1>
+        <h1>Profile page</h1>
 
-          { currentUser && 
+        { currentUser && 
 
             <>
               <p>Welcome back <strong>{currentUser.username}</strong></p>
@@ -84,14 +84,11 @@ const ProfilePage = () => {
               </div>
 
             </>
-          }
+        }
 
-        </>
+      </>
 
-        :
-
-        <h1>SOMETHING HAS GONE WRONG</h1>
-      }
+        
 
     </>
 

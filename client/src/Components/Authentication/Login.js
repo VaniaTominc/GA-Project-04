@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-// import { useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 const Login = () => {
 
-  // const history = useHistory()
+  const history = useHistory()
 
   const setToken = (token) => {
     window.localStorage.setItem('token', token)
@@ -63,11 +63,12 @@ const Login = () => {
 
     try {
       await axios.post('/api/auth/register/', registerData)
+      history.push('/profile')
       location.assign('/profile')
+      
     } catch (err) {
       console.log(err)
       window.alert('Your email or username is already in use.')
-      setErrors(err.response.data.errors)
     }
   }
 

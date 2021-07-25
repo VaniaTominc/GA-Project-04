@@ -64,9 +64,9 @@ const ProfileEditDelete = () => {
     try {
       await axios.delete(`/api/auth/profiles/${id}/`, {
         headers: {
-          Authorization: `Bearer ${getTokenFromStorage}` },
+          Authorization: `Bearer ${getTokenFromStorage()}` },
       })
-      history.push('/home')
+      location.assign('/home')
     } catch (err) {
       console.log(err)
     }
@@ -161,7 +161,7 @@ const ProfileEditDelete = () => {
               <input 
                 type='submit' 
                 value='Delete' 
-                onSubmit={deleteUser}
+                onClick={deleteUser}
               />
             </form>
             }
