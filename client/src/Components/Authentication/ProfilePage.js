@@ -2,7 +2,7 @@
 // import React from 'react'
 import React, { useState, useEffect } from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import { getCurrentUser, getTokenFromStorage } from './auth'
+import { getCurrentUser, getPayload, checkUserIsAuthenticated } from './auth'
 import { convertAmericanDate } from '../ExtraFunctions/ReusableFunctions.js'
 
 
@@ -13,7 +13,17 @@ const ProfilePage = () => {
 
   const [currentUser, setCurrentUser] = useState(null)
 
+  const [currentUserId, setCurrentUserId] = useState(null)
+
   useEffect(() => {
+    if (getPayload()) {
+      setCurrentUserId(getPayload().sub)
+    }
+  }, [])
+
+
+  useEffect(() => {
+    
     const getCurrentUserData = async () => {
       const currentUserData = await getCurrentUser()
       // console.log(currentUserData.opinions)
@@ -27,50 +37,64 @@ const ProfilePage = () => {
 
 
   return (
+    
     <>
-      <h1>Profile page</h1>
 
-      { currentUser && 
+      { currentUserId ?
 
         <>
-          <p>Welcome back <strong>{currentUser.username}</strong></p>
-          <p>Member since: {convertAmericanDate(currentUser.date_joined.slice(0, 10))}</p>
+      
+          <h1>Profile page</h1>
 
-          <h3>YOUR INFO</h3>
-          <p>Username: {currentUser.username}</p>
-          <p>Email: </p>
-          <p>First Name: </p>
-          <p>Last Name: </p>
+          { currentUser && 
 
-          <h3>EDIT / DELETE YOUR PROFILE</h3>
+            <>
+              <p>Welcome back <strong>{currentUser.username}</strong></p>
+              <p>Member since: {convertAmericanDate(currentUser.date_joined.slice(0, 10))}</p>
 
-          <div>
-            { currentUser.opinions &&
+              <h3>YOUR INFO</h3>
+              <p>Username: {currentUser.username}</p>
+              <p>Email: {currentUser.email}</p>
+              <p>First Name: {currentUser.first_name}</p>
+              <p>Last Name: {currentUser.last_name}</p>
+
+              <h3>EDIT / DELETE YOUR PROFILE</h3>
+              
               <div>
-                <h3>YOUR COMMENTS SO FAR</h3>
-                {
+                { currentUser.opinions &&
+                  <div>
+                    <h3>YOUR COMMENTS SO FAR</h3>
+                    {
 
-                  currentUser.opinions.map(item => {
-                    return (
-                      <div key={item.id}>
-                        <p>{item.owner.username}</p>
-                        <p>{convertAmericanDate(item.created_at.slice(11, 19))} {convertAmericanDate(item.created_at.slice(0, 10))}</p>
-                        <p>{item.rating}</p>
-                        <p>{item.text}</p>
-                      </div>
-                    )
-                  })
+                      currentUser.opinions.map(item => {
+                        return (
+                          <div key={item.id}>
+                            <p>{item.owner.username}</p>
+                            <p>{convertAmericanDate(item.created_at.slice(11, 19))} {convertAmericanDate(item.created_at.slice(0, 10))}</p>
+                            <p>{item.rating}</p>
+                            <p>{item.text}</p>
+                          </div>
+                        )
+                      })
 
+                    }
+
+                  </div>
                 }
-
               </div>
-            }
-          </div>
+
+            </>
+          }
 
         </>
+
+        :
+
+        <h1>SOMETHING HAS GONE WRONG</h1>
       }
 
     </>
+
   )
 
 }

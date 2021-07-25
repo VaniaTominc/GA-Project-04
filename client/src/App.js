@@ -16,6 +16,7 @@ import FilteredByCategory from './Components/Products/FilteredByCategory'
 
 // Dummy commponent
 import ProductsInfoPage from './Components/Products/ProductsInfoPage'
+import ProfileEditDelete from './Components/Authentication/ProfileEditDelete'
 
 const App = () => {
   
@@ -26,6 +27,10 @@ const App = () => {
       <Navbar />
 
       <Switch>
+
+        <Route path='/profile/:id'>
+          <ProfileEditDelete />
+        </Route>
 
         <Route path='/profile/'>
           <ProfilePage />
