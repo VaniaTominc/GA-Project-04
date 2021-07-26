@@ -66,18 +66,18 @@ const EditDeleteComments = () => {
     }
   }
 
-  // const deleteComment = async () => {
-  //   try {
-  //     const token = window.localStorage.getItem('token')
-  //     await axios.delete(`/api/opinions/${id}`, {
-  //       headers: {
-  //         Authorization: `Bearer ${token}` },
-  //     })
-  //     location.assign('/home')
-  //   } catch (err) {
-  //     console.log(err)
-  //   }
-  // }
+  const deleteComment = async () => {
+    try {
+      const token = window.localStorage.getItem('token')
+      await axios.delete(`/api/opinions/${id}`, {
+        headers: {
+          Authorization: `Bearer ${token}` },
+      })
+      location.assign('/home')
+    } catch (err) {
+      console.log(err)
+    }
+  }
 
   return (
   
@@ -119,6 +119,7 @@ const EditDeleteComments = () => {
           <br />
 
           <input type='submit' value='Submit' />
+          <input type='submit' value='Delete' onClick={deleteComment} />
         </form>
 
       </div>

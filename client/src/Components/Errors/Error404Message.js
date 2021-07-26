@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaSpinner } from 'react-icons/fa'
 
 const Error404Message = () => {
 
@@ -7,15 +6,11 @@ const Error404Message = () => {
 
     <>
     
-      <div className='mailbox'>
-        <div className='err'>4</div>
-        <i>< FaSpinner className='where'/></i>
-        <div className='err2'>4</div>
-        <div className='msg'>
-          Maybe this page moved? Got deleted? Is hiding out in quarantine? Never existed in the first place?
-          <p>Let`s go <a href="#">home</a> and try from there.</p>
-        </div>
-      </div>
+      <section className='error-container'>
+        <span className='four'><span className='screen-reader-text'>4</span></span>
+        <span className='zero'><span className='screen-reader-text'>0</span></span>
+        <span className='four'><span className='screen-reader-text'>4</span></span>
+      </section>
     
     </>
   )

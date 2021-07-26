@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { convertAmericanDate } from '../ExtraFunctions/ReusableFunctions.js'
 import { useParams } from 'react-router-dom'
+import AddComment from '../Comments/AddComment.js'
 
 // Component showing individual product for sell
 
@@ -39,62 +40,6 @@ const ProductsInfoPage = () => {
   
   }, [id])
 
-  // ! PLAYING WITH POSTING COMMENTS
-
-  // ? Handling user typing
-
-  // const currentProduct = location.pathname
-  // console.log('Current product page >>>', currentProduct)
-  // Current product page >>> /categories/product/12
-
-
-  const [getCommentData, setGetCommentData] = useState({
-    text: '',
-    rating: '',
-    truffle: id,
-  })
-
-  const [errors, setErrors] = useState(
-    {
-      text: '',
-      rating: '',
-      truffle: '',
-    }
-  )
-
-  const incomingCommentData = (event) => {
-    const getUserComment = { ...getCommentData, [event.target.name]: event.target.value }
-    const newError = { ...errors, [event.target.name]: '' }
-    setGetCommentData(getUserComment)
-    setErrors(newError)
-  }
-
-  // console.log('INCOMING DATA >>>', getCommentData)
-
-  // ? Comment to the backend
-  const postComment = async (event) => {
-    event.preventDefault()
-
-    try {
-      const token = window.localStorage.getItem('token')
-
-      await axios.post('/api/opinions/', getCommentData,
-        {
-          headers: {
-            Authorization: `Bearer ${token}` },
-        }
-      )
-
-      location.assign(`/categories/product/${id}`)
-
-    } catch (err) {
-      console.log('🆘 Something is wrong with posting a comment >>>', err.message)
-      window.alert('Something went wrong 😬')
-    }
-  }
-
-  console.log('truffle pictures >>>', truffle.pictures)
-
 
 
 
@@ -103,37 +48,8 @@ const ProductsInfoPage = () => {
     <>
 
       { truffle ?
-      
-        <div>
-
-          <h1>Product Info</h1>
-
-          <h3>PODATKI</h3>
-          <h4>{truffle.name}</h4>
-          <p>{truffle.description}</p>
-          <p>{truffle.price}</p>
-          <p>Photos</p>
-          <>
-            { truffle.photos &&
-              <>
-
-                {
-
-                  truffle.photos.map(item => {
-                    return (
-                      <div key={item.id}>
-                        <img src={item.imageurl} alt={item.name} />
-                      </div>
-                    )
-                  })
-
-                }
-
-              </>
-
-            }
-          </>
-          
+    
+        <>
 
           <h1>PLAYING WITH COMMENTS</h1>
       
@@ -159,48 +75,12 @@ const ProductsInfoPage = () => {
               </div>
             }
           </div>
-          
-          
-          {/* PLAYIING WITH ADDING COMMENTS SECTIONS  */}
+      
+      
+          <AddComment />
 
-          <h1>ADD COMMENTS SECTION</h1>
-          <h2>Post your comment</h2>
-
-          <div> 
-
-            <form onSubmit={postComment}>
-
-              <input 
-                type='number'
-                name='rating'
-                min='1'
-                max='5'
-                required
-                value={getCommentData.rating}
-                onChange={incomingCommentData}
-              />
-
-              <br />
-
-              <textarea
-                placeholder='This is where you write your review. Explain what happened, and leave out offensive words. Keep your feedback honest, helpful, and constructive.' 
-                required 
-                name='text'
-                rows='6'
-                cols='70'
-                value={getCommentData.text}
-                onChange={incomingCommentData}
-              />
-
-              <br />
-
-              <input type='submit' value='Submit' />
-            </form>
-
-          </div>
-
-
-        </div>
+        </>
+      
 
         
 
