@@ -1,20 +1,18 @@
-/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import Error404Message from '../Errors/Error404Message'
 
 const FilteredByCategory = () => {
 
   const [categories, setCategories] = useState([])
-  const [errors, setErrors] = useState(false)
+  const [hasError, setHasError] = useState(false)
 
   const { id } = useParams()
 
   useEffect(() => {
 
     const getData = async () => {
-
-      setErrors(false)
 
       try {
         // const { data } = await axios.get('/api/categories/2/')
@@ -25,7 +23,7 @@ const FilteredByCategory = () => {
 
       } catch (err) {
         console.log(err.message)
-        setErrors(true)
+        setHasError(true)
       }
     }
 
@@ -59,9 +57,18 @@ const FilteredByCategory = () => {
           </div>
         </>
         :
-        <>
-          <h1>Something has gone wrong ...</h1>
-        </>
+
+        hasError ?
+
+          <Error404Message />
+
+          :
+
+          <>
+
+            <img src='https://thumbs.gfycat.com/BareJoyousAsp.webp' alt='Rick And Morty'/>
+          
+          </>
           
       }
 

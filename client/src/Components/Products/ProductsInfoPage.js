@@ -3,13 +3,15 @@ import axios from 'axios'
 import { convertAmericanDate } from '../ExtraFunctions/ReusableFunctions.js'
 import { useParams } from 'react-router-dom'
 import AddComment from '../Comments/AddComment.js'
+import Error404Message from '../Errors/Error404Message'
+import { checkUserIsAuthenticated } from '../Authentication/auth'
 
 // Component showing individual product for sell
 
 const ProductsInfoPage = () => {
 
   const [truffle, setTruffle] = useState([])
-  // const [hasError, setHasError] = useState(false)
+  const [hasError, setHasError] = useState(false)
   // const [productComments, setProductComments] = useState([])
   // const [populateCommentOwner, setPopulateCommentOwner] = useState([])
 
@@ -32,6 +34,7 @@ const ProductsInfoPage = () => {
 
 
       } catch (err) {
+        setHasError(true)
         console.log('Display Product is not working properly! >>>', err.message)
       }
 
@@ -76,19 +79,30 @@ const ProductsInfoPage = () => {
             }
           </div>
       
-      
-          <AddComment />
+          {
+
+            checkUserIsAuthenticated ?
+
+              <AddComment />
+
+              :
+
+              <h1>Login in, so you can comment.</h1>
+
+          }
 
         </>
       
-
-        
-
-
         :
-        <>
-          <h1>Something has gone wrong ...</h1>
-        </>
+
+        hasError ? 
+        
+          <Error404Message />
+
+          :
+
+          <img src='https://thumbs.gfycat.com/BareJoyousAsp.webp' alt='Rick And Morty'/>
+
       } 
 
     </>

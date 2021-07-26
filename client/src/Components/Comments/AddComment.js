@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
+import Error404Message from '../Errors/Error404Message'
 
 // Component showing individual product for sell
 
@@ -59,47 +60,55 @@ const AddComment = () => {
 
     <>
 
-   
-    
-          
-          
-      {/* PLAYIING WITH ADDING COMMENTS SECTIONS  */}
+      { getCommentData ?
+      
+        <>
 
-      <h1>ADD COMMENTS SECTION</h1>
-      <h2>Post your comment</h2>
+          <h1>ADD COMMENTS SECTION</h1>
+          <h2>Post your comment</h2>
 
-      <div> 
+          <div> 
 
-        <form onSubmit={postComment}>
+            <form onSubmit={postComment}>
 
-          <input 
-            type='number'
-            name='rating'
-            min='1'
-            max='5'
-            required
-            value={getCommentData.rating}
-            onChange={incomingCommentData}
-          />
+              <input 
+                type='number'
+                name='rating'
+                min='1'
+                max='5'
+                required
+                value={getCommentData.rating}
+                onChange={incomingCommentData}
+              />
 
-          <br />
+              <br />
 
-          <textarea
-            placeholder='This is where you write your review. Explain what happened, and leave out offensive words. Keep your feedback honest, helpful, and constructive.' 
-            required 
-            name='text'
-            rows='6'
-            cols='70'
-            value={getCommentData.text}
-            onChange={incomingCommentData}
-          />
+              <textarea
+                placeholder='This is where you write your review. Explain what happened, and leave out offensive words. Keep your feedback honest, helpful, and constructive.' 
+                required 
+                name='text'
+                rows='6'
+                cols='70'
+                value={getCommentData.text}
+                onChange={incomingCommentData}
+              />
 
-          <br />
+              <br />
 
-          <input type='submit' value='Submit' />
-        </form>
+              <input type='submit' value='Submit' />
+            </form>
 
-      </div>
+          </div>
+
+        </>
+
+        :
+
+        <>
+          <Error404Message />
+        </>
+        
+      }
 
 
 

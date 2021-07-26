@@ -4,6 +4,7 @@ import { useParams, useHistory } from 'react-router-dom'
 
 import axios from 'axios'
 import { getCurrentUser, getTokenFromStorage } from './auth'
+import Error404Message from '../Errors/Error404Message'
 
 
 const ProfileEditDelete = () => {
@@ -174,7 +175,7 @@ const ProfileEditDelete = () => {
         :
 
         <>
-          <h1>Something has gone wrong</h1>
+          <Error404Message />
         </>
 
       }

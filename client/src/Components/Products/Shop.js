@@ -1,17 +1,15 @@
-/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import Error404Message from '../Errors/Error404Message'
 
 const Shop = () => {
 
   const [categories, setCategories] = useState([])
-  const [errors, setErrors] = useState(false)
+  const [hasError, setHasError] = useState(false)
 
   useEffect(() => {
 
     const getData = async () => {
-
-      setErrors(false)
 
       try {
         const { data } = await axios.get('/api/categories/')
@@ -30,7 +28,7 @@ const Shop = () => {
 
       } catch (err) {
         console.log(err.message)
-        setErrors(true)
+        setHasError(true)
       }
     }
 
@@ -41,17 +39,39 @@ const Shop = () => {
   return (
 
     <>
-      <h1>Categories</h1>
-
-      {categories.length > 0 &&
-        categories.map(item => {
-          return (
-            <h1 key={item.id}>
-              <a href={`/categories/${item.id}`}>{item.name}</a>
-            </h1>
-          )
-        })
       
+      { categories ?
+      
+        <>
+
+          <h1>Categories</h1>
+
+          {categories.length > 0 &&
+            categories.map(item => {
+              return (
+                <h1 key={item.id}>
+                  <a href={`/categories/${item.id}`}>{item.name}</a>
+                </h1>
+              )
+            })
+          }
+
+        </>
+
+        :
+
+        hasError ?
+
+          <Error404Message />
+
+          :
+
+          <>
+
+            <img src='https://thumbs.gfycat.com/BareJoyousAsp.webp' alt='Rick And Morty'/>
+            
+          </>
+
       }
 
     </>

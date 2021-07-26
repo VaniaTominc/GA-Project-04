@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
-// import { getPayload } from './auth'
+import Error404Message from '../Errors/Error404Message'
+import { checkUserIsAuthenticated } from '../Authentication/auth'
 
 
 const EditDeleteComments = () => {
+
+  const [hasError, setHasError] = useState(false)
 
   // ! PLAYING WITH EDITING COMMENT
 
@@ -30,10 +33,17 @@ const EditDeleteComments = () => {
   useEffect(() => {
 
     const getData = async() => {
-      const { data } = await axios.get(`/api/opinions/${id}/`)
-      console.log('incoming >>>', data)
-      data.truffle = data.truffle.id            // The way how to get products_to_update id. 
-      setCommentToEdit(data)
+
+      try {
+        const { data } = await axios.get(`/api/opinions/${id}/`)
+        // console.log('incoming >>>', data)
+        data.truffle = data.truffle.id            // The way how to get products_to_update id. 
+        setCommentToEdit(data)
+
+      } catch (err) {
+        console.log('Something has gone wrong >>>', err.message)
+        setHasError(true)
+      }
     }
     getData()
   }, [id])
@@ -61,6 +71,7 @@ const EditDeleteComments = () => {
       location.assign(`/categories/product/${id}`)
 
     } catch (err) {
+      setHasError(true)
       console.log('Incoming error from submiting changed comment >>>', err.response)
       window.alert('😱 Something has wrong with updating your comment 🆘')
     }
@@ -76,6 +87,7 @@ const EditDeleteComments = () => {
       location.assign('/home')
     } catch (err) {
       console.log(err)
+      setHasError(true)
     }
   }
 
@@ -83,47 +95,94 @@ const EditDeleteComments = () => {
   
     <>
 
-      <h1>ADD COMMENTS SECTION</h1>
-      <h2>Post your comment</h2>
+      { commentToEdit ?
+      
+        <>
 
-      <div> 
+          { commentToEdit &&
+          
+            <>
 
-        <form onSubmit={handleCommentChangeSubmit}>
+              {
 
-          <input 
-            type='number'
-          />
+                checkUserIsAuthenticated ?
 
-          <input 
-            type='number'
-            name='rating'
-            min='1'
-            max='5'
-            required
-            value={commentToEdit.rating}
-            onChange={handleCommentChange}
-          />
+                  <>
 
-          <br />
+                    <h1>EDIT / DELETE</h1>
+                    <h2>Post your comment</h2>
 
-          <textarea
-            placeholder='This is where you write your review. Explain what happened, and leave out offensive words. Keep your feedback honest, helpful, and constructive.' 
-            required 
-            name='text'
-            rows='6'
-            cols='70'
-            value={commentToEdit.text}
-            onChange={handleCommentChange}
-          />
+                    <div> 
 
-          <br />
+                      <form onSubmit={handleCommentChangeSubmit}>
 
-          <input type='submit' value='Submit' />
-          <input type='submit' value='Delete' onClick={deleteComment} />
-        </form>
+                        <input 
+                          type='number'
+                        />
 
-      </div>
+                        <input 
+                          type='number'
+                          name='rating'
+                          min='1'
+                          max='5'
+                          required
+                          value={commentToEdit.rating}
+                          onChange={handleCommentChange}
+                        />
 
+                        <br />
+
+                        <textarea
+                          placeholder='This is where you write your review. Explain what happened, and leave out offensive words. Keep your feedback honest, helpful, and constructive.' 
+                          required 
+                          name='text'
+                          rows='6'
+                          cols='70'
+                          value={commentToEdit.text}
+                          onChange={handleCommentChange}
+                        />
+
+                        <br />
+
+                        <input type='submit' value='Submit' />
+                        <input type='submit' value='Delete' onClick={deleteComment} />
+                      </form>
+
+                    </div>
+
+                  </>
+
+                  :
+
+                  <h1>Something has gone wrong</h1>
+
+              }
+
+            </>
+          
+          }
+
+
+          
+
+        </>
+
+        :
+
+        hasError ?
+
+          <Error404Message />
+
+          :
+
+          <>
+
+            <img src='https://thumbs.gfycat.com/BareJoyousAsp.webp' alt='Rick And Morty'/>
+          
+          </>
+
+      }
+      
     </>
   
   )
