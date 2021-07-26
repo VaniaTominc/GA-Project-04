@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import SearchFilter from '../SearchBar/SearchFilter'
+import SearchFilter from './SearchFilter'
 
 const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
 
