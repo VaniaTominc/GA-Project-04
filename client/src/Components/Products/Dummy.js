@@ -92,7 +92,35 @@ const ProductsInfoPage = () => {
     }
   }
 
-  
+  // ! PLAYING WITH EDITING COMMENT
+
+  const [commentToEdit, setCommentToEdit] = useState({
+    text: '',
+    rating: '',
+    truffle: id,
+  })
+
+  // const [errors, setErrors] = useState({
+  //   text: '',
+  //   rating: '',
+  //   truffle: '',
+  // })
+
+  useEffect(() => {
+
+    const getData = async() => {
+      const { data } = await axios.get(`/api/opinions/${id}/`)
+      setCommentToEdit(data)
+    }
+    getData()
+  }, [id])
+
+  const handleCommentChange = (event) => {
+    const newComment = { ...commentToEdit, [event.target.name]: event.target.value }
+    const newErrors = { ...errors, [event.target.name]: '' }
+    setCommentToEdit(newComment)
+    setErrors(newErrors)
+  }
 
 
 
