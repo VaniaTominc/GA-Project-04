@@ -8,11 +8,11 @@ const EditDeleteComments = () => {
 
   // ! PLAYING WITH EDITING COMMENT
 
-  const currentProduct = location.pathname
-  console.log('Current product page >>>', currentProduct)
-  const myString = currentProduct
-  const newString = myString.replace(/[^\d]/g, '')
-  console.log('NEW STRING >>>', newString)
+  // const currentProduct = location.pathname
+  // console.log('Current product page >>>', currentProduct)
+  // const myString = currentProduct
+  // const newString = myString.replace(/[^\d]/g, '')
+  // console.log('NEW STRING >>>', newString)
 
 
   const { id } = useParams()
@@ -23,7 +23,7 @@ const EditDeleteComments = () => {
   const [commentToEdit, setCommentToEdit] = useState({
     text: '',
     rating: '',
-    truffle: newString,
+    truffle: id,
     // owner: payload.sub,
   })
 
@@ -32,6 +32,7 @@ const EditDeleteComments = () => {
     const getData = async() => {
       const { data } = await axios.get(`/api/opinions/${id}/`)
       console.log('incoming >>>', data)
+      data.truffle = data.truffle.id
       setCommentToEdit(data)
     }
     getData()
@@ -42,41 +43,41 @@ const EditDeleteComments = () => {
     setCommentToEdit(newComment)
   }
 
-  // console.log('INCOMING DATA >>>', commentToEdit)
+  console.log('INCOMING DATA >>>', commentToEdit)
 
-  // const handleCommentChangeSubmit = async (event) => {
-  //   event.preventDefault()
+  const handleCommentChangeSubmit = async (event) => {
+    event.preventDefault()
 
-  //   try {
-  //     const token = window.localStorage.getItem('token')
-
-  //     await axios.put(`/api/opinions/${id}/`, commentToEdit,
-  //       {
-  //         headers: {
-  //           Authorization: `Bearer ${token}` },
-  //       }
-  //     )
-
-  //     location.assign(`/categories/product/${id}`)
-
-  //   } catch (err) {
-  //     console.log('Incoming error from submiting changed comment >>>', err.response.data.errors)
-  //     window.alert('😱 Something has wrong with updating your comment 🆘')
-  //   }
-  // }
-
-  const deleteComment = async () => {
     try {
       const token = window.localStorage.getItem('token')
-      await axios.delete(`/api/opinions/${id}`, {
-        headers: {
-          Authorization: `Bearer ${token}` },
-      })
-      location.assign('/home')
+
+      await axios.put(`/api/opinions/${id}/`, commentToEdit,
+        {
+          headers: {
+            Authorization: `Bearer ${token}` },
+        }
+      )
+
+      location.assign(`/categories/product/${id}`)
+
     } catch (err) {
-      console.log(err)
+      console.log('Incoming error from submiting changed comment >>>', err.response)
+      window.alert('😱 Something has wrong with updating your comment 🆘')
     }
   }
+
+  // const deleteComment = async () => {
+  //   try {
+  //     const token = window.localStorage.getItem('token')
+  //     await axios.delete(`/api/opinions/${id}`, {
+  //       headers: {
+  //         Authorization: `Bearer ${token}` },
+  //     })
+  //     location.assign('/home')
+  //   } catch (err) {
+  //     console.log(err)
+  //   }
+  // }
 
   return (
   
@@ -87,7 +88,11 @@ const EditDeleteComments = () => {
 
       <div> 
 
-        <form onSubmit={deleteComment}>
+        <form onSubmit={handleCommentChangeSubmit}>
+
+          <input 
+            type='number'
+          />
 
           <input 
             type='number'

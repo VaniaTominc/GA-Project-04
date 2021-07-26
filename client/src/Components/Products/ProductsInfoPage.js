@@ -118,10 +118,12 @@ const ProductsInfoPage = () => {
                   truffle.opinions.map(item => {
                     return (
                       <div key={item.id}>
+                        {console.log('COMMENT ID >>>', item.id)}
                         <p>{item.owner.username}</p>
                         <p>{convertAmericanDate(item.created_at.slice(11, 19))} {convertAmericanDate(item.created_at.slice(0, 10))}</p>
                         <p>{item.rating}</p>
                         <p>{item.text}</p>
+                        <a href={`/opinions/${item.id}`}>Do you want to edit?</a>
                       </div>
                     )
                   })
