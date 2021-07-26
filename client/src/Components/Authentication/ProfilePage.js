@@ -2,7 +2,7 @@
 // import React from 'react'
 import React, { useState, useEffect } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
-import { getCurrentUser, getPayload, checkUserIsAuthenticated } from './auth'
+import { getCurrentUser, getPayload } from './auth'
 import { convertAmericanDate } from '../ExtraFunctions/ReusableFunctions.js'
 
 
