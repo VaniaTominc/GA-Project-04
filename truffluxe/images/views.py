@@ -5,6 +5,7 @@ from rest_framework import status
 from rest_framework.exceptions import NotFound
 
 from .serializers.common import ImageSerializer
+from .serializers.populated import PopulatedImageSerializer
 from .models import Image
 
 class ImageListView(APIView):
@@ -12,7 +13,7 @@ class ImageListView(APIView):
     # GET request all
     def get(self, _request):
         images = Image.objects.all()
-        serialized_images = ImageSerializer(images, many=True)
+        serialized_images = PopulatedImageSerializer(images, many=True)
         return Response(serialized_images.data, status=status.HTTP_200_OK)
 
     # POST request
@@ -36,6 +37,6 @@ class ImageDetailView(APIView):
     def get(self, _request, pk):
 
         image = self.get_image(pk=pk)
-        serialized_image = ImageSerializer(image)
+        serialized_image = PopulatedImageSerializer(image)
         return Response(serialized_image.data, status=status.HTTP_200_OK)
     

@@ -23,6 +23,7 @@ const ProductsInfoPage = () => {
 
         const { data } = await axios.get(`/api/truffles/${id}/`)
         // console.log('OPINIONS >>>', data.opinions)               // The lenght of the opinion array
+        console.log('TRUFFLE PICTURES >>>', data.photos.imageurl)
 
         setTruffle(data)    
 
@@ -92,7 +93,7 @@ const ProductsInfoPage = () => {
     }
   }
 
-  
+  console.log('truffle pictures >>>', truffle.pictures)
 
 
 
@@ -111,6 +112,28 @@ const ProductsInfoPage = () => {
           <h4>{truffle.name}</h4>
           <p>{truffle.description}</p>
           <p>{truffle.price}</p>
+          <p>Photos</p>
+          <>
+            { truffle.photos &&
+              <>
+
+                {
+
+                  truffle.photos.map(item => {
+                    return (
+                      <div key={item.id}>
+                        <img src={item.imageurl} alt={item.name} />
+                      </div>
+                    )
+                  })
+
+                }
+
+              </>
+
+            }
+          </>
+          
 
           <h1>PLAYING WITH COMMENTS</h1>
       
@@ -124,7 +147,6 @@ const ProductsInfoPage = () => {
                   truffle.opinions.map(item => {
                     return (
                       <div key={item.id}>
-                        {console.log('COMMENT ID >>>', item.id)}
                         <p>{item.owner.username}</p>
                         <p>{convertAmericanDate(item.created_at.slice(11, 19))} {convertAmericanDate(item.created_at.slice(0, 10))}</p>
                         <p>{item.rating}</p>

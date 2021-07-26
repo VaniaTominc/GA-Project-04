@@ -32,7 +32,7 @@ const EditDeleteComments = () => {
     const getData = async() => {
       const { data } = await axios.get(`/api/opinions/${id}/`)
       console.log('incoming >>>', data)
-      data.truffle = data.truffle.id
+      data.truffle = data.truffle.id            // The way how to get products_to_update id. 
       setCommentToEdit(data)
     }
     getData()
