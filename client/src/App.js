@@ -13,12 +13,13 @@ import ProfilePage from './Components/Authentication/ProfilePage'
 import Shop from './Components/Products/Shop'
 import FilteredByCategory from './Components/Products/FilteredByCategory'
 
-// Dummy commponent
+// ! Dummy commponent
 import ProductsInfoPage from './Components/Products/ProductsInfoPage'
 import ProfileEditDelete from './Components/Authentication/ProfileEditDelete'
 // import AddComments from './Components/Comments/AddComments'
 import EditDeleteComments from './Components/Comments/EditDeleteComments'
 import Search from './Components/SearchBar/Search'
+// import SearchResults from './Components/SearchBar/SearchResults'
 
 const App = () => {
   

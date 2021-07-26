@@ -5,6 +5,7 @@ const Search = () => {
 
   const [searchItem, setSearchItem] = useState([])
   const [filteredTruffles, setFilteredTruffles] = useState([])
+  const emptyArray = []
   // eslint-disable-next-line no-unused-vars
   const [errors, setErrors] = useState('')
 
@@ -28,7 +29,6 @@ const Search = () => {
 
   }, [])
 
-
   const filteredItem = (event) => {
 
     try {
@@ -38,7 +38,7 @@ const Search = () => {
       })
       setFilteredTruffles(filterProductsInArray)
       if (filterProductsInArray.length === 0) {
-        setErrors('List is empty')
+        setErrors(filterProductsInArray)
       }
       if (filterProductsInArray.length > 0) {
         setErrors('Something is wrong with the array')
@@ -50,7 +50,6 @@ const Search = () => {
   }
 
   console.log('filtered truffles >>>', filteredTruffles)
-
 
   return (
 
@@ -71,10 +70,10 @@ const Search = () => {
 
       <div>
 
-        { (filteredTruffles.length > 0 ? filteredTruffles : '' ).map(item => {
+        { (filteredTruffles.length > 0 ? filteredTruffles : emptyArray ).map(item => {
           return (
             <div key={item.id}>
-              <p>{item.name}</p>
+              <a href={`/categories/product/${item.id}`}>{item.name}</a>
             </div>
           )
         })

@@ -106,7 +106,13 @@ const ProductsInfoPage = () => {
         <div>
 
           <h1>Product Info</h1>
-          <h2>PLAYING WITH COMMENTS</h2>
+
+          <h3>PODATKI</h3>
+          <h4>{truffle.name}</h4>
+          <p>{truffle.description}</p>
+          <p>{truffle.price}</p>
+
+          <h1>PLAYING WITH COMMENTS</h1>
       
           <p>{truffle.name}</p>
 
