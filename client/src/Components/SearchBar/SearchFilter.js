@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
-const SearchDummy = () => {
+const SearchFilter = () => {
 
   const [searchItem, setSearchItem] = useState([])
   const [filteredTruffles, setFilteredTruffles] = useState([])
@@ -88,4 +88,4 @@ const SearchDummy = () => {
   )
 }
 
-export default SearchDummy
+export default SearchFilter

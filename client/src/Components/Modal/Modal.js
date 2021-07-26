@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import SearchDummy from '../SearchBar/SearchDummy'
+import SearchFilter from '../SearchBar/SearchFilter'
 
 const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
 
@@ -14,7 +14,7 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <SearchDummy />
+        <SearchFilter />
       </div>
     </div>
 
