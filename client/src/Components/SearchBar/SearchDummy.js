@@ -1,16 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import Modal from '../Modal/Modal'
-import UseModal from '../Modal/UseModal'
 
-const Search = () => {
+const SearchDummy = () => {
 
   const [searchItem, setSearchItem] = useState([])
   const [filteredTruffles, setFilteredTruffles] = useState([])
   // eslint-disable-next-line no-unused-vars
   const [errors, setErrors] = useState('')
-
-  const { isShowing, toggle } = UseModal()
 
   useEffect(() => {
 
@@ -87,18 +83,9 @@ const Search = () => {
 
       </div>
 
-      <div className="App">
-        <button className="button-default" onClick={toggle}>Show Modal</button>
-        <Modal
-          isShowing={isShowing}
-          hide={toggle}
-        />
-      </div>
-
-
     </>
 
   )
 }
 
-export default Search
+export default SearchDummy
