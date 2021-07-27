@@ -49,25 +49,444 @@
 },
 {
   "model": "truffles.truffle",
-  "pk": 5,
+  "pk": 11,
   "fields": {
-    "name": "CATEGORIES",
-    "taste": "LOREIPSUM DOLORIT",
-    "description": "💎",
+    "name": "PLACEHOLDER",
+    "taste": "Bacon ipsum dolor amet",
+    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
     "volume": "100 g",
-    "price": 250,
-    "use": "😎",
-    "ingredients": "100% Fresh Black Summer Truffles",
-    "alergies": "None",
-    "life": "Within 7 day of delivery",
-    "images": "crni_poletni_tartuf.png",
-    "availability": "Winter",
+    "price": 200,
+    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
+    "ingredients": "Bacon ipsum dolor amet",
+    "alergies": "Bacon ipsum dolor amet",
+    "life": "Bacon ipsum dolor amet",
+    "images": "https://baconmockup.com/640/360",
+    "availability": "Bacon ipsum dolor amet",
     "owner": 1,
     "categories": [
-      1,
-      2
+      12
     ],
-    "photos": []
+    "photos": [
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 12,
+  "fields": {
+    "name": "PLACEHOLDER TWO",
+    "taste": "Bacon ipsum dolor amet",
+    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
+    "volume": "100 g",
+    "price": 200,
+    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
+    "ingredients": "Bacon ipsum dolor amet",
+    "alergies": "Bacon ipsum dolor amet",
+    "life": "Bacon ipsum dolor amet",
+    "images": "https://baconmockup.com/640/360",
+    "availability": "Bacon ipsum dolor amet",
+    "owner": 1,
+    "categories": [
+      12
+    ],
+    "photos": [
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 13,
+  "fields": {
+    "name": "PLACEHOLDER THREE",
+    "taste": "Bacon ipsum dolor amet",
+    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
+    "volume": "100 g",
+    "price": 200,
+    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
+    "ingredients": "Bacon ipsum dolor amet",
+    "alergies": "Bacon ipsum dolor amet",
+    "life": "Bacon ipsum dolor amet",
+    "images": "https://baconmockup.com/640/360",
+    "availability": "Bacon ipsum dolor amet",
+    "owner": 1,
+    "categories": [
+      12
+    ],
+    "photos": [
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 14,
+  "fields": {
+    "name": "PLACEHOLDER FOUR",
+    "taste": "Bacon ipsum dolor amet",
+    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
+    "volume": "100 g",
+    "price": 200,
+    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
+    "ingredients": "Bacon ipsum dolor amet",
+    "alergies": "Bacon ipsum dolor amet",
+    "life": "Bacon ipsum dolor amet",
+    "images": "https://baconmockup.com/640/360",
+    "availability": "Bacon ipsum dolor amet",
+    "owner": 1,
+    "categories": [
+      12
+    ],
+    "photos": [
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 15,
+  "fields": {
+    "name": "PLACEHOLDER FIVE",
+    "taste": "Bacon ipsum dolor amet",
+    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
+    "volume": "100 g",
+    "price": 200,
+    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
+    "ingredients": "Bacon ipsum dolor amet",
+    "alergies": "Bacon ipsum dolor amet",
+    "life": "Bacon ipsum dolor amet",
+    "images": "https://baconmockup.com/640/360",
+    "availability": "Bacon ipsum dolor amet",
+    "owner": 1,
+    "categories": [
+      12
+    ],
+    "photos": [
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 16,
+  "fields": {
+    "name": "PLACEHOLDER SIX",
+    "taste": "Bacon ipsum dolor amet",
+    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
+    "volume": "100 g",
+    "price": 200,
+    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
+    "ingredients": "Bacon ipsum dolor amet",
+    "alergies": "Bacon ipsum dolor amet",
+    "life": "Bacon ipsum dolor amet",
+    "images": "https://baconmockup.com/640/360",
+    "availability": "Bacon ipsum dolor amet",
+    "owner": 1,
+    "categories": [
+      1
+    ],
+    "photos": [
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 17,
+  "fields": {
+    "name": "PLACEHOLDER SEVEN",
+    "taste": "Bacon ipsum dolor amet",
+    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
+    "volume": "100 g",
+    "price": 200,
+    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
+    "ingredients": "Bacon ipsum dolor amet",
+    "alergies": "Bacon ipsum dolor amet",
+    "life": "Bacon ipsum dolor amet",
+    "images": "https://baconmockup.com/640/360",
+    "availability": "Bacon ipsum dolor amet",
+    "owner": 1,
+    "categories": [
+      2,
+      12
+    ],
+    "photos": [
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 18,
+  "fields": {
+    "name": "PLACEHOLDER EIGHT",
+    "taste": "Bacon ipsum dolor amet",
+    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
+    "volume": "100 g",
+    "price": 200,
+    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
+    "ingredients": "Bacon ipsum dolor amet",
+    "alergies": "Bacon ipsum dolor amet",
+    "life": "Bacon ipsum dolor amet",
+    "images": "https://baconmockup.com/640/360",
+    "availability": "Bacon ipsum dolor amet",
+    "owner": 1,
+    "categories": [
+      3,
+      12
+    ],
+    "photos": [
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 19,
+  "fields": {
+    "name": "PLACEHOLDER NINE",
+    "taste": "Bacon ipsum dolor amet",
+    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
+    "volume": "100 g",
+    "price": 200,
+    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
+    "ingredients": "Bacon ipsum dolor amet",
+    "alergies": "Bacon ipsum dolor amet",
+    "life": "Bacon ipsum dolor amet",
+    "images": "https://baconmockup.com/640/360",
+    "availability": "Bacon ipsum dolor amet",
+    "owner": 1,
+    "categories": [
+      4,
+      12
+    ],
+    "photos": [
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 20,
+  "fields": {
+    "name": "PLACEHOLDER TEN",
+    "taste": "Bacon ipsum dolor amet",
+    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
+    "volume": "100 g",
+    "price": 200,
+    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
+    "ingredients": "Bacon ipsum dolor amet",
+    "alergies": "Bacon ipsum dolor amet",
+    "life": "Bacon ipsum dolor amet",
+    "images": "https://baconmockup.com/640/360",
+    "availability": "Bacon ipsum dolor amet",
+    "owner": 1,
+    "categories": [
+      5,
+      12
+    ],
+    "photos": [
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 21,
+  "fields": {
+    "name": "PLACEHOLDER ELEVEN",
+    "taste": "Bacon ipsum dolor amet",
+    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
+    "volume": "100 g",
+    "price": 200,
+    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
+    "ingredients": "Bacon ipsum dolor amet",
+    "alergies": "Bacon ipsum dolor amet",
+    "life": "Bacon ipsum dolor amet",
+    "images": "https://baconmockup.com/640/360",
+    "availability": "Bacon ipsum dolor amet",
+    "owner": 1,
+    "categories": [
+      6,
+      12
+    ],
+    "photos": [
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 22,
+  "fields": {
+    "name": "PLACEHOLDER TWELVE",
+    "taste": "Bacon ipsum dolor amet",
+    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
+    "volume": "100 g",
+    "price": 200,
+    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
+    "ingredients": "Bacon ipsum dolor amet",
+    "alergies": "Bacon ipsum dolor amet",
+    "life": "Bacon ipsum dolor amet",
+    "images": "https://baconmockup.com/640/360",
+    "availability": "Bacon ipsum dolor amet",
+    "owner": 1,
+    "categories": [
+      7,
+      12
+    ],
+    "photos": [
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 23,
+  "fields": {
+    "name": "PLACEHOLDER THIRTEEN",
+    "taste": "Bacon ipsum dolor amet",
+    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
+    "volume": "100 g",
+    "price": 200,
+    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
+    "ingredients": "Bacon ipsum dolor amet",
+    "alergies": "Bacon ipsum dolor amet",
+    "life": "Bacon ipsum dolor amet",
+    "images": "https://baconmockup.com/640/360",
+    "availability": "Bacon ipsum dolor amet",
+    "owner": 1,
+    "categories": [
+      8,
+      12
+    ],
+    "photos": [
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 24,
+  "fields": {
+    "name": "PLACEHOLDER FOURTEEN",
+    "taste": "Bacon ipsum dolor amet",
+    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
+    "volume": "100 g",
+    "price": 200,
+    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
+    "ingredients": "Bacon ipsum dolor amet",
+    "alergies": "Bacon ipsum dolor amet",
+    "life": "Bacon ipsum dolor amet",
+    "images": "https://baconmockup.com/640/360",
+    "availability": "Bacon ipsum dolor amet",
+    "owner": 1,
+    "categories": [
+      9,
+      12
+    ],
+    "photos": [
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 25,
+  "fields": {
+    "name": "PLACEHOLDER FIFTHTEEN",
+    "taste": "Bacon ipsum dolor amet",
+    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
+    "volume": "100 g",
+    "price": 200,
+    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
+    "ingredients": "Bacon ipsum dolor amet",
+    "alergies": "Bacon ipsum dolor amet",
+    "life": "Bacon ipsum dolor amet",
+    "images": "https://baconmockup.com/640/360",
+    "availability": "Bacon ipsum dolor amet",
+    "owner": 1,
+    "categories": [
+      10,
+      12
+    ],
+    "photos": [
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 26,
+  "fields": {
+    "name": "PLACEHOLDER SIXSTEEN",
+    "taste": "Bacon ipsum dolor amet",
+    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
+    "volume": "100 g",
+    "price": 200,
+    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
+    "ingredients": "Bacon ipsum dolor amet",
+    "alergies": "Bacon ipsum dolor amet",
+    "life": "Bacon ipsum dolor amet",
+    "images": "https://baconmockup.com/640/360",
+    "availability": "Bacon ipsum dolor amet",
+    "owner": 1,
+    "categories": [
+      11,
+      12
+    ],
+    "photos": [
+      3,
+      4,
+      5,
+      6
+    ]
   }
 }
 ]

@@ -12,6 +12,8 @@ class Truffle(models.Model):
     life = models.CharField(max_length=50, default=None)
     images = models.CharField(max_length=100, default=None)
     availability = models.TextField(default=None)
+    cart = models.BooleanField(default=False)
+    quantity = models.PositiveIntegerField()
     categories = models.ManyToManyField(
         "categories.Category",
         related_name = "truffles",
