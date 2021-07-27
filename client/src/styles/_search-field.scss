@@ -1,0 +1,25 @@
+input.search-field[type="text"] {
+  height: 60px;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Lato";
+  font-weight: 100;
+  border: none;
+  outline: none;
+  color: #555;
+  padding: 3px;
+  position: absolute;
+  top: 1rem;
+  background: none;
+  z-index: 3;
+  cursor: pointer;
+}
+
+input.search-field[type="text"] {
+  width: 75%;
+  z-index: 1;
+  border-bottom: 1px solid #BBB;
+  cursor: text;
+  padding: 1rem;
+}
+

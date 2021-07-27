@@ -65,10 +65,11 @@ const SearchFilter = () => {
       <div>
 
         <input
-
+          name='search'
           type='text'
-          placeholder='search ...'
+          placeholder="What're we looking for ?"
           onKeyUp={filteredItem}
+          className='search-field'
         />
 
       </div>
