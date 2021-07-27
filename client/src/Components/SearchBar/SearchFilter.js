@@ -15,7 +15,7 @@ const SearchFilter = () => {
       try {
 
         const { data } = await axios.get('/api/truffles/')
-        console.log('Incoming truffle data >>>', data)
+        // console.log('Incoming truffle data >>>', data)
         setSearchItem(data)
 
       } catch (err) {
@@ -48,7 +48,7 @@ const SearchFilter = () => {
     }
   }
 
-  console.log('filtered truffles >>>', filteredTruffles)
+  // console.log('filtered truffles >>>', filteredTruffles)
 
 
   
@@ -56,8 +56,6 @@ const SearchFilter = () => {
   return (
 
     <>
-
-      <h1>I am a search bar</h1>
 
       <div>
 
@@ -75,6 +73,7 @@ const SearchFilter = () => {
         { (filteredTruffles.length > 0 ? filteredTruffles : searchItem ).map(item => {
           return (
             <div key={item.id}>
+              <img src={item.images} alt={item.name} />
               <a href={`/categories/product/${item.id}`}>{item.name}</a>
             </div>
           )
