@@ -4,7 +4,7 @@ import { convertAmericanDate } from '../ExtraFunctions/ReusableFunctions.js'
 import { useParams } from 'react-router-dom'
 import AddComment from '../Comments/AddComment.js'
 import Error404Message from '../Errors/Error404Message'
-import { checkUserIsAuthenticated } from '../Authentication/auth'
+import { checkUserIsAuthenticated, getPayload } from '../Authentication/auth'
 
 // Component showing individual product for sell
 
@@ -12,11 +12,8 @@ const ProductsInfoPage = () => {
 
   const [truffle, setTruffle] = useState([])
   const [hasError, setHasError] = useState(false)
-  // const [productComments, setProductComments] = useState([])
-  // const [populateCommentOwner, setPopulateCommentOwner] = useState([])
 
   const { id } = useParams()
-  // const history = useHistory()
 
   useEffect(() => {
 
@@ -26,12 +23,8 @@ const ProductsInfoPage = () => {
 
         const { data } = await axios.get(`/api/truffles/${id}/`)
         // console.log('OPINIONS >>>', data.opinions)               // The lenght of the opinion array
-        console.log('TRUFFLE PICTURES >>>', data.photos.imageurl)
 
         setTruffle(data)    
-
-        // console.log('ratings >>>', data.opinions.rating)
-
 
       } catch (err) {
         setHasError(true)
@@ -44,7 +37,13 @@ const ProductsInfoPage = () => {
   }, [id])
 
 
+  const [currentUserId, setCurrentUserId] = useState(null)
 
+  useEffect(() => {
+    if (getPayload()) {
+      setCurrentUserId(getPayload().sub)
+    }
+  }, [])
 
   return (
 
@@ -80,6 +79,40 @@ const ProductsInfoPage = () => {
 
           </>
 
+          <section className='product-display-section'>
+
+            <details>
+              <summary>Description</summary>
+              <p>{truffle.description}</p>
+            </details>
+
+            <details>
+              <summary>Taste</summary>
+              <p>{truffle.taste}</p>
+            </details>
+
+            <details>
+              <summary>Use</summary>
+              <p>{truffle.use}</p>
+            </details>
+
+            <details>
+              <summary>Ingredients</summary>
+              <p>{truffle.ingredients}</p>
+            </details>
+
+            <details>
+              <summary>Alergies</summary>
+              <p>{truffle.alergies}</p>
+            </details>
+            
+            <details>
+              <summary>Life</summary>
+              <p></p>
+            </details>
+
+          </section>
+
           <h1>POSTED COMMENTS</h1>
 
           <div>
@@ -94,7 +127,18 @@ const ProductsInfoPage = () => {
                         <p>{convertAmericanDate(item.created_at.slice(11, 19))} {convertAmericanDate(item.created_at.slice(0, 10))}</p>
                         <p>{item.rating}</p>
                         <p>{item.text}</p>
-                        <a href={`/opinions/${item.id}`}>Do you want to edit?</a>
+
+                        {
+                          currentUserId === item.owner ?
+
+                            <a href={`/opinions/${item.id}`}>Do you want to edit?</a>
+
+                            :
+
+                            ''
+
+                        }
+                        
                       </div>
                     )
                   })

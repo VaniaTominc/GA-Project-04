@@ -1,4 +1,4 @@
-section {
+section.login-section {
   position: relative;
   min-height: 100vh;
   background: #557085;
@@ -9,11 +9,11 @@ section {
   transition: .5s;
 }
 
-section.active {
+section.login-section.active {
   background: #3e3f39;
 }
 
-section .container {
+section.login-section .container {
   position: relative;
   width: 800px;
   height: 500px;
@@ -23,7 +23,7 @@ section .container {
   // border-radius: 40px 0;
 }
 
-section .container .user {
+section.login-section .container .user {
   position: absolute;
   top: 0;
   left: 0;
@@ -32,14 +32,14 @@ section .container .user {
   display: flex;
 }
 
-section .container .user .imageBox {
+section.login-section .container .user .imageBox {
   position: relative;
   width: 50%;
   height: 100%;
   transition: .5s;
 }
 
-section .container .user .imagebox img {
+section.login-section .container .user .imagebox img {
   position: absolute;
   top: 0;
   left: 0;
@@ -48,7 +48,7 @@ section .container .user .imagebox img {
   object-fit: cover;
 }
 
-section .container .user .formBox {
+section.login-section .container .user .formBox {
   position: relative;
   width: 50%;
   height: 100%;
@@ -60,7 +60,7 @@ section .container .user .formBox {
   transition: .5s;
 }
 
-section .container .user .formBox h2 {
+section.login-section .container .user .formBox h2 {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
@@ -71,7 +71,7 @@ section .container .user .formBox h2 {
   color: #555;
 }
 
-section .container .user .formBox input {
+section.login-section .container .user .formBox input {
   width: 100%;
   padding: 10px;
   background: #f5f5f5;
@@ -86,7 +86,7 @@ section .container .user .formBox input {
 }
 
 // SignIn Button
-section .container .user .formBox input[type='submit'] {
+section.login-section .container .user .formBox input[type='submit'] {
   max-width: 100px;
   background: #677eff;
   color: #fff;
@@ -98,11 +98,11 @@ section .container .user .formBox input[type='submit'] {
 }
 
 // SignOut Button
-section .container .user.signupBox .formBox input[type='submit'] {
+section.login-section .container .user.signupBox .formBox input[type='submit'] {
   background: #e73e49;
 }
 
-section .container .user .formBox .signup {
+section.login-section .container .user .formBox .signup {
   position: relative;
   margin-top: 20px;
   font-size: 12px;
@@ -112,42 +112,42 @@ section .container .user .formBox .signup {
   font-weight: 300;
 }
 
-section .container .user .formBox .signup a {
+section.login-section .container .user .formBox .signup a {
   font-weight: 600;
   text-decoration: none;
   color: #577eff
 }
 
-section .container .user .formBox .signupBox a {
+section.login-section .container .user .formBox .signupBox a {
   display: none;
 }
 
-section .container .signupBox {
+section.login-section .container .signupBox {
   pointer-events: none;
 }
 
-section .container.active .signupBox {
+section.login-section .container.active .signupBox {
   pointer-events: initial;
 }
 
-section .container .signupBox .formBox {
+section.login-section .container .signupBox .formBox {
   top: 100%;
 }
 
-section .container.active .signupBox .formBox {
+section.login-section .container.active .signupBox .formBox {
   top: 0;
 }
 
-section .container .signupBox .imageBox {
+section.login-section .container .signupBox .imageBox {
   top: -100%;
   transition: .5s;
 }
 
-section .container.active .signupBox .imageBox {
+section.login-section .container.active .signupBox .imageBox {
   top: 0;
 }
 
-section .container .signinBox .formBox {
+section.login-section .container .signinBox .formBox {
   top: 0;
 }
 
@@ -160,25 +160,25 @@ section .container .signinBox .imageBox {
   transition: .5s;
 }
 
-section .container.active .signinBox .imageBox {
+section.login-section .container.active .signinBox .imageBox {
   top: -100%;
 }
 
 @media only screen and (max-width: 900px) {
 
-  section .container {
+  section.login-section .container {
     max-width: 400px;
   }
 
-  section .container .imageBox {
+  section.login-section .container .imageBox {
     display: none;
   }
 
-  section .container .user .formBox {
+  section.login-section .container .user .formBox {
     width: 100%;
   }
 
-  section .container.active .signinBox .formBox {
+  section.login-section .container.active .signinBox .formBox {
     top: -100%;
   }
 }

@@ -34,28 +34,9 @@ const FilteredByCategory = () => {
 
     <>
       { categories ? 
-        <>
-          <h1>PRIKAZANA KATEGORIJA</h1>
+      
+        { categories }
 
-          <div>
-
-            {categories &&
-              categories.map(item => {
-                return (
-                  <div className='product-card-border' key={item.id}>
-                    <h3>{item.name}</h3>
-                    <p>RATING</p>
-                    <img src={item.images} alt={item.name}/>
-                    <p>{item.price}</p>
-                    <a href={`/categories/product/${item.id}`}>SHOW MORE</a>
-                    <p>BASKET</p>
-                  </div>
-                )
-              })
-            }
-
-          </div>
-        </>
         :
 
         hasError ?

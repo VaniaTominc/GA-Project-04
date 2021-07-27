@@ -81,7 +81,7 @@ const Login = () => {
   return (
 
     <>
-      <section>
+      <section className='login-section'>
         <div className='container'>
 
           {/* Login View */}

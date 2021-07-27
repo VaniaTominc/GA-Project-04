@@ -30,10 +30,28 @@ const Basket = () => {
     products.map(item => {
       if (item.id === product.id) {
         item.cart = true
+        console.log('Adding to cart >>>', cart)
+        return localStorage.setItem('productIds', JSON.stringify(item))
       } 
     })
     setCart(cartToAdd)
   }
+
+  const WorkingCart = cart.map(item => {
+    const retriveData = localStorage.getItem('productIds')
+    return retriveData
+  })
+  
+  
+  console.log('working cart? >>>', WorkingCart)
+
+
+  localStorage.setItem('working', JSON.stringify(WorkingCart))
+
+  const WorkingCartData = localStorage.getItem('working')
+  const DemistifiedCartData = JSON.parse(WorkingCartData)
+
+  alert(DemistifiedCartData.length)
 
   // console.log('Adding to cart >>>', cart)
 
@@ -43,6 +61,7 @@ const Basket = () => {
     products.map(item => {
       if (item.id === product.id) {
         item.cart = false
+        console.log('Removing from cart >>>', cart)
       }
     })
     setCart(cartToRemove)
@@ -55,7 +74,7 @@ const Basket = () => {
   const increaseQuantity = (product) => {
     const plus = cart.map(item => {
       if (product.id === item.id) {
-        // console.log('Increasing the quantity')
+        console.log('Increasing the quantity')
         item.quantity = item.quantity + 1
       }
       return item
@@ -69,7 +88,7 @@ const Basket = () => {
   const decreaseQuantity = (product) => {
     const minus = cart.map(item => {
       if (product.id === item.id && item.quantity > 1) {
-        // console.log('Decreasing the quantity')
+        console.log('Decreasing the quantity')
         item.quantity = item.quantity - 1
       }
       return item
@@ -91,88 +110,123 @@ const Basket = () => {
 
 
 
+ 
+
   return (
 
-    <>
-      <h1>I am a basket</h1>
+    <div>
+      <div>
+        {products.map(item => {
 
-      {
+          return (
+            <div key={item.id}>
+              <div>
 
-        products && 
+                <div>
 
-        <>
+                  <h6>
+                    {item.name} - £{item.price}
+                  </h6>
 
-          {products.map(item => {
-            return (
-              <>
-                <div key={item.id}>
-                  <p>{item.name} - £{item.price}</p>
                   {
-                    item.cart === false &&
-                  <button
+                    item.cart === false
+                  &&
+                  <button 
                     onClick={() => addToBasket(item)}
                   >
                     Add to cart
                   </button>
                   }
+
                   {
-                    item.cart === true && 
-                  <button
+                    item.cart === true
+                  &&
+                  <button 
                     onClick={() => addToBasket(item)}
                   >
                     Added
                   </button>
                   }
                 </div>
+              </div>
+            </div>
 
-                <>
+          )
+        })}
 
-                  {
-                    cart.map(itemTwo => {
-                      return (
-                        <div key={itemTwo.id}>
+      </div>
 
-                          <button 
-                            onClick={() => increaseQuantity(item)}
-                          >
-                            Increase
-                          </button>
+      <div>
+        <table>
 
-                          <button 
-                            onClick={() => decreaseQuantity(item)}
-                          >
-                            Decrease
-                          </button>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Product</th>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
 
-                          <button 
-                            onClick={() => removeFromBasket(itemTwo)}
-                          >
-                            Remove
-                          </button>
-                        </div>
-                      )
-                    })
-                  }
-                </>
+          <tbody>
+            {
+              cart.map((i, index) => {
+                return (
 
-                <>
+                  < tr key={i.id}>
+                    <th scope='row'>{index + 1}</th>
+                    <th scope='row'>
+                    </th>
+                    <td>{i.name}</td>
+                    <td>
+                      {i.price}
+                    </td>
+                    <td>
 
-                  <h4>TOTAL: {totalPrice()}</h4>
+                      <button
+                        onClick={() => decreaseQuantity(i)}
+                      >
+                      -
+                      </button>
 
-                </>
-              </>
+                      {i.quantity}
 
-            )
-          })}
-          
-        </>
+                      <button
+                        onClick={() => increaseQuantity(i)}
+                      >
+                      +
+                      </button>
+                      
+                    </td>
 
-      }
+                    <td>
+                      <button onClick={() => removeFromBasket(i)}>
+                      Remove
+                      </button>
+                    </td >
+                  </tr >
+                
+                )
+              })
+            }
+          </tbody>
 
-    </>
+        </table>
+      </div>
 
+      <div>
 
+        <h4>TOTAL: {totalPrice()}</h4>
+
+      </div>
+
+    </div >
   )
+
+
+  
 }
 
 export default Basket
