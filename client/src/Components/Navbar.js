@@ -108,7 +108,7 @@ const Navbar = () => {
         }
 
         <li>
-          <Link to='#' className='nav-links-style'>Basket</Link>
+          <Link to='/basket' className='nav-links-style'>Basket</Link>
         </li>
       </ul>
 

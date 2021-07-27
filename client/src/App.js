@@ -19,6 +19,7 @@ import ProfileEditDelete from './Components/Authentication/ProfileEditDelete'
 import EditDeleteComments from './Components/Comments/EditDeleteComments'
 import Search from './Components/SearchBar/Search'
 import Error404Message from './Components/Errors/Error404Message'
+import Basket from './Components/Basket/Basket'
 
 
 const App = () => {
@@ -47,8 +48,12 @@ const App = () => {
           <FilteredByCategory />
         </Route>
 
-        <Route path='/profile/'>
+        <Route path='/profile'>
           <ProfilePage />
+        </Route>
+
+        <Route path='/basket'>
+          <Basket />
         </Route>
 
         <Route path='/shop'>
