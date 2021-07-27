@@ -50,6 +50,47 @@ const Basket = () => {
 
   // console.log('Removing from cart >>>', cart)
 
+  // ! Increating the quantity
+
+  const increaseQuantity = (product) => {
+    const plus = cart.map(item => {
+      if (product.id === item.id) {
+        // console.log('Increasing the quantity')
+        item.quantity = item.quantity + 1
+      }
+      return item
+    })
+    setCart(plus)
+  }
+
+  // console.log('Increasing cart >>>', cart)
+
+  // ! Decreasing the quantity
+  const decreaseQuantity = (product) => {
+    const minus = cart.map(item => {
+      if (product.id === item.id && item.quantity > 1) {
+        // console.log('Decreasing the quantity')
+        item.quantity = item.quantity - 1
+      }
+      return item
+    })
+    setCart(minus)
+  }
+
+  // console.log('Decreasing cart >>>', cart)
+
+  // ! Getting total
+
+  const totalPrice = () => {
+    let initialSum = 0
+    cart.map(item => {
+      initialSum += item.price * item.quantity
+    })
+    return initialSum
+  }
+
+
+
   return (
 
     <>
@@ -90,15 +131,34 @@ const Basket = () => {
                     cart.map(itemTwo => {
                       return (
                         <div key={itemTwo.id}>
+
+                          <button 
+                            onClick={() => increaseQuantity(item)}
+                          >
+                            Increase
+                          </button>
+
+                          <button 
+                            onClick={() => decreaseQuantity(item)}
+                          >
+                            Decrease
+                          </button>
+
                           <button 
                             onClick={() => removeFromBasket(itemTwo)}
                           >
-                          Remove
+                            Remove
                           </button>
                         </div>
                       )
                     })
                   }
+                </>
+
+                <>
+
+                  <h4>TOTAL: {totalPrice()}</h4>
+
                 </>
               </>
 
