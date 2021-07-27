@@ -8,6 +8,8 @@ const SearchFilter = () => {
   // eslint-disable-next-line no-unused-vars
   const [errors, setErrors] = useState('')
 
+  const emptyArray = []
+
   useEffect(() => {
 
     const getData = async () => {
@@ -32,8 +34,11 @@ const SearchFilter = () => {
 
     try {
 
+      const inputSearch = event.target.value
+      const regexSearch = new RegExp(inputSearch, 'i')
+
       const filterProductsInArray = searchItem.filter(item => {
-        return (item.name.includes(event.target.value.toUpperCase()))
+        return (regexSearch.test(item.name.toUpperCase()))
       })
       setFilteredTruffles(filterProductsInArray)
       if (filterProductsInArray.length === 0) {
@@ -70,7 +75,7 @@ const SearchFilter = () => {
 
       <div>
 
-        { (filteredTruffles.length > 0 ? filteredTruffles : searchItem ).map(item => {
+        { (filteredTruffles.length > 0 ? filteredTruffles : emptyArray ).map(item => {
           return (
             <div key={item.id}>
               <img src={item.images} alt={item.name} />

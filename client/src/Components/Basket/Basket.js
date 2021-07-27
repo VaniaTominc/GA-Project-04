@@ -37,7 +37,7 @@ const Basket = () => {
 
   // console.log('Adding to cart >>>', cart)
 
-  // ! Removing from cart
+  // ! Removing from basket
   const removeFromBasket = (product) => {
     const cartToRemove = cart.filter(item => item.id !== product.id)
     products.map(item => {

@@ -54,9 +54,33 @@ const ProductsInfoPage = () => {
     
         <>
 
-          <h1>PLAYING WITH COMMENTS</h1>
-      
-          <p>{truffle.name}</p>
+          <>
+            <h1>DISPLAY CONTENT</h1>
+            <p>{truffle.name}</p>
+            <p>{truffle.description}</p>
+            
+            <>
+              {
+                truffle.photos &&
+
+                <>
+
+                  {truffle.photos.map(item => {
+                    return (
+                      <div key={item.id}>
+                        <img src={item.imageurl} alt={truffle.name} />
+                      </div>
+                    )
+                  })}
+
+                </>
+
+              }
+            </>
+
+          </>
+
+          <h1>POSTED COMMENTS</h1>
 
           <div>
             { truffle.opinions && 
@@ -81,13 +105,13 @@ const ProductsInfoPage = () => {
       
           {
 
-            checkUserIsAuthenticated ?
+            checkUserIsAuthenticated() ?
 
               <AddComment />
 
               :
 
-              <h1>Login in, so you can comment.</h1>
+              <h1><a href='/login'>Login / Sign Up</a> to comment.</h1>
 
           }
 
