@@ -21,7 +21,9 @@ const Basket = () => {
     getData()
   }, [])
 
-  // Adding to basket
+  // console.log('products >>>', products)
+
+  // ! Adding to basket
   const addToBasket = (product) => {
     const cartToAdd = [ ...cart ]
     cartToAdd.push({ ...product })
@@ -32,8 +34,21 @@ const Basket = () => {
     })
     setCart(cartToAdd)
   }
-  
-  console.log('products >>>', products)
+
+  // console.log('Adding to cart >>>', cart)
+
+  // ! Removing from cart
+  const removeFromBasket = (product) => {
+    const cartToRemove = cart.filter(item => item.id !== product.id)
+    products.map(item => {
+      if (item.id === product.id) {
+        item.cart = false
+      }
+    })
+    setCart(cartToRemove)
+  }
+
+  // console.log('Removing from cart >>>', cart)
 
   return (
 
@@ -48,13 +63,45 @@ const Basket = () => {
 
           {products.map(item => {
             return (
-              <div key={item.id}>
-                <p>{item.name} - £{item.price}</p>
-                {
-                  item.cart === false &&
-                  <button>Add to cart</button>
-                }
-              </div>
+              <>
+                <div key={item.id}>
+                  <p>{item.name} - £{item.price}</p>
+                  {
+                    item.cart === false &&
+                  <button
+                    onClick={() => addToBasket(item)}
+                  >
+                    Add to cart
+                  </button>
+                  }
+                  {
+                    item.cart === true && 
+                  <button
+                    onClick={() => addToBasket(item)}
+                  >
+                    Added
+                  </button>
+                  }
+                </div>
+
+                <>
+
+                  {
+                    cart.map(itemTwo => {
+                      return (
+                        <div key={itemTwo.id}>
+                          <button 
+                            onClick={() => removeFromBasket(itemTwo)}
+                          >
+                          Remove
+                          </button>
+                        </div>
+                      )
+                    })
+                  }
+                </>
+              </>
+
             )
           })}
           
