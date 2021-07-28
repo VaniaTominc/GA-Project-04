@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Error404Message from '../Errors/Error404Message'
+import Slider from 'react-slick'
+
 
 const Shop = () => {
 
@@ -35,10 +37,20 @@ const Shop = () => {
     getData()
   }, [])
 
+  const categoryConfig = {
+    dots: true,
+    infinite: true,
+    speed: 3000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    autoplay: true,
+    autoplaySpeed: 50,
+  }
 
   return (
 
-    <>
+    <div className='pushing-content-down'>
       
       { categories ?
       
@@ -46,16 +58,42 @@ const Shop = () => {
 
           <h1>Categories</h1>
 
-          {categories.length > 0 &&
-            categories.map(item => {
-              return (
-                <h1 key={item.id}>
-                  <a href={`/categories/${item.id}`}>{item.name}</a>
-                </h1>
-              )
-            })
-          }
+          <div className='outside-shop-container'>
 
+            {/* // <h1 key={item.id}>
+                //   <a href={`/categories/${item.id}`}>{item.name}</a>
+                // </h1> */}
+
+            { categories.length > 0 &&
+
+            <div className='sliding-gallery-container shop-slider'>
+              <Slider {... categoryConfig}>
+
+                
+
+                {
+                  categories.map(item => {
+                    return (
+                      <div key={item.id} className="container-shop-display">
+                    
+                        <div className="card-shop-display card0-expanded" style={{
+                          backgroundImage: `url(${item.image})`,
+                        }}>
+                          <div className="border-shop-display">
+                            <h2>{item.longname}</h2>
+                          </div>
+                        </div>
+                      </div>
+                    )
+                  })
+                }
+
+            
+                
+              </Slider>
+            </div>
+            }
+          </div>
         </>
 
         :
@@ -74,7 +112,7 @@ const Shop = () => {
 
       }
 
-    </>
+    </div>
   )
 }
 
