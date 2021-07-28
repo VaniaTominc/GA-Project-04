@@ -10,17 +10,15 @@ const EditDeleteComments = () => {
 
   const [hasError, setHasError] = useState(false)
 
-  // ! PLAYING WITH EDITING COMMENT
+  const oldURL = document.referrer
+  console.log('oldurl >>>', oldURL)
+  const lastNumberId = oldURL.slice(21)
+  console.log('lastNumberId >>>', lastNumberId)
 
-  // const currentProduct = location.pathname
-  // console.log('Current product page >>>', currentProduct)
-  // const myString = currentProduct
-  // const newString = myString.replace(/[^\d]/g, '')
-  // console.log('NEW STRING >>>', newString)
 
 
   const { id } = useParams()
-  console.log('ID from Params >>>', id)
+  // console.log('ID from Params >>>', id)
 
   // const payload = getPayload()
 
@@ -54,7 +52,7 @@ const EditDeleteComments = () => {
     setCommentToEdit(newComment)
   }
 
-  console.log('INCOMING DATA >>>', commentToEdit)
+  // console.log('INCOMING DATA >>>', commentToEdit)
 
   const handleCommentChangeSubmit = async (event) => {
     event.preventDefault()
@@ -69,7 +67,7 @@ const EditDeleteComments = () => {
         }
       )
 
-      location.assign(`/categories/product/${id}`)
+      location.assign(lastNumberId)
 
     } catch (err) {
       setHasError(true)

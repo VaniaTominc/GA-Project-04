@@ -16,8 +16,6 @@ const ProfilePage = () => {
 
   const [currentUserId, setCurrentUserId] = useState(null)
 
-  const [populateProductName, setPopulateProductName] = useState([])
-
 
   useEffect(() => {
     if (getPayload()) {
