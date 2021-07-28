@@ -35,6 +35,12 @@ const Navbar = () => {
       </label>
       <label htmlFor='active' className='close'></label>
       
+      <ul>
+        <li>
+          <Search />
+        </li>
+      </ul>
+
       <div className='navbar-wrapper'>
 
         <ul>
@@ -44,10 +50,6 @@ const Navbar = () => {
         </ul>
 
         <ul>
-          <li>
-            <Search />
-          </li>
-
           <li>
             <a href='/home'>Home</a>
           </li>

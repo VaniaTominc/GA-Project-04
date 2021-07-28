@@ -67,22 +67,22 @@ const FilteredByCategory = () => {
                         <div className='container' style={{
                           backgroundImage: `url(${item.images})`,
                         }}>
-                          <div className='overlay overlay-positioning-like'>
+                          <div className='overlay overlay-positioning-like overlay-color'>
                             <label className='like'>
                               <input type='checkbox' id='input-heart'/>
                               <div className='hearth'/>
                             </label>
                             <div className= 'items'></div>
                             <div className= 'items head'>
-                              <p>{item.name}</p>
+                              <p className='category-writing-styling'>{item.name}</p>
                               <hr></hr>
                             </div>
                             <div className= 'items price'>
-                              <p className='new'>£{item.price}</p>
+                              <p className='new category-writing-styling'>£{item.price}</p>
                             </div>
                             <div className='items cart .cart-positioning'>
                               <a href={'/basket'}><IoIosBasket size={16}/></a>
-                              <span>ADD TO CART</span>
+                              <span className='category-writing-styling'>ADD TO CART</span>
                             </div>
                           </div>
                         </div>

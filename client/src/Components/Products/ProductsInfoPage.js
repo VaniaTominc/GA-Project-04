@@ -44,6 +44,9 @@ const ProductsInfoPage = () => {
     }
   }, [])
 
+  const star = (item) => {
+    return '⭐️'.repeat(item)
+  }
 
   return (
     <>
@@ -120,7 +123,7 @@ const ProductsInfoPage = () => {
                         {convertAmericanDate(item.created_at.slice(11, 19))}{' '}
                         {convertAmericanDate(item.created_at.slice(0, 10))}
                       </p>
-                      <p>{item.rating}</p>
+                      <p>{star(item.rating)}</p>
                       <p>{item.text}</p>
 
                       {currentUserId === item.owner ? (

@@ -52,7 +52,7 @@ const ProfilePage = () => {
 
               <>
                 <h1>Welcome back {currentUser.username}</h1>
-                <p>Member since: {convertAmericanDate(currentUser.date_joined.slice(0, 10))}</p>
+                <h3 className='profile-page-heading-1'>Member since: {convertAmericanDate(currentUser.date_joined.slice(0, 10))}</h3>
 
                 <h3>YOUR INFO</h3>
                 <p>Username: {currentUser.username}</p>
@@ -69,19 +69,24 @@ const ProfilePage = () => {
                 <div>
                   { currentUser.opinions &&
                     <div>
-                      <h3>YOUR COMMENTS SO FAR</h3>
+
+                      <h3>YOUR HAVE {currentUser.length} COMMENTS</h3>
                       {
 
                         currentUser.opinions.map(item => {
                           return (
                             <div key={item.id}>
-                              <a href={`/categories/product/${item.truffle.id}`}> 
-                                <h4>{item.truffle.name}</h4>
-                              </a>
-                              <p>{item.owner.username}</p>
-                              <p>{convertAmericanDate(item.created_at.slice(11, 19))} {convertAmericanDate(item.created_at.slice(0, 10))}</p>
-                              <p>{item.rating}</p>
-                              <p>{item.text}</p>
+                              <section className='changing-according-profile'>
+                                <details>
+                                  <summary><a href={`/categories/product/${item.truffle.id}`}> 
+                                    {item.truffle.name}
+                                  </a></summary>
+                                  <p>{item.owner.username}</p>
+                                  <p>{convertAmericanDate(item.created_at.slice(11, 19))} {convertAmericanDate(item.created_at.slice(0, 10))}</p>
+                                  <p>{item.rating}</p>
+                                  <p>{item.text}</p>
+                                </details>
+                              </section>
                             </div>
                           )
                         })

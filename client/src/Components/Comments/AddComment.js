@@ -71,15 +71,22 @@ const AddComment = () => {
 
             <form onSubmit={postComment}>
 
-              <input 
-                type='number'
-                name='rating'
-                min='1'
-                max='5'
-                required
-                value={getCommentData.rating}
-                onChange={incomingCommentData}
-              />
+              <fieldset required>
+                <span className='star-cb-group'>
+                  <input type='radio' id='rating-5' name='rating' value={getCommentData.rating = 5} onChange={incomingCommentData}/>
+                  <label htmlFor='rating-5'>5</label>
+                  <input type='radio' id='rating-4' name='rating' value={getCommentData.rating = 4} onChange={incomingCommentData}/>
+                  <label htmlFor='rating-4'>4</label>
+                  <input type='radio' id='rating-3' name='rating' value={getCommentData.rating = 3} onChange={incomingCommentData}/>
+                  <label htmlFor='rating-3'>3</label>
+                  <input type='radio' id='rating-2' name='rating' value={getCommentData.rating = 2} onChange={incomingCommentData}/>
+                  <label htmlFor='rating-2'>2</label>
+                  <input type='radio' id='rating-1' name='rating' value={getCommentData.rating = 1} onChange={incomingCommentData}/>
+                  <label htmlFor='rating-1'>1</label>
+                  <input type='radio' id='rating-0' name='rating' value='0' className='star-cb-clear' />
+                  <label htmlFor='rating-0'>0</label>
+                </span>
+              </fieldset>
 
               <br />
 
@@ -94,7 +101,6 @@ const AddComment = () => {
               />
 
               <br />
-
               <input type='submit' value='Submit' />
             </form>
 

@@ -33,7 +33,7 @@
   margin: 1.75rem auto;
   border-radius: 3px;
   max-width: 500px;
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .modal-header {
@@ -61,6 +61,8 @@ button {
 }
 
 .button-default {
-  background: #247BA0;
-  color: #fff;
+  background: transparent;
+  color: red;
+  margin-top: 1.7rem;
+  margin-left: 89%;
 }
