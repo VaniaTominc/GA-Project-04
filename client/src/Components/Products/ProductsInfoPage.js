@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom'
 import AddComment from '../Comments/AddComment.js'
 import Error404Message from '../Errors/Error404Message.js'
 import { checkUserIsAuthenticated, getPayload } from '../Authentication/auth'
-import EditDeleteComments from '../Comments/EditDeleteComments.js'
+// import EditDeleteComments from '../Comments/EditDeleteComments.js'
 import MovingGallery from '../Image Gallery/MovingGallery.js'
 
 import { IoIosArrowUp } from 'react-icons/io'
@@ -128,8 +128,6 @@ const ProductsInfoPage = () => {
                           <a href={`/opinions/${item.id}`}>
                             Do you want to edit?
                           </a>
-
-                          <EditDeleteComments />
                         </>
                       ) : (
                         ''

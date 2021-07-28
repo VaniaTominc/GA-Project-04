@@ -176,23 +176,24 @@ const ProfileEditDelete = () => {
 
               // <br />
 
-        //       <input 
-        //         type='submit' 
-        //         value='Update' 
-        //         onSubmit={handleSubmit}
-        //       />
+              // <input 
+              //   type='submit' 
+              //   value='Update' 
+              //   onSubmit={handleSubmit}
+              // />
 
-        //       <input 
-        //         type='submit' 
-        //         value='Delete' 
-        //         onClick={deleteUser}
-        //       />
+              // <input 
+              //   type='submit' 
+              //   value='Delete' 
+              //   onClick={deleteUser}
+              // />
         //     </form>
         //     }
         //   </>
           
         // </div>
 
+        <div><h2>Update or Delete your account</h2>
         <section className='login-section'>
           <div className='container'>
 
@@ -258,16 +259,33 @@ const ProfileEditDelete = () => {
                     required
                   />
 
+                  <div className='update-delete-buttons'>
+                    <input 
+                      type='submit' 
+                      value='Update' 
+                      onSubmit={handleSubmit}
+                    />
+
+                    <input 
+                      type='submit' 
+                      value='Delete' 
+                      onClick={deleteUser}
+                    />
+                  </div>
+
                 </form>
               </div>
               <div className='hidePicture'>
-                <h2>Update or Delete your account</h2>
-                <img src='https://i.ibb.co/hMF1RzD/Doggy-Snifing-Truffle.jpg' alt='profile-picture'/>
+                <img src='https://i.ibb.co/hMF1RzD/Doggy-Snifing-Truffle.jpg' alt='a-cute-doggy' id='doggysnifing'/>
+                <h1>rdfgdg</h1>
               </div>
+
             </div>
 
           </div>
+          
         </section>
+        </div>
 
         :
 
