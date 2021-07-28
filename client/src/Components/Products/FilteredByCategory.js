@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import Error404Message from '../Errors/Error404Message'
+import { IoIosBasket } from 'react-icons/io'
 
 const FilteredByCategory = () => {
 
   const [categories, setCategories] = useState([])
   const [hasError, setHasError] = useState(false)
+  const [categoryName, setCategoryName] = useState('')
 
   const { id } = useParams()
 
@@ -18,8 +20,9 @@ const FilteredByCategory = () => {
         // const { data } = await axios.get('/api/categories/2/')
         const { data } = await axios.get(`/api/categories/${id}`)
         // console.log('DATA FROM CATEGORIES >>>', data[1].truffles[0])
-
+        console.log('data.name', data.name)
         setCategories(data.truffles)
+        setCategoryName(data.name)
 
       } catch (err) {
         console.log(err.message)
@@ -30,28 +33,54 @@ const FilteredByCategory = () => {
     getData()
   }, [id])
 
+  console.log('CATEGORY NAME >>>', categoryName)
+
   return (
 
     <>
       { categories ? 
         <>
-          <h1>PRIKAZANA KATEGORIJA</h1>
+  
+          { categoryName &&
+            <h1>You are viewing {categoryName} category</h1>
+          }
+  
 
-          <div>
+          <div className='outside-container'>
 
-            {categories &&
-              categories.map(item => {
-                return (
-                  <div className='product-card-border' key={item.id}>
-                    <h3>{item.name}</h3>
-                    <p>RATING</p>
-                    <img src={item.images} alt={item.name}/>
-                    <p>{item.price}</p>
-                    <a href={`/categories/product/${item.id}`}>SHOW MORE</a>
-                    <p>BASKET</p>
-                  </div>
-                )
-              })
+            {
+              categories ?
+
+                categories.map(item => {
+                  return (
+                    <div key={item.id} className='middle-category-container'>
+                      <div className='container' style={{
+                        backgroundImage: `url(${item.images})`,
+                      }}>
+                        <div className='overlay overlay-positioning-like'>
+                          <label className='like'>
+                            <input type='checkbox' id='input-heart'/>
+                            <div className='hearth'/>
+                          </label>
+                          <div className= 'items'></div>
+                          <div className= 'items head'>
+                            <p>{item.name}</p>
+                            <hr></hr>
+                          </div>
+                          <div className= 'items price'>
+                            <p className='new'>£{item.price}</p>
+                          </div>
+                          <div className='items cart .cart-positioning'>
+                            <IoIosBasket size={16}/>
+                            <span>ADD TO CART</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )
+                })
+                :
+                <></>
             }
 
           </div>

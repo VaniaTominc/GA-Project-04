@@ -19,8 +19,8 @@ import ProfileEditDelete from './Components/Authentication/ProfileEditDelete'
 import EditDeleteComments from './Components/Comments/EditDeleteComments'
 import Search from './Components/SearchBar/Search'
 import Error404Message from './Components/Errors/Error404Message'
-// import Basket from './Components/Basket/Basket'
-import MovingGallery from './Components/Image Gallery/MovingGallery'
+import Basket from './Components/Basket/Basket'
+// import MovingGallery from './Components/Image Gallery/MovingGallery'
 
 
 const App = () => {
@@ -54,7 +54,7 @@ const App = () => {
         </Route>
 
         <Route path='/basket'>
-          <MovingGallery />
+          <Basket />
         </Route>
 
         <Route path='/shop'>

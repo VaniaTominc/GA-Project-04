@@ -8,6 +8,8 @@ import { checkUserIsAuthenticated, getPayload } from '../Authentication/auth'
 import EditDeleteComments from '../Comments/EditDeleteComments.js'
 import MovingGallery from '../Image Gallery/MovingGallery.js'
 
+import { IoIosArrowUp } from 'react-icons/io'
+
 // Component showing individual product for sell
 
 const ProductsInfoPage = () => {
@@ -46,7 +48,7 @@ const ProductsInfoPage = () => {
   return (
     <>
       {truffle ? (
-        <>
+        <div className='main-info-page'>
           <>
             <h1>DISPLAY CONTENT</h1>
             <p>{truffle.name}</p>
@@ -58,6 +60,20 @@ const ProductsInfoPage = () => {
 
             </>
           </>
+
+          <div className='links'>
+            <div className='sidenav'>
+              <a href={`/categories/product/${id}`}><h1 className='rotating-links rotate-links'>Product</h1></a>
+            </div>
+            <IoIosArrowUp size={20} />
+            <div className='sidenav'>
+              <a href='#'><h1 className='rotating-links rotate-links'>Category</h1></a>
+            </div>
+            <IoIosArrowUp size={20} />
+            <div className='sidenav'>
+              <a href='/shop'><h1 className='rotating-links rotate-links'>Shop</h1></a>
+            </div>
+          </div>
 
           <section className='product-display-section'>
             <details>
@@ -132,7 +148,7 @@ const ProductsInfoPage = () => {
               <a href='/login'>Login / Sign Up</a> to comment.
             </h1>
           )}
-        </>
+        </div>
       ) : hasError ? (
         <Error404Message />
       ) : (

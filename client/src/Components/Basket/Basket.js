@@ -51,7 +51,7 @@ const Basket = () => {
   const WorkingCartData = localStorage.getItem('working')
   const DemistifiedCartData = JSON.parse(WorkingCartData)
 
-  alert(DemistifiedCartData.length)
+  // alert(DemistifiedCartData.length)
 
   // console.log('Adding to cart >>>', cart)
 

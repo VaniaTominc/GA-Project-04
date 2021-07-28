@@ -1,6 +1,7 @@
 import React from 'react'
 import { getPayload } from './Authentication/auth'
 import Search from './SearchBar/Search'
+import { IoBasketOutline } from 'react-icons/io5'
 
 
 const Navbar = () => {
@@ -87,7 +88,7 @@ const Navbar = () => {
           }
 
           <li>
-            <a href='/basket'>Basket</a>
+            <a href='/basket'><IoBasketOutline /></a>
           </li>
         </ul>
 

@@ -27,16 +27,14 @@ const MovingGallery = () => {
   if (!gallery) return null
 
   const imageConfig = {
+    dots: true,
     infinite: true,
-    speed: 500,
-    slidesToShow: 3,
+    speed: 3000,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: '80px',
     focusOnSelect: true,
-    draggable: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 50,
   }
 
   return (
@@ -45,7 +43,7 @@ const MovingGallery = () => {
       {
         gallery.photos && 
 
-          <div>
+          <div className='sliding-gallery-container'>
             <Slider {... imageConfig}>
               {gallery.photos.map(image => (
                 <ImageShow key={image} {...image}/>

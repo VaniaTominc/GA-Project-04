@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
@@ -5,6 +6,10 @@ import { useParams, useHistory } from 'react-router-dom'
 import axios from 'axios'
 import { getCurrentUser, getTokenFromStorage } from './auth'
 import Error404Message from '../Errors/Error404Message'
+
+import { ProfileImageUpload } from './ProfileImageUpload'
+
+import { AiOutlineDelete } from 'react-icons/ai'
 
 
 const ProfileEditDelete = () => {
@@ -18,6 +23,7 @@ const ProfileEditDelete = () => {
     email_name: '',
     password: '',
     password_confirmation: '',
+    profile_image: '',
   })
 
   const [errors, setErrors] = useState({
@@ -26,6 +32,7 @@ const ProfileEditDelete = () => {
     email_name: '',
     password: '',
     password_confirmation: '',
+    profile_image: '',
   })
 
   useEffect(() => {
@@ -55,6 +62,7 @@ const ProfileEditDelete = () => {
         }
       )
       history.push('/profile')
+      // location.reload()
     } catch (err) {
       console.log('ERROR MESSAGE >>>', err)
       setErrors(err.response.data.errors)
@@ -78,99 +86,188 @@ const ProfileEditDelete = () => {
     }
   }
 
+  const imageToUpload = url => {
+    setUserToEdit({ ... userToEdit, profile_image: url })
+  }
+
   return (
 
     <>
       { userToEdit ?
     
-        <div>
-          <h1>JUST BASIC EDIT / DELETE PROFILE FOR NOW</h1>
+        // <div>
+        //   <h1>JUST BASIC EDIT / DELETE PROFILE FOR NOW</h1>
 
-          <>
-            { userToEdit && 
+        //   <>
+        //     { userToEdit && 
             
-            <form onSubmit={handleSubmit}>
+        //     <form onSubmit={handleSubmit}>
 
-              <input 
-                type='text' 
-                name='username'
-                placeholder='Username' 
-                value={userToEdit.username}
-                onChange={handleUserEdit}
-                hidden
-              />
+        //       <input 
+        //         type='text' 
+        //         name='username'
+        //         placeholder='Username' 
+        //         value={userToEdit.username}
+        //         onChange={handleUserEdit}
+        //         hidden
+        //       />
 
-              <br />
+        //       <br />
 
-              <input 
-                type='email' 
-                name='email'
-                placeholder='Email' 
-                value={userToEdit.email}
-                onChange={handleUserEdit}
-                required
-              />
+        //       <input 
+        //         type='email' 
+        //         name='email'
+        //         placeholder='Email' 
+        //         value={userToEdit.email}
+        //         onChange={handleUserEdit}
+        //         required
+        //       />
 
-              <br />
+        //       <br />
 
-              <input 
-                type='password' 
-                name='password'
-                placeholder='Create Password' 
-                value={userToEdit.password}
-                onChange={handleUserEdit}
-                required
-              />
+        //       <input 
+        //         type='password' 
+        //         name='password'
+        //         placeholder='Create Password' 
+        //         value={userToEdit.password}
+        //         onChange={handleUserEdit}
+        //         required
+        //       />
 
-              <br />
+        //       <br />
 
-              <input 
-                type='password'
-                name='password_confirmation'
-                placeholder='Confirm Password' 
-                value={userToEdit.password_confirmation}
-                onChange={handleUserEdit}
-                required
-              />
+        //       <input 
+        //         type='password'
+        //         name='password_confirmation'
+        //         placeholder='Confirm Password' 
+        //         value={userToEdit.password_confirmation}
+        //         onChange={handleUserEdit}
+        //         required
+        //       />
 
-              <br />
+        //       <br />
 
-              <input 
-                type='text' 
-                name='first_name'
-                placeholder='First name' 
-                value={userToEdit.first_name}
-                onChange={handleUserEdit}
-              />
+        //       <input 
+        //         type='text' 
+        //         name='first_name'
+        //         placeholder='First name' 
+        //         value={userToEdit.first_name}
+        //         onChange={handleUserEdit}
+        //       />
 
-              <br />
+        //       <br />
 
-              <input 
-                type='text' 
-                name='last_name'
-                placeholder='Last name' 
-                value={userToEdit.last_name}
-                onChange={handleUserEdit}
-              />
+        //       <input 
+        //         type='text' 
+        //         name='first_name'
+        //         placeholder='First name' 
+        //         value={userToEdit.first_name}
+        //         onChange={handleUserEdit}
+        //       />
 
-              <br />
+        //       <br />
 
-              <input 
-                type='submit' 
-                value='Update' 
-                onSubmit={handleSubmit}
-              />
 
-              <input 
-                type='submit' 
-                value='Delete' 
-                onClick={deleteUser}
-              />
-            </form>
-            }
-          </>
+              // <ProfileImageUpload
+              //   value={userToEdit.image}
+              //   name="image"
+              //   handleImageUrl={imageToUpload}
+              // />
+
+              // <br />
+
+        //       <input 
+        //         type='submit' 
+        //         value='Update' 
+        //         onSubmit={handleSubmit}
+        //       />
+
+        //       <input 
+        //         type='submit' 
+        //         value='Delete' 
+        //         onClick={deleteUser}
+        //       />
+        //     </form>
+        //     }
+        //   </>
           
-        </div>
+        // </div>
+
+        <section className='login-section'>
+          <div className='container'>
+
+            {/* Register view */}
+            <div className='user'>
+              <div className='formBox'>
+                <form onSubmit={handleSubmit}>
+
+                  <input 
+                    type='text' 
+                    name='username'
+                    placeholder='Username' 
+                    value={userToEdit.username}
+                    onChange={handleUserEdit}
+                    hidden
+                  />
+
+                  <label className='label-edit-delete'>Your email</label>
+                  <input 
+                    type='email' 
+                    name='email'
+                    placeholder='Email' 
+                    value={userToEdit.email}
+                    onChange={handleUserEdit}
+                    required
+                  />
+
+                  <label className='label-edit-delete'>First name</label>
+                  <input 
+                    type='text' 
+                    name='first_name'
+                    placeholder='First name' 
+                    value={userToEdit.first_name}
+                    onChange={handleUserEdit}
+                  />
+
+                  <label className='label-edit-delete'>Last name</label>
+                  <input 
+                    type='text' 
+                    name='first_name'
+                    placeholder='Last name' 
+                    value={userToEdit.last_name}
+                    onChange={handleUserEdit}
+                  />
+
+                  <label className='label-edit-delete'>Your password</label>
+                  <input 
+                    type='password' 
+                    name='password'
+                    placeholder='Create Password' 
+                    value={userToEdit.password}
+                    onChange={handleUserEdit}
+                    required
+                  />
+
+                  <label className='label-edit-delete'>Confirm password</label>
+                  <input 
+                    type='password'
+                    name='password_confirmation'
+                    placeholder='Confirm Password' 
+                    value={userToEdit.password_confirmation}
+                    onChange={handleUserEdit}
+                    required
+                  />
+
+                </form>
+              </div>
+              <div className='hidePicture'>
+                <h2>Update or Delete your account</h2>
+                <img src='https://i.ibb.co/hMF1RzD/Doggy-Snifing-Truffle.jpg' alt='profile-picture'/>
+              </div>
+            </div>
+
+          </div>
+        </section>
 
         :
 
@@ -187,3 +284,6 @@ const ProfileEditDelete = () => {
 }
 
 export default ProfileEditDelete
+
+
+

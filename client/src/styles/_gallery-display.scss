@@ -1,0 +1,21 @@
+.sliding-gallery-container {
+  width: 20%;
+}
+
+img.sliding-gallery-margin {
+  padding: 20px;
+  object-fit: cover;
+  width: 50%;
+  height: 50%;
+}
+
+.slick-list {
+  margin: 0 -150px;
+  padding: -150px;
+}
+
+.container-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

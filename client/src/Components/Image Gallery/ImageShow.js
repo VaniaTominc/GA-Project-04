@@ -6,7 +6,7 @@ const ImageShow = ( { imageurl } ) => {
     <div>
       <span> 
         {/* <img src={images} /> */}
-        <img src={imageurl} />
+        <img src={imageurl} className='sliding-gallery-margin'/>
           
       </span>
     </div>
