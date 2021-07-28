@@ -12,7 +12,9 @@
     "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "sass": "^1.35.2"
+    "react-slick": "^0.28.1",
+    "sass": "^1.35.2",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
