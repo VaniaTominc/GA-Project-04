@@ -54,7 +54,6 @@ const ProductsInfoPage = () => {
 
   const addToCart = () => {
     const currentProduct = JSON.parse(localStorage.getItem('truffluxious'))
-    console.log('current products >>>', currentProduct)
     const productsToAdd = currentProduct ? [...currentProduct, { ...truffleProducts }] : [ { ...truffleProducts }]
     localStorage.setItem('truffluxious', JSON.stringify(productsToAdd))
     setClickedBuy(true)

@@ -4,11 +4,8 @@ import React, { useState, useEffect } from 'react'
 
 const Basket = () => {
 
-  // const [cart, setCart] = useState([])
-  // const [products, setProducts] = useState([])
-  
   const [basketItems, setBasketItems] = useState(null)
-  // const [basket, setBasket] = useState([])
+  const [updatedBasket, setUpdatedBasket] = useState([])
 
   useEffect(() => {
     const getBasketFromLocalStorage = () => {
@@ -21,21 +18,6 @@ const Basket = () => {
 
   }, [])
 
-  // useEffect(() => {
-  //   const getData = async () => {
-
-  //     try {
-  //       const { data } = await axios.get('/api/truffles/')
-  //       // console.log('Incoming DATA >>>', data)
-  //       setProducts(data)
-  //     } catch (err) {
-  //       console.log('Something is wrong with the basket >>>', err.message)
-  //     }
-  //   }
-  //   getData()
-  // }, [])
-
-  // console.log('products >>>', products)
 
   // ! Adding to basket
   // const addToBasket = (product) => {
@@ -51,30 +33,13 @@ const Basket = () => {
   //   setCart(cartToAdd)
   // }
 
-  // const WorkingCart = cart.map(item => {
-  //   const retriveData = localStorage.getItem('productIds')
-  //   return retriveData
-  // })
-  
-  
-  // console.log('working cart? >>>', WorkingCart)
-
-
-  // localStorage.setItem('working', JSON.stringify(WorkingCart))
-
-  // const WorkingCartData = localStorage.getItem('working')
-  // const DemistifiedCartData = JSON.parse(WorkingCartData)
-
-  // alert(DemistifiedCartData.length)
-
-  // console.log('Adding to cart >>>', cart)
 
   // ! Removing from basket
   const removeFromBasket = (product) => {
     const cartToRemove = basketItems.filter(item => item.id !== product.id)
     basketItems.map(item => {
       if (item.id === product.id) {
-        item.basketItems = false
+        item.updatedBasket = false
         console.log('Removing from cart >>>', cartToRemove)
       }
     })
@@ -95,8 +60,6 @@ const Basket = () => {
     })
     setUpdatedBasket(plus)
   }
-
-  const [updatedBasket, setUpdatedBasket] = useState([])
 
   console.log('Increasing cart >>>', updatedBasket)
 
