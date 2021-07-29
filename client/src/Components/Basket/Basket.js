@@ -9,7 +9,7 @@ const Basket = () => {
 
   useEffect(() => {
     const getBasketFromLocalStorage = () => {
-      const items = JSON.parse(localStorage.getItem('truffluxious'))
+      const items = JSON.parse(localStorage.getItem('test'))
       console.log('items in basket', items.price)
       setBasketItems(items)
       setUpdatedBasket(items)
@@ -43,8 +43,9 @@ const Basket = () => {
         console.log('Removing from cart >>>', cartToRemove)
       }
     })
-    setUpdatedBasket(cartToRemove)
+    setBasketItems(cartToRemove)
   }
+
 
   // console.log('Removing from cart >>>', cart)
 
@@ -54,11 +55,11 @@ const Basket = () => {
     const plus = basketItems.map(item => {
       if (product.id === item.id) {
         console.log('Increasing the quantity')
-        item.quantity = item.quantity + 1
+        item.qty = item.qty + 1
       }
       return item
     })
-    setUpdatedBasket(plus)
+    setBasketItems(plus)
   }
 
   console.log('Increasing cart >>>', updatedBasket)
@@ -68,11 +69,11 @@ const Basket = () => {
     const minus = basketItems.map(item => {
       if (product.id === item.id && item.quantity > 1) {
         console.log('Decreasing the quantity')
-        item.quantity = item.quantity - 1
+        item.qty = item.qty - 1
       }
       return item
     })
-    setUpdatedBasket(minus)
+    setBasketItems(minus)
   }
 
   // console.log('Decreasing cart >>>', updatedBasket)

@@ -73,23 +73,28 @@ const ProfilePage = () => {
                       <h3>YOUR HAVE {currentUser.length} COMMENTS</h3>
                       {
 
-                        currentUser.opinions.map(item => {
-                          return (
-                            <div key={item.id}>
-                              <section className='changing-according-profile'>
-                                <details>
-                                  <summary><a href={`/categories/product/${item.truffle.id}`}> 
-                                    {item.truffle.name}
-                                  </a></summary>
-                                  <p>{item.owner.username}</p>
-                                  <p>{convertAmericanDate(item.created_at.slice(11, 19))} {convertAmericanDate(item.created_at.slice(0, 10))}</p>
-                                  <p>{item.rating}</p>
-                                  <p>{item.text}</p>
-                                </details>
-                              </section>
-                            </div>
-                          )
-                        })
+                        <section>
+                          {currentUser.opinions.map(item => {
+                            return (
+                              <div key={item.id}>
+                                <section className='changing-according-profile'>
+                                  <details>
+                                    <summary>
+                                      <a href={`/categories/product/${item.truffle.id}`}> 
+                                        {item.truffle.name}
+                                      </a>
+                                      <p>{convertAmericanDate(item.created_at.slice(11, 19))} {convertAmericanDate(item.created_at.slice(0, 10))}</p>
+                                    </summary>
+                                    <p>{item.owner.username}</p>
+                                    <p>{item.rating}</p>
+                                    <p>{item.text}</p>
+                                  </details>
+                                </section>
+                              </div>
+                            )
+                          })
+                          }
+                        </section>
 
                       }
 

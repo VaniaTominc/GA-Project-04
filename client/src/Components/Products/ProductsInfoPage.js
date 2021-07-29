@@ -53,9 +53,9 @@ const ProductsInfoPage = () => {
   const [clickedBuy, setClickedBuy] = useState(false)
 
   const addToCart = () => {
-    const currentProduct = JSON.parse(localStorage.getItem('truffluxious'))
+    const currentProduct = JSON.parse(localStorage.getItem('test'))
     const productsToAdd = currentProduct ? [...currentProduct, { ...truffleProducts }] : [ { ...truffleProducts }]
-    localStorage.setItem('truffluxious', JSON.stringify(productsToAdd))
+    localStorage.setItem('test', JSON.stringify(productsToAdd))
     setClickedBuy(true)
   }
   console.log('products inside? >>>', truffleProducts)
@@ -67,28 +67,6 @@ const ProductsInfoPage = () => {
     <>
       {truffle ? (
         <div className='main-info-page'>
-
-          <section className='section-picture-cart'>
-
-            <div className='section-picture-cart-outline'>
-              <div className='left-side-gallery'>
-                {truffle.photos &&
-                
-                  truffle.photos.map(item => {
-                    return (
-                      <img key={item.id} src={item.imageurl} alt='pictures-of-product' />
-                    )
-                  })
-                }
-              </div>
-              <div className='right-side-price'>
-                <p>{truffle.name}</p>
-                <p>{truffle.description}</p>
-              </div>
-            </div>
-          
-          </section>
-
           <>
             <h1>DISPLAY CONTENT</h1>
             <p>{truffle.name}</p>
@@ -101,7 +79,7 @@ const ProductsInfoPage = () => {
             </>
           </>
 
-          <section className='links'>
+          <div className='links'>
             <div className='sidenav'>
               <a href={`/categories/product/${id}`}><h1 className='rotating-links rotate-links'>Product</h1></a>
             </div>
@@ -113,7 +91,7 @@ const ProductsInfoPage = () => {
             <div className='sidenav'>
               <a href='/shop'><h1 className='rotating-links rotate-links'>Shop</h1></a>
             </div>
-          </section>
+          </div>
           <button onClick={addToCart}>{clickedBuy ? 'Added to basket' : 'Buy Item'}</button>
           <section className='product-display-section'>
             <details>
