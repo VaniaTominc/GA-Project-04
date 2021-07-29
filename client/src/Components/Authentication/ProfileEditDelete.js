@@ -9,8 +9,6 @@ import Error404Message from '../Errors/Error404Message'
 
 import { ProfileImageUpload } from './ProfileImageUpload'
 
-import { AiOutlineDelete } from 'react-icons/ai'
-
 
 const ProfileEditDelete = () => {
 
@@ -94,104 +92,6 @@ const ProfileEditDelete = () => {
 
     <>
       { userToEdit ?
-    
-        // <div>
-        //   <h1>JUST BASIC EDIT / DELETE PROFILE FOR NOW</h1>
-
-        //   <>
-        //     { userToEdit && 
-            
-        //     <form onSubmit={handleSubmit}>
-
-        //       <input 
-        //         type='text' 
-        //         name='username'
-        //         placeholder='Username' 
-        //         value={userToEdit.username}
-        //         onChange={handleUserEdit}
-        //         hidden
-        //       />
-
-        //       <br />
-
-        //       <input 
-        //         type='email' 
-        //         name='email'
-        //         placeholder='Email' 
-        //         value={userToEdit.email}
-        //         onChange={handleUserEdit}
-        //         required
-        //       />
-
-        //       <br />
-
-        //       <input 
-        //         type='password' 
-        //         name='password'
-        //         placeholder='Create Password' 
-        //         value={userToEdit.password}
-        //         onChange={handleUserEdit}
-        //         required
-        //       />
-
-        //       <br />
-
-        //       <input 
-        //         type='password'
-        //         name='password_confirmation'
-        //         placeholder='Confirm Password' 
-        //         value={userToEdit.password_confirmation}
-        //         onChange={handleUserEdit}
-        //         required
-        //       />
-
-        //       <br />
-
-        //       <input 
-        //         type='text' 
-        //         name='first_name'
-        //         placeholder='First name' 
-        //         value={userToEdit.first_name}
-        //         onChange={handleUserEdit}
-        //       />
-
-        //       <br />
-
-        //       <input 
-        //         type='text' 
-        //         name='first_name'
-        //         placeholder='First name' 
-        //         value={userToEdit.first_name}
-        //         onChange={handleUserEdit}
-        //       />
-
-        //       <br />
-
-
-              // <ProfileImageUpload
-              //   value={userToEdit.image}
-              //   name="image"
-              //   handleImageUrl={imageToUpload}
-              // />
-
-              // <br />
-
-              // <input 
-              //   type='submit' 
-              //   value='Update' 
-              //   onSubmit={handleSubmit}
-              // />
-
-              // <input 
-              //   type='submit' 
-              //   value='Delete' 
-              //   onClick={deleteUser}
-              // />
-        //     </form>
-        //     }
-        //   </>
-          
-        // </div>
 
         <div><h2>Update or Delete your account</h2>
         <section className='login-section'>

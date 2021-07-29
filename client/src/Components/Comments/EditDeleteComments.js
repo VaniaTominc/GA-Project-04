@@ -8,7 +8,7 @@ import { checkUserIsAuthenticated } from '../Authentication/auth'
 
 const EditDeleteComments = () => {
 
-  const [hasError, setHasError] = useState(false)
+  // const [hasError, setHasError] = useState(false)
 
   const oldURL = document.referrer
   console.log('oldurl >>>', oldURL)
@@ -41,7 +41,7 @@ const EditDeleteComments = () => {
 
       } catch (err) {
         console.log('Something has gone wrong >>>', err.message)
-        setHasError(true)
+        // setHasError(true)
       }
     }
     getData()
@@ -70,7 +70,7 @@ const EditDeleteComments = () => {
       location.assign(lastNumberId)
 
     } catch (err) {
-      setHasError(true)
+      // setHasError(true)
       console.log('Incoming error from submiting changed comment >>>', err.response)
       window.alert('😱 Something has wrong with updating your comment 🆘')
     }
@@ -86,7 +86,7 @@ const EditDeleteComments = () => {
       location.assign('/home')
     } catch (err) {
       console.log(err)
-      setHasError(true)
+      // setHasError(true)
     }
   }
 
@@ -108,45 +108,70 @@ const EditDeleteComments = () => {
 
                   <>
 
-                    <h1>EDIT / DELETE</h1>
-                    <h2>Post your comment</h2>
+                    <div>
+                      <section className='login-section'>
+                        <div className='container'>
 
-                    <div> 
+                          {/* Register view */}
+                          <div className='user'>
+                            <div className='formBox'>
 
-                      <form onSubmit={handleCommentChangeSubmit}>
+                              <form onSubmit={handleCommentChangeSubmit}>
+                                <h3>Update or Delete your comment!</h3>
 
-                        <input 
-                          type='number'
-                        />
+                                <fieldset className='fieldset-no-border' required>
+                                  <span className='star-cb-group'>
+                                    <input type='radio' id='rating-5' name='rating' value={commentToEdit.rating = 5} onChange={handleCommentChange}/>
+                                    <label htmlFor='rating-5'>5</label>
+                                    <input type='radio' id='rating-4' name='rating' value={commentToEdit.rating = 4} onChange={handleCommentChange}/>
+                                    <label htmlFor='rating-4'>4</label>
+                                    <input type='radio' id='rating-3' name='rating' value={commentToEdit.rating = 3} onChange={handleCommentChange}/>
+                                    <label htmlFor='rating-3'>3</label>
+                                    <input type='radio' id='rating-2' name='rating' value={commentToEdit.rating = 2} onChange={handleCommentChange}/>
+                                    <label htmlFor='rating-2'>2</label>
+                                    <input type='radio' id='rating-1' name='rating' value={commentToEdit.rating = 1} onChange={handleCommentChange}/>
+                                    <label htmlFor='rating-1'>1</label>
+                                    <input type='radio' id='rating-0' name='rating' value='0' className='star-cb-clear' />
+                                    <label htmlFor='rating-0'>0</label>
+                                  </span>
+                                </fieldset>
 
-                        <input 
-                          type='number'
-                          name='rating'
-                          min='1'
-                          max='5'
-                          required
-                          value={commentToEdit.rating}
-                          onChange={handleCommentChange}
-                        />
+                                <textarea
+                                  placeholder='This is where you write your review. Explain what happened, and leave out offensive words. Keep your feedback honest, helpful, and constructive.' 
+                                  required 
+                                  name='text'
+                                  rows='6'
+                                  cols='40'
+                                  value={commentToEdit.text}
+                                  onChange={handleCommentChange}
+                                />
 
-                        <br />
+                                <div className='update-delete-buttons'>
+                                  <input 
+                                    type='submit' 
+                                    value='Update' 
+                                    onSubmit={handleCommentChangeSubmit}
+                                  />
 
-                        <textarea
-                          placeholder='This is where you write your review. Explain what happened, and leave out offensive words. Keep your feedback honest, helpful, and constructive.' 
-                          required 
-                          name='text'
-                          rows='6'
-                          cols='70'
-                          value={commentToEdit.text}
-                          onChange={handleCommentChange}
-                        />
+                                  <input 
+                                    type='submit' 
+                                    value='Delete' 
+                                    onClick={deleteComment}
+                                  />
+                                </div>
 
-                        <br />
+                              </form>
+                            </div>
+                            <div className='hidePicture'>
+                              <img src='https://i.ibb.co/hMF1RzD/Doggy-Snifing-Truffle.jpg' alt='a-cute-doggy' id='doggysnifing'/>
+                              <h1>rdfgdg</h1>
+                            </div>
 
-                        <input type='submit' value='Submit' />
-                        <input type='submit' value='Delete' onClick={deleteComment} />
-                      </form>
+                          </div>
 
+                        </div>
+          
+                      </section>
                     </div>
 
                   </>
@@ -168,17 +193,8 @@ const EditDeleteComments = () => {
 
         :
 
-        hasError ?
+        <Error404Message />
 
-          <Error404Message />
-
-          :
-
-          <>
-
-            <img src='https://thumbs.gfycat.com/BareJoyousAsp.webp' alt='Rick And Morty'/>
-          
-          </>
 
       }
       

@@ -14,7 +14,7 @@ import { IoIosArrowUp } from 'react-icons/io'
 
 const ProductsInfoPage = () => {
   const [truffle, setTruffle] = useState([])
-  const [hasError, setHasError] = useState(false)
+  // const [hasError, setHasError] = useState(false)
 
   const { id } = useParams()
 
@@ -26,7 +26,7 @@ const ProductsInfoPage = () => {
 
         setTruffle(data)
       } catch (err) {
-        setHasError(true)
+        //setHasError(true)
         console.log(
           'Display Product is not working properly! >>>',
           err.message
@@ -120,7 +120,7 @@ const ProductsInfoPage = () => {
                     <div key={item.id}>
                       <p>{item.owner.username}</p>
                       <p>
-                        {convertAmericanDate(item.created_at.slice(11, 19))}{' '}
+                        {convertAmericanDate(item.created_at.slice(11, 19))}
                         {convertAmericanDate(item.created_at.slice(0, 10))}
                       </p>
                       <p>{star(item.rating)}</p>
@@ -150,14 +150,9 @@ const ProductsInfoPage = () => {
             </h1>
           )}
         </div>
-      ) : hasError ? (
+      ) :
         <Error404Message />
-      ) : (
-        <img
-          src='https://thumbs.gfycat.com/BareJoyousAsp.webp'
-          alt='Rick And Morty'
-        />
-      )}
+      }
     </>
   )
 }

@@ -43,12 +43,12 @@
   display: inline-block;
   text-indent: -9999px;
   content: "☆";
-  color: #888;
+  color: rgba(0, 0, 0, 0.374);
 }
 .star-cb-group > input:checked ~ label:before, .star-cb-group > input + label:hover ~ label:before, .star-cb-group > input + label:hover:before {
   content: "★";
-  color: #e52;
-  text-shadow: 0 0 1px #333;
+  color: gold;
+  text-shadow: 0 0 1px gold;
 }
 .star-cb-group > .star-cb-clear + label {
   text-indent: -9999px;
@@ -60,17 +60,15 @@
 }
 .star-cb-group:hover > input + label:before {
   content: "☆";
-  color: #888;
+  color: gold;
   text-shadow: none;
 }
 .star-cb-group:hover > input + label:hover ~ label:before, .star-cb-group:hover > input + label:hover:before {
   content: "★";
-  color: #e52;
+  color: gold;
   text-shadow: 0 0 1px #333;
 }
 
-.full-star {
-  content: "☆";
-  color: gold;
-  text-shadow: none;
+.fieldset-no-border {
+  border: none;
 }
