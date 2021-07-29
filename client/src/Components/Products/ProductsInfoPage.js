@@ -25,6 +25,7 @@ const ProductsInfoPage = () => {
         // console.log('OPINIONS >>>', data.opinions)               // The lenght of the opinion array
 
         setTruffle(data)
+        setTruffleProducts(data)
       } catch (err) {
         //setHasError(true)
         console.log(
@@ -47,6 +48,21 @@ const ProductsInfoPage = () => {
   const star = (item) => {
     return '⭐️'.repeat(item)
   }
+
+  const [truffleProducts, setTruffleProducts] = useState({})
+  const [clickedBuy, setClickedBuy] = useState(false)
+
+  const addToCart = () => {
+    const currentProduct = JSON.parse(localStorage.getItem('truffluxious'))
+    console.log('current products >>>', currentProduct)
+    const productsToAdd = currentProduct ? [...currentProduct, { ...truffleProducts }] : [ { ...truffleProducts }]
+    localStorage.setItem('truffluxious', JSON.stringify(productsToAdd))
+    setClickedBuy(true)
+  }
+  console.log('products inside? >>>', truffleProducts)
+
+
+  
 
   return (
     <>
@@ -77,7 +93,7 @@ const ProductsInfoPage = () => {
               <a href='/shop'><h1 className='rotating-links rotate-links'>Shop</h1></a>
             </div>
           </div>
-
+          <button onClick={addToCart}>{clickedBuy ? 'Added to basket' : 'Buy Item'}</button>
           <section className='product-display-section'>
             <details>
               <summary>Description</summary>

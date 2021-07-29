@@ -4,66 +4,45 @@ import React, { useState, useEffect } from 'react'
 
 const Basket = () => {
 
-  // const [cart, setCart] = useState([])
-  // const [products, setProducts] = useState([])
-  
-  const [basketItems, setBasketItems] = useState(null)
-  // const [basket, setBasket] = useState([])
+  const [cart, setCart] = useState(false)
+  const [products, setProducts] = useState({})
 
   useEffect(() => {
-    const getBasketFromLocalStorage = () => {
-      const items = JSON.parse(localStorage.getItem('truffluxious'))
-      console.log('items in basket', items.price)
-      setBasketItems(items)
-      setUpdatedBasket(items)
+    const getData = async () => {
+
+      try {
+        const { data } = await axios.get('/api/truffles/')
+        // console.log('Incoming DATA >>>', data)
+        setProducts(data)
+      } catch (err) {
+        console.log('Something is wrong with the basket >>>', err.message)
+      }
     }
-    getBasketFromLocalStorage()
-
+    getData()
   }, [])
-
-  // useEffect(() => {
-  //   const getData = async () => {
-
-  //     try {
-  //       const { data } = await axios.get('/api/truffles/')
-  //       // console.log('Incoming DATA >>>', data)
-  //       setProducts(data)
-  //     } catch (err) {
-  //       console.log('Something is wrong with the basket >>>', err.message)
-  //     }
-  //   }
-  //   getData()
-  // }, [])
 
   // console.log('products >>>', products)
 
   // ! Adding to basket
-  // const addToBasket = (product) => {
-  //   const cartToAdd = [ ...cart ]
-  //   cartToAdd.push({ ...product })
-  //   products.map(item => {
-  //     if (item.id === product.id) {
-  //       item.cart = true
-  //       console.log('Adding to cart >>>', cart)
-  //       return localStorage.setItem('productIds', JSON.stringify(item))
-  //     } 
-  //   })
-  //   setCart(cartToAdd)
-  // }
+  const addToBasket = (product) => {
+    const currentProduct = JSON.parse(localStorage.getItem('truffluxious'))
+    const productsToAdd = currentProduct ? [...currentProduct, { ...products }] : [ { ...products }]
+    setCart(true)
+  }
 
-  // const WorkingCart = cart.map(item => {
-  //   const retriveData = localStorage.getItem('productIds')
-  //   return retriveData
-  // })
+  const WorkingCart = cart.map(item => {
+    const retriveData = localStorage.getItem('productIds')
+    return retriveData
+  })
   
   
-  // console.log('working cart? >>>', WorkingCart)
+  console.log('working cart? >>>', WorkingCart)
 
 
-  // localStorage.setItem('working', JSON.stringify(WorkingCart))
+  localStorage.setItem('working', JSON.stringify(WorkingCart))
 
-  // const WorkingCartData = localStorage.getItem('working')
-  // const DemistifiedCartData = JSON.parse(WorkingCartData)
+  const WorkingCartData = localStorage.getItem('working')
+  const DemistifiedCartData = JSON.parse(WorkingCartData)
 
   // alert(DemistifiedCartData.length)
 
@@ -71,14 +50,14 @@ const Basket = () => {
 
   // ! Removing from basket
   const removeFromBasket = (product) => {
-    const cartToRemove = basketItems.filter(item => item.id !== product.id)
-    basketItems.map(item => {
+    const cartToRemove = cart.filter(item => item.id !== product.id)
+    products.map(item => {
       if (item.id === product.id) {
-        item.basketItems = false
-        console.log('Removing from cart >>>', cartToRemove)
+        item.cart = false
+        console.log('Removing from cart >>>', cart)
       }
     })
-    setUpdatedBasket(cartToRemove)
+    setCart(cartToRemove)
   }
 
   // console.log('Removing from cart >>>', cart)
@@ -86,39 +65,37 @@ const Basket = () => {
   // ! Increating the quantity
 
   const increaseQuantity = (product) => {
-    const plus = basketItems.map(item => {
+    const plus = cart.map(item => {
       if (product.id === item.id) {
         console.log('Increasing the quantity')
         item.quantity = item.quantity + 1
       }
       return item
     })
-    setUpdatedBasket(plus)
+    setCart(plus)
   }
 
-  const [updatedBasket, setUpdatedBasket] = useState([])
-
-  console.log('Increasing cart >>>', updatedBasket)
+  // console.log('Increasing cart >>>', cart)
 
   // ! Decreasing the quantity
   const decreaseQuantity = (product) => {
-    const minus = basketItems.map(item => {
+    const minus = cart.map(item => {
       if (product.id === item.id && item.quantity > 1) {
         console.log('Decreasing the quantity')
         item.quantity = item.quantity - 1
       }
       return item
     })
-    setUpdatedBasket(minus)
+    setCart(minus)
   }
 
-  // console.log('Decreasing cart >>>', updatedBasket)
+  // console.log('Decreasing cart >>>', cart)
 
   // ! Getting total
 
   const totalPrice = () => {
     let initialSum = 0
-    updatedBasket.map(item => {
+    cart.map(item => {
       initialSum += item.price * item.quantity
     })
     return initialSum
@@ -131,19 +108,39 @@ const Basket = () => {
   return (
 
     <div>
-
-      {/* {basketItems && basketItems.map(item => {
-        return (
-          <h1 key={item.id}>{item.name}</h1>
-        )
-      })} */}
-
       <div>
-        {basketItems && basketItems.map(item => {
+        {products.map(item => {
 
           return (
             <div key={item.id}>
               <div>
+
+                <div>
+
+                  <h6>
+                    {item.name} - £{item.price}
+                  </h6>
+
+                  {
+                    item.cart === false
+                  &&
+                  <button 
+                    onClick={() => addToBasket(item)}
+                  >
+                    Add to cart
+                  </button>
+                  }
+
+                  {
+                    item.cart === true
+                  &&
+                  <button 
+                    onClick={() => addToBasket(item)}
+                  >
+                    Added
+                  </button>
+                  }
+                </div>
               </div>
             </div>
 
@@ -168,7 +165,7 @@ const Basket = () => {
 
           <tbody>
             {
-              basketItems && basketItems.map((i, index) => {
+              cart.map((i, index) => {
                 return (
 
                   < tr key={i.id}>
@@ -214,7 +211,7 @@ const Basket = () => {
 
       <div>
 
-        <h4>TOTAL: £{totalPrice()}</h4>
+        <h4>TOTAL: {totalPrice()}</h4>
 
       </div>
 
