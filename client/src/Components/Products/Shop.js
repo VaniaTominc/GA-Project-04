@@ -74,15 +74,17 @@ const Shop = () => {
                 {
                   categories.map(item => {
                     return (
+                      
                       <div key={item.id} className="container-shop-display">
-                    
-                        <div className="card-shop-display card0-expanded" style={{
-                          backgroundImage: `url(${item.image})`,
-                        }}>
-                          <div className="border-shop-display">
-                            <h2>{item.longname}</h2>
+                        <a href={`/categories/${item.id}`}>
+                          <div className="card-shop-display card0-expanded" style={{
+                            backgroundImage: `url(${item.image})`,
+                          }}>
+                            <div className="border-shop-display">
+                              <h2>{item.longname}</h2>
+                            </div>
                           </div>
-                        </div>
+                        </a>
                       </div>
                     )
                   })

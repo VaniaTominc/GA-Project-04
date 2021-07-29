@@ -1,3 +1,35 @@
+section.section-picture-cart {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  height: 500px;
+  width: 1485px;
+  border: 1px solid black;
+  margin-right: 80px;
+}
+
+.section-picture-cart-outline {
+  display: flex;
+  width: 85%;
+  height: 100%;
+  border: 1px solid red;
+}
+
+.left-side-gallery {
+  width: 70%;
+  height: 100%;
+  border: 1px solid yellow;
+}
+
+.right-side-price {
+  padding: 3rem;
+  width: 50%;
+  height: 100%;
+  border: 1px solid blue;
+}
+
+
+// ! Accordion
 section.product-display-section {
   padding-top: 4rem;
   width: 50%;
@@ -100,4 +132,11 @@ h1.rotating-links {
   margin-left: 80px; /* Same as the width of the sidenav */
   margin-right: 80px;
   padding: 0px 10px;
+}
+
+@media only screen and (max-width: 900px)  {
+  .main-info-page {
+    width: 400%;
+    height: 100vh;
+  }
 }
