@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
 import { getCurrentUser, getPayload } from './auth'
-import { convertAmericanDate } from '../ExtraFunctions/ReusableFunctions.js'
+import { convertAmericanDate, star } from '../ExtraFunctions/ReusableFunctions.js'
 import Error404Message from '../Errors/Error404Message'
 
 
@@ -51,20 +51,32 @@ const ProfilePage = () => {
             { currentUser && 
 
               <>
-                <h1>Welcome back {currentUser.username}</h1>
-                <h3 className='profile-page-heading-1'>Member since: {convertAmericanDate(currentUser.date_joined.slice(0, 10))}</h3>
+                <div>
+                  <div className='outer-box-user-profile'>
+                    <div className='positioning-left-box-user-profile'>
+                      <h1 className='greeting-user-profile-page'>Welcome back <span className='logo-nav'>{currentUser.username}</span></h1>
+                      <h3>Member since: {convertAmericanDate(currentUser.date_joined.slice(0, 10))}</h3>
+                    </div>
 
-                <h3>YOUR INFO</h3>
-                <p>Username: {currentUser.username}</p>
-                <p>Email: {currentUser.email}</p>
-                <p>First Name: {currentUser.first_name}</p>
-                <p>Last Name: {currentUser.last_name}</p>
+                    <div>
+                      <h3>YOUR INFO</h3>
+                      <p>Username: {currentUser.username}</p>
+                      <p>Email: {currentUser.email}</p>
+                      <p>First Name: {currentUser.first_name}</p>
+                      <p>Last Name: {currentUser.last_name}</p>
 
-                <a href={`profile/${currentUserId}`}>
-                  <h3>
-                    EDIT / DELETE YOUR PROFILE
-                  </h3>
-                </a>
+                      <div className='general-button'>
+                        <a href={`profile/${currentUserId}`}>
+                          <input 
+                            type='submit' 
+                            value='Update / Delete your account' 
+                          />
+                        </a>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
                 
                 <div>
                   { currentUser.opinions &&
@@ -80,14 +92,15 @@ const ProfilePage = () => {
                                 <section className='changing-according-profile'>
                                   <details>
                                     <summary>
-                                      <a href={`/categories/product/${item.truffle.id}`}> 
+                                      <a href={`/categories/product/${item.truffle.id}`} className='profile-page-a-tag'> 
                                         {item.truffle.name}
                                       </a>
-                                      <p>{convertAmericanDate(item.created_at.slice(11, 19))} {convertAmericanDate(item.created_at.slice(0, 10))}</p>
                                     </summary>
-                                    <p>{item.owner.username}</p>
-                                    <p>{item.rating}</p>
-                                    <p>{item.text}</p>
+                                    <div className='positioning-comments-profile-page'>
+                                      <p>You reviewed <span className='bold'>{item.truffle.name}</span> on {convertAmericanDate(item.created_at.slice(0, 10))} {convertAmericanDate(item.created_at.slice(11, 19))}</p>
+                                      <p>{star(item.rating)}</p>
+                                    </div>
+                                    <p className='comments-profile-page-styling'>{item.text}</p>
                                   </details>
                                 </section>
                               </div>

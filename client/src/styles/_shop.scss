@@ -1,16 +1,3 @@
-.container-shop-display {
-  // height: 100vh;
-  // width: 100vw;
-  // max-height: 800px;
-  // max-width: 1280px;
-  // min-height: 600px;
-  // min-width: 1000px;
-  // display: flex;
-  // justify-content: space-around;
-  // align-items: center;
-  // margin: 0 auto;
-}
-
 .border-shop-display {
   height: 369px;
   width: 290px;
@@ -20,7 +7,7 @@
   position: relative;
 
   &:hover {
-    border: 1px solid white;
+    border: 1px solid rgba(254,245,223, .8);
   }
 }
 
@@ -54,14 +41,6 @@
     }
 }
 
-h2 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: white;
-  margin: 20px;
-  opacity: 0;
-  transition: opacity 1s;
-}
-
 .outside-shop-container {
   display: flex;
   justify-content: center;
@@ -72,9 +51,47 @@ h2 {
 }
 
 .pushing-content-down {
-  height: 100vh - 5vh;
+  height: 80vh;
 }
 
 .slick-next {
   display:none;
+}
+
+div.shop-top-margin {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+h1.shop-heading-1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3.shop-heading-3 {
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: .7rem;
+}
+
+div.shop-top-description {
+  border-top: 1px dotted #d39700;
+  padding-top: 1rem;
+  width: 80%;
+  height: 200px;
+}
+
+.shop-card-text {
+  font-family: 'Antic Didone', serif;
+  font-size: 1.2rem;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+  color: rgba(254,245,223, .8);
+}
+
+a.removing-a-underline {
+  text-decoration: none;
 }

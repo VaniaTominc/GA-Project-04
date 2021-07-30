@@ -56,7 +56,12 @@ const Shop = () => {
       
         <>
 
-          <h1>Categories</h1>
+          <div className='shop-top-margin'>
+            <div className='shop-top-description'>
+              <h1 className='shop-heading-1'>Chose from many categories we have</h1>
+              <h3 className='shop-heading-3'>At Truff<span className='logo-nav'>·l·</span>uxury we take the utmost care at selecting <span className='logo-nav'>THE BEST</span> and we provide products from reputable local Istrian providers!</h3>
+            </div>
+          </div>
 
           <div className='outside-shop-container'>
 
@@ -72,16 +77,16 @@ const Shop = () => {
                 
 
                 {
-                  categories.map(item => {
+                  categories && categories.map(item => {
                     return (
                       
-                      <div key={item.id} className="container-shop-display">
-                        <a href={`/categories/${item.id}`}>
-                          <div className="card-shop-display card0-expanded" style={{
+                      <div key={item.id} className='container-shop-display'>
+                        <a href={`/categories/${item.id}`} className='removing-a-underline'>
+                          <div className='card-shop-display card0-expanded' style={{
                             backgroundImage: `url(${item.image})`,
                           }}>
-                            <div className="border-shop-display">
-                              <h2>{item.longname}</h2>
+                            <div className='border-shop-display'>
+                              <h2 className='shop-card-text'>{item.longname}</h2>
                             </div>
                           </div>
                         </a>

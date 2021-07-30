@@ -6,6 +6,51 @@
   margin: auto;
 }
 
-* {
-  font-family: 'Lato', sans-serif;
+a.profile-page-a-tag {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.page-heading {
+  text-align: center;
+  margin-top: -3.7rem;
+  letter-spacing: .3rem;
+}
+
+.carousel {
+  margin-top: 1.5rem;
+  z-index: -1;
+}
+
+.logo-nav {
+  color: #d39700;
+}
+
+.truffluxry-heading {
+  font-size: 80px;
+}
+
+.truffluxry-second-heading {
+  text-align: center;
+}
+
+.home-text-container {
+  width: 500px;
+  height: 300px;
+  border: 2px solid #d39700;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: center;
+  background-color: white;
+  padding: 1rem;
+}
+
+.home-page-card {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-top: -7rem;
+  z-index: 999;
 }

@@ -5,10 +5,10 @@ import { useParams } from 'react-router-dom'
 import AddComment from '../Comments/AddComment.js'
 import Error404Message from '../Errors/Error404Message.js'
 import { checkUserIsAuthenticated, getPayload } from '../Authentication/auth'
-// import EditDeleteComments from '../Comments/EditDeleteComments.js'
-import MovingGallery from '../Image Gallery/MovingGallery.js'
-
 import { IoIosArrowUp } from 'react-icons/io'
+import { FiEdit } from 'react-icons/fi'
+import Carousel from 'react-bootstrap/Carousel'
+
 
 // Component showing individual product for sell
 
@@ -66,110 +66,152 @@ const ProductsInfoPage = () => {
   return (
     <>
       {truffle ? (
+
+        
         <div className='main-info-page'>
-          <>
-            <h1>DISPLAY CONTENT</h1>
-            <p>{truffle.name}</p>
-            <p>{truffle.description}</p>
-
-            <>
-              
-              <MovingGallery />
-
-            </>
-          </>
-
-          <div className='links'>
-            <div className='sidenav'>
-              <a href={`/categories/product/${id}`}><h1 className='rotating-links rotate-links'>Product</h1></a>
-            </div>
-            <IoIosArrowUp size={20} />
-            <div className='sidenav'>
-              <a href='#'><h1 className='rotating-links rotate-links'>Category</h1></a>
-            </div>
-            <IoIosArrowUp size={20} />
-            <div className='sidenav'>
-              <a href='/shop'><h1 className='rotating-links rotate-links'>Shop</h1></a>
-            </div>
-          </div>
-          <button onClick={addToCart}>{clickedBuy ? 'Added to basket' : 'Buy Item'}</button>
-          <section className='product-display-section'>
-            <details>
-              <summary>Description</summary>
-              <p>{truffle.description}</p>
-            </details>
-
-            <details>
-              <summary>Taste</summary>
-              <p>{truffle.taste}</p>
-            </details>
-
-            <details>
-              <summary>Use</summary>
-              <p>{truffle.use}</p>
-            </details>
-
-            <details>
-              <summary>Ingredients</summary>
-              <p>{truffle.ingredients}</p>
-            </details>
-
-            <details>
-              <summary>Alergies</summary>
-              <p>{truffle.alergies}</p>
-            </details>
-
-            <details>
-              <summary>Life</summary>
-              <p></p>
-            </details>
-          </section>
-
-          <h1>POSTED COMMENTS</h1>
-
-          <div>
-            {truffle.opinions && (
-              <div>
-                {truffle.opinions.map((item) => {
-                  return (
-                    <div key={item.id}>
-                      <p>{item.owner.username}</p>
-                      <p>
-                        {convertAmericanDate(item.created_at.slice(11, 19))}
-                        {convertAmericanDate(item.created_at.slice(0, 10))}
-                      </p>
-                      <p>{star(item.rating)}</p>
-                      <p>{item.text}</p>
-
-                      {currentUserId === item.owner ? (
-                        <>
-                          <a href={`/opinions/${item.id}`}>
-                            Do you want to edit?
-                          </a>
-                        </>
-                      ) : (
-                        ''
-                      )}
-                    </div>
-                  )
-                })}
+          <main>
+            <div className="container-display-page-1">
+              <div className='left-side-display-page'>
+                
+                <Carousel>
+                  {truffle.photos &&
+                    truffle.photos.map(item => {
+                      return (
+                        <Carousel.Item key={item.id}>
+                          <img 
+                            className="d-block w-100 h-120"
+                            src={item.imageurl} 
+                            alt={truffle.name} 
+                          />
+                        </Carousel.Item>
+                      )
+                    })
+                  }
+                </Carousel>
+                
               </div>
-            )}
-          </div>
+              <div className='right-side-display-page'>
+                <div>
+                  <div>
+                    <h1 className='truffle-name'>{truffle.name}</h1>
+                    <h3 className='truffle-price'>£{truffle.price}</h3>
+                    {
+                      truffle.price && 
+                        <p className='short-description'>{(truffle.description).slice(0, 200)} ...</p>
+                      
+                    }
+                  </div>
+                  <div className='general-button-2' id='truffle-button'>
+                    <input 
+                      type='submit' 
+                      onClick={addToCart}
+                      value={clickedBuy ? 'Added' : 'Add'} 
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section className='links'>
+              <div className='sidenav'>
+                <a href={`/categories/product/${id}`}><h1 className='rotating-links rotate-links'>Product</h1></a>
+              </div>
+              <IoIosArrowUp size={20} />
+              <div className='sidenav'>
+                <a href='#'><h1 className='rotating-links rotate-links'>Category</h1></a>
+              </div>
+              <IoIosArrowUp size={20} />
+              <div className='sidenav'>
+                <a href='/shop'><h1 className='rotating-links rotate-links'>Shop</h1></a>
+              </div>
+            </section>
+            <section className='product-display-section'>
+              <details>
+                <summary>Description</summary>
+                <p>{truffle.description}</p>
+              </details>
 
-          {checkUserIsAuthenticated() ? (
-            <AddComment />
-          ) : (
-            <h1>
-              <a href='/login'>Login / Sign Up</a> to comment.
-            </h1>
-          )}
+              <details>
+                <summary>Taste</summary>
+                <p>{truffle.taste}</p>
+              </details>
+
+              <details>
+                <summary>Use</summary>
+                <p>{truffle.use}</p>
+              </details>
+
+              <details>
+                <summary>Ingredients</summary>
+                <p>{truffle.ingredients}</p>
+              </details>
+
+              <details>
+                <summary>Alergies</summary>
+                <p>{truffle.alergies}</p>
+              </details>
+
+              <details>
+                <summary>Life</summary>
+                <p></p>
+              </details>
+            </section>
+
+            <section>
+              <h1 className='products-info-comment-heading'>COMMENTS</h1>
+
+              <div>
+                {truffle.opinions && (
+                  <div className='embracing-comments'>
+                    {truffle.opinions.map((item) => {
+                      return (
+                        <div key={item.id} className='outer-outer-comment-box'>
+                          <div className='outer-comment-box'>
+                            {currentUserId === item.owner ? (
+                              <>
+                                <a href={`/opinions/${item.id}`}><FiEdit /></a>
+                              </>
+                            ) : (
+                              ''
+                            )}
+                            <p>User</p>
+                            <p>{convertAmericanDate(item.created_at.slice(11, 19))} {convertAmericanDate(item.created_at.slice(0, 10))}</p>
+                            <p>{star(item.rating)}</p>
+                          </div>
+
+                          <p>{item.text}</p>
+                        </div>
+                      )
+                    })}
+                  </div>
+                )}
+              </div>
+            </section>
+
+            {checkUserIsAuthenticated() ? (
+              <AddComment />
+            ) : (
+              <h3 className='shop-heading-3 shop-heading-3-additional'>
+                <a href='/login'>Login / Sign Up</a> to comment.
+              </h3>
+            )}
+
+          </main>
+    
+     
+
         </div>
       ) :
         <Error404Message />
       }
+
+
+        
+
+          
     </>
   )
+
+
 }
 
 export default ProductsInfoPage

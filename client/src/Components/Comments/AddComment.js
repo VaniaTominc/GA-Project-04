@@ -64,9 +64,6 @@ const AddComment = () => {
       
         <>
 
-          <h1>ADD COMMENTS SECTION</h1>
-          <h2>Post your comment</h2>
-
           <div> 
 
             <form onSubmit={postComment}>
@@ -101,7 +98,7 @@ const AddComment = () => {
               />
 
               <br />
-              <p className='full-star'>☆</p>
+              
               <input type='submit' value='Submit' onSubmit={postComment} />
             </form>
 

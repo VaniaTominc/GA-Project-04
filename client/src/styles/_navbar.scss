@@ -1,5 +1,5 @@
 .navbar-wrapper{
-  z-index: 999;
+  z-index: 990;
   position: fixed;
   top: 0;
   right: -100%;
@@ -13,7 +13,7 @@
 }
 .menu-button{
   position: absolute;
-  z-index: 2;
+  z-index: 1000;
   right: 20px;
   top: 20px;
   height: 50px;

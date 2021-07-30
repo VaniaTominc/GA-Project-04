@@ -67,7 +67,7 @@ const Basket = () => {
   // ! Decreasing the quantity
   const decreaseQuantity = (product) => {
     const minus = basketItems.map(item => {
-      if (product.id === item.id && item.quantity > 1) {
+      if (product.id === item.id && item.qty > 1) {
         console.log('Decreasing the quantity')
         item.qty = item.qty - 1
       }

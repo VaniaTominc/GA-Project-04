@@ -104,3 +104,109 @@ h3.profile-page-heading-1 {
   text-align: center;
   margin-top: -2rem;
 }
+
+div.general-button input {
+  width: 100%;
+  padding: 10px;
+  background: rgba(211, 151, 0, .2);
+  color: #333;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 14px;
+  margin: 8px 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+div.general-button input[type='submit'] {
+  max-width: 300px;
+  background: rgba(211, 151, 0, 0.2);
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+div.general-button-2 input[type='submit'] {
+  max-width: 200px;
+  background: rgba(211, 151, 0, 0.2);
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.positioning-comments-profile-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.comments-profile-page-styling {
+  margin-top: -1rem;
+  padding: 5px;
+  border-top: 1px dotted red;
+  border-top-width: 50%;
+}
+
+.outer-box-user-profile {
+  width: 60%;
+  height: 500px;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+  margin-top: 1rem;
+}
+
+#root > div:nth-child(7) {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-inner > .item {
+  position: relative;
+  display: none;
+  -webkit-transition: 2s ease-in-out left;
+  -moz-transition: 2s ease-in-out left;
+  -o-transition: 2s ease-in-out left;
+  transition: 2s ease-in-out left;
+}
+
+.tales {
+  width: 100%;
+}
+.carousel-inner{
+  width:100%;
+  max-height: 1000px !important;
+}
+
+img.updating-photos-height {
+  max-height: 1000px;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  min-height: 1000px;    /* Set slide height here */
+}
+
+.positioning-left-box-user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.greeting-user-profile-page {
+  font-size: 3rem;
+}

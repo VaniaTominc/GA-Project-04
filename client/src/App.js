@@ -1,9 +1,9 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import Navbar from './Components/Navbar'
+import NavbarComponent from './Components/NavbarComponent'
 import Home from './Components/Home'
-// import About from './Components/About'
+import Footer from './Components/Footer'
 
 // Authentication components
 import Login from './Components/Authentication/Login'
@@ -19,7 +19,6 @@ import ProfileEditDelete from './Components/Authentication/ProfileEditDelete'
 import EditDeleteComments from './Components/Comments/EditDeleteComments'
 import Search from './Components/SearchBar/Search'
 import Basket from './Components/Basket/Basket'
-// import MovingGallery from './Components/Image Gallery/MovingGallery'
 
 
 const App = () => {
@@ -28,7 +27,7 @@ const App = () => {
     
     <BrowserRouter>
 
-      <Navbar />
+      <NavbarComponent />
 
       <Switch>
 
@@ -71,7 +70,10 @@ const App = () => {
         <Route path='/'>
           <Home />
         </Route>
+
       </Switch>
+
+      <Footer />
 
     </BrowserRouter>
 

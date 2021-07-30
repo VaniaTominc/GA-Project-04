@@ -4,7 +4,7 @@ import Search from './SearchBar/Search'
 import { IoBasketOutline } from 'react-icons/io5'
 
 
-const Navbar = () => {
+const NavbarComponent = () => {
 
   const checkIfUserIsAuthenticated = () => {
     const payload = getPayload()
@@ -35,17 +35,16 @@ const Navbar = () => {
       </label>
       <label htmlFor='active' className='close'></label>
       
-      <ul>
-        <li>
-          <Search />
-        </li>
-      </ul>
+      <div id='positioning-search-component'>
+        <ul>
+          <li>
+            <Search />
+          </li>
+        </ul>
+      </div>
 
-      <ul>
-        <li>
-          <a href='/'>The nav</a>
-        </li>
-      </ul>
+      
+      <h1 className='page-heading' id='truffluxe-logo-navbar'>Truff<span className='logo-nav'>·l·</span>uxury</h1>
 
       <div className='navbar-wrapper'>
 
@@ -97,4 +96,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default NavbarComponent

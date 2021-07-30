@@ -21,7 +21,7 @@ const ProfileEditDelete = () => {
     email_name: '',
     password: '',
     password_confirmation: '',
-    profile_image: '',
+    // profile_image: '',
   })
 
   const [errors, setErrors] = useState({
@@ -30,7 +30,7 @@ const ProfileEditDelete = () => {
     email_name: '',
     password: '',
     password_confirmation: '',
-    profile_image: '',
+    // profile_image: '',
   })
 
   useEffect(() => {
@@ -93,7 +93,7 @@ const ProfileEditDelete = () => {
     <>
       { userToEdit ?
 
-        <div><h2>Update or Delete your account</h2>
+        <div>
         <section className='login-section'>
           <div className='container'>
 
@@ -177,7 +177,6 @@ const ProfileEditDelete = () => {
               </div>
               <div className='hidePicture'>
                 <img src='https://i.ibb.co/hMF1RzD/Doggy-Snifing-Truffle.jpg' alt='a-cute-doggy' id='doggysnifing'/>
-                <h1>rdfgdg</h1>
               </div>
 
             </div>

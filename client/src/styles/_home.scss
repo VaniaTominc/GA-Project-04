@@ -1,3 +1,29 @@
 .coursel-background {
   z-index: -999;
 }
+
+a.carousel-control-next-icon {
+  display: none;
+}
+
+span.carousel-control-next-icon {
+  background-image: hidden;
+}
+
+div.home-text-container {
+  width: 500px;
+  height: 400px;
+  border: 1px solid black;
+  /* color: white; */
+  background-color: yellow;
+}
+
+#positioning-search-component {
+  margin-top: -25px;
+}
+
+.home-page-outer-body {
+  height: 150vh;
+}
+
+

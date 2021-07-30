@@ -42,7 +42,11 @@ const FilteredByCategory = () => {
         <>
   
           { categoryName &&
-            <h1>You are viewing {categoryName} category</h1>
+            <div className='shop-top-margin'>
+              <div className='shop-top-description-2'>
+                <h1 className='shop-heading-1'>You are viewing <span className='logo-nav'>{categoryName}</span> category</h1>
+              </div>
+            </div>
           }
   
           <div className='links'>

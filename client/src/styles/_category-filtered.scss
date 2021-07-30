@@ -83,14 +83,13 @@ body {
   }
 
 .overlay {
-  width: 100%;
+  width: 109%;
   height: 100%;
+  margin-left: -4.5%;
   background: rgba(77, 77, 77, .5);
   color: $bg;
   opacity: 0;
   transition: all 0.5s;
-  
-  font-family: 'Playfair Display', serif;
 }
 
 .category-writing-styling {
@@ -207,4 +206,15 @@ body {
       border-radius: 100%;
     }
   }
+}
+
+.shop-top-description-2 {
+  border-top: 1px dotted #d39700;
+  padding-top: 1rem;
+  width: 80%;
+  height: 100px;
+}
+
+.positioning-arrow-to-middle {
+  margin-left: .8rem;
 }
