@@ -62,6 +62,7 @@ div.shop-top-margin {
   margin-top: 1rem;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 h1.shop-heading-1 {
@@ -94,4 +95,20 @@ div.shop-top-description {
 
 a.removing-a-underline {
   text-decoration: none;
+}
+
+.outer-outer-box-user-profile {
+  border-bottom: 1px dotted #D39700;
+}
+
+.heading-3-profile-page {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.sorting-shop-category {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Error404Message from '../Errors/Error404Message'
-import Slider from 'react-slick'
+// import Slider from 'react-slick'
 
 
 const Shop = () => {
@@ -37,16 +37,16 @@ const Shop = () => {
     getData()
   }, [])
 
-  const categoryConfig = {
-    dots: true,
-    infinite: true,
-    speed: 3000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    focusOnSelect: true,
-    autoplay: true,
-    autoplaySpeed: 50,
-  }
+  // const categoryConfig = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 3000,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   focusOnSelect: true,
+  //   autoplay: true,
+  //   autoplaySpeed: 50,
+  // }
 
   return (
 
@@ -71,8 +71,9 @@ const Shop = () => {
 
             { categories.length > 0 &&
 
-            <div className='sliding-gallery-container shop-slider'>
-              <Slider {... categoryConfig}>
+            // <div className='sliding-gallery-container shop-slider'>
+              <div className='sorting-shop-category'>
+                {/* <Slider {... categoryConfig}> */}
 
                 
 
@@ -97,8 +98,8 @@ const Shop = () => {
 
             
                 
-              </Slider>
-            </div>
+                {/* </Slider> */}
+              </div>
             }
           </div>
         </>

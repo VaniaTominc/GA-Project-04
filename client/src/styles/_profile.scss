@@ -149,15 +149,9 @@ div.general-button-2 input[type='submit'] {
   padding: 5px;
 }
 
-.bold {
-  font-weight: bold;
-}
-
 .comments-profile-page-styling {
   margin-top: -1rem;
   padding: 5px;
-  border-top: 1px dotted red;
-  border-top-width: 50%;
 }
 
 .outer-box-user-profile {
@@ -173,6 +167,7 @@ div.general-button-2 input[type='submit'] {
 #root > div:nth-child(7) {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .carousel-inner > .item {
@@ -184,22 +179,22 @@ div.general-button-2 input[type='submit'] {
   transition: 2s ease-in-out left;
 }
 
-.tales {
-  width: 100%;
-}
-.carousel-inner{
-  width:100%;
-  max-height: 1000px !important;
-}
+// .tales {
+//   width: 100%;
+// }
+// .carousel-inner{
+//   width:100%;
+//   max-height: 1000px !important;
+// }
 
-img.updating-photos-height {
-  max-height: 1000px;
-}
+// img.updating-photos-height {
+//   max-height: 1000px;
+// }
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  min-height: 1000px;    /* Set slide height here */
-}
+// .carousel-inner > .item > img,
+// .carousel-inner > .item > a > img {
+//   min-height: 1000px;    /* Set slide height here */
+// }
 
 .positioning-left-box-user-profile {
   display: flex;
@@ -209,4 +204,8 @@ img.updating-photos-height {
 
 .greeting-user-profile-page {
   font-size: 3rem;
+}
+
+.profile-page-subheading {
+  padding-bottom: .5rem;
 }

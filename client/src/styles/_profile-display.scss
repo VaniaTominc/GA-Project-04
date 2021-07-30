@@ -10,6 +10,7 @@ a.profile-page-a-tag {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .page-heading {
@@ -52,5 +53,10 @@ a.profile-page-a-tag {
   align-items: baseline;
   justify-content: center;
   margin-top: -7rem;
-  z-index: 999;
+  z-index: 1;
+}
+
+.some-random-text-profile-page {
+  font-size: 1rem;
+  font-weight: bold;
 }

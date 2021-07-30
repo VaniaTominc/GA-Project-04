@@ -7,6 +7,7 @@ import { convertAmericanDate, star } from '../ExtraFunctions/ReusableFunctions.j
 import Error404Message from '../Errors/Error404Message'
 
 
+
 const ProfilePage = () => {
 
   const history = useHistory()
@@ -30,7 +31,7 @@ const ProfilePage = () => {
       const currentUserData = await getCurrentUser()
       // console.log('INCOMING ID >>>', currentUserData.id)
       // console.log('OPINIONS >>>', currentUserData.opinions[0].truffle.name)
-
+      // console.log('incoming-data >>>', currentUserData)
       setCurrentUser(currentUserData)
     }
     getCurrentUserData()
@@ -51,7 +52,7 @@ const ProfilePage = () => {
             { currentUser && 
 
               <>
-                <div>
+                <div className='outer-outer-box-user-profile'>
                   <div className='outer-box-user-profile'>
                     <div className='positioning-left-box-user-profile'>
                       <h1 className='greeting-user-profile-page'>Welcome back <span className='logo-nav'>{currentUser.username}</span></h1>
@@ -59,7 +60,7 @@ const ProfilePage = () => {
                     </div>
 
                     <div>
-                      <h3>YOUR INFO</h3>
+                      <h3 className='profile-page-subheading'>YOUR INFO</h3>
                       <p>Username: {currentUser.username}</p>
                       <p>Email: {currentUser.email}</p>
                       <p>First Name: {currentUser.first_name}</p>
@@ -82,7 +83,7 @@ const ProfilePage = () => {
                   { currentUser.opinions &&
                     <div>
 
-                      <h3>YOUR HAVE {currentUser.length} COMMENTS</h3>
+                      <h3 className='heading-3-profile-page'>YOU HAVE {currentUser.opinions.length} COMMENTS SO FAR</h3>
                       {
 
                         <section>
@@ -97,7 +98,7 @@ const ProfilePage = () => {
                                       </a>
                                     </summary>
                                     <div className='positioning-comments-profile-page'>
-                                      <p>You reviewed <span className='bold'>{item.truffle.name}</span> on {convertAmericanDate(item.created_at.slice(0, 10))} {convertAmericanDate(item.created_at.slice(11, 19))}</p>
+                                      <p className='some-random-text-profile-page'>You reviewed <span className='logo-nav'>{item.truffle.name}</span> on {convertAmericanDate(item.created_at.slice(0, 10))} at {convertAmericanDate(item.created_at.slice(11, 19))}</p>
                                       <p>{star(item.rating)}</p>
                                     </div>
                                     <p className='comments-profile-page-styling'>{item.text}</p>
