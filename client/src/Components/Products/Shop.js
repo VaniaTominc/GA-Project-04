@@ -59,7 +59,7 @@ const Shop = () => {
           <div className='shop-top-margin'>
             <div className='shop-top-description'>
               <h1 className='shop-heading-1'>Chose from many categories we have</h1>
-              <h3 className='shop-heading-3'>At Truff<span className='logo-nav'>·l·</span>uxury we take the utmost care at selecting <span className='logo-nav'>THE BEST</span> and we provide products from reputable local Istrian providers!</h3>
+              <h3 className='shop-heading-3-1'>At <span className='logo-spacing'>Truff<span className='logo-nav'>·l·</span>uxury</span> we take the utmost care at selecting <span className='logo-nav'>THE BEST</span> and we provide products from reputable local <span className='logo-nav'>Istrian</span> providers!</h3>
             </div>
           </div>
 

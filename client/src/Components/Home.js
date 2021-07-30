@@ -37,7 +37,7 @@ const Home = () => {
             <span className='truffluxry-heading'>Truff<span className='logo-nav'>·l·</span>uxury</span>,
           </h1>
           <h1 className='truffluxry-second-heading'>
-            <span>your specialied shop for </span>
+            <span>your specialized shop for </span>
             <span>THE Istrian truffles</span>
           </h1>
         </div>

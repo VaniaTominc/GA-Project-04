@@ -52,6 +52,8 @@
 
 .pushing-content-down {
   height: 80vh;
+  display: flex;
+  justify-content: center;
 }
 
 .slick-next {
@@ -77,6 +79,12 @@ h3.shop-heading-3 {
   padding-top: .7rem;
 }
 
+h3.shop-heading-3-1 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: .7rem;
+}
+
 div.shop-top-description {
   border-top: 1px dotted #d39700;
   padding-top: 1rem;
@@ -86,11 +94,12 @@ div.shop-top-description {
 
 .shop-card-text {
   font-family: 'Antic Didone', serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 20px;
   opacity: 0;
   transition: opacity 1s;
-  color: rgba(254,245,223, .8);
+  // color: rgba(254,245,223, .8);
+  color: white;
 }
 
 a.removing-a-underline {
@@ -99,6 +108,8 @@ a.removing-a-underline {
 
 .outer-outer-box-user-profile {
   border-bottom: 1px dotted #D39700;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .heading-3-profile-page {
@@ -111,4 +122,9 @@ a.removing-a-underline {
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 2rem;
+
+}
+
+.container-shop-display {
+  padding-top: 1.5rem;
 }

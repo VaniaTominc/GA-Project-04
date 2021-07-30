@@ -139,6 +139,10 @@ img.image-display-info-page {
   height: 100%;
 }
 
+.logo-spacing {
+  font-weight: bolder;
+}
+
 .truffle-name {
   font-size: 3rem;
 }
@@ -211,6 +215,8 @@ img.image-display-info-page {
   width: 390px;
   border: 1px dotted #d39700;
   margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: #ffffffa1;
 }
 
 div.embracing-comments {
@@ -350,4 +356,25 @@ h1.rotating-links {
     width: 400%;
     height: 100vh;
   }
+}
+
+.positioning-comments-display-page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.positioning-comments-display-page-two {
+  padding: 10px;
+}
+
+img.info-picture {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.form-styling-card {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
 }

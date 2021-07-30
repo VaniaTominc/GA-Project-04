@@ -117,40 +117,40 @@ const EditDeleteComments = () => {
                             <div className='formBox'>
 
                               <form onSubmit={handleCommentChangeSubmit}>
-                                <h3>Update or Delete your comment!</h3>
+                                <h3 className='heading-delete-update.comment'>Update or Delete your comment!</h3>
 
-                                <fieldset className='fieldset-no-border' required>
-                                  <span className='star-cb-group'>
-                                    <input type='radio' id='rating-5' name='rating' value={commentToEdit.rating = 5} onChange={handleCommentChange}/>
-                                    <label htmlFor='rating-5'>5</label>
-                                    <input type='radio' id='rating-4' name='rating' value={commentToEdit.rating = 4} onChange={handleCommentChange}/>
-                                    <label htmlFor='rating-4'>4</label>
-                                    <input type='radio' id='rating-3' name='rating' value={commentToEdit.rating = 3} onChange={handleCommentChange}/>
-                                    <label htmlFor='rating-3'>3</label>
-                                    <input type='radio' id='rating-2' name='rating' value={commentToEdit.rating = 2} onChange={handleCommentChange}/>
-                                    <label htmlFor='rating-2'>2</label>
-                                    <input type='radio' id='rating-1' name='rating' value={commentToEdit.rating = 1} onChange={handleCommentChange}/>
-                                    <label htmlFor='rating-1'>1</label>
-                                    <input type='radio' id='rating-0' name='rating' value='0' className='star-cb-clear' />
-                                    <label htmlFor='rating-0'>0</label>
-                                  </span>
-                                </fieldset>
+                                <div className='rating-rating-container'>
+                                  <p className='rating-number-text-two'>Rate your experience from 1 to 5!</p>
+                                  <div className='rating-box-three'>
+                                    <input 
+                                      type='number'
+                                      name='rating'
+                                      min='1'
+                                      max='5'
+                                      required
+                                      value={commentToEdit.rating}
+                                      onChange={handleCommentChange}
+                                    />
+                                  </div>
+                                </div>
 
-                                <textarea
-                                  placeholder='This is where you write your review. Explain what happened, and leave out offensive words. Keep your feedback honest, helpful, and constructive.' 
-                                  required 
-                                  name='text'
-                                  rows='6'
-                                  cols='40'
-                                  value={commentToEdit.text}
-                                  onChange={handleCommentChange}
-                                />
+                                <div className='text-area-update-delete'>
+                                  <textarea
+                                    placeholder='This is where you write your review. Explain what happened, and leave out offensive words. Keep your feedback honest, helpful, and constructive.' 
+                                    required 
+                                    name='text'
+                                    rows='6'
+                                    cols='40'
+                                    value={commentToEdit.text}
+                                    onChange={handleCommentChange}
+                                  />
+                                </div>
 
                                 <div className='update-delete-buttons'>
                                   <input 
                                     type='submit' 
                                     value='Update' 
-                                    onSubmit={handleCommentChangeSubmit}
+                                    // onSubmit={handleCommentChangeSubmit}
                                   />
 
                                   <input 

@@ -3,7 +3,7 @@ import axios from 'axios'
 import { convertAmericanDate } from '../ExtraFunctions/ReusableFunctions.js'
 import { useParams } from 'react-router-dom'
 import AddComment from '../Comments/AddComment.js'
-import Error404Message from '../Errors/Error404Message.js'
+// import Error404Message from '../Errors/Error404Message.js'
 import { checkUserIsAuthenticated, getPayload } from '../Authentication/auth'
 import { IoIosArrowUp } from 'react-icons/io'
 import { FiEdit } from 'react-icons/fi'
@@ -73,21 +73,7 @@ const ProductsInfoPage = () => {
             <div className="container-display-page-1">
               <div className='left-side-display-page'>
                 
-                <Carousel>
-                  {truffle.photos &&
-                    truffle.photos.map(item => {
-                      return (
-                        <Carousel.Item key={item.id}>
-                          <img 
-                            className="d-block w-100 h-120"
-                            src={item.imageurl} 
-                            alt={truffle.name} 
-                          />
-                        </Carousel.Item>
-                      )
-                    })
-                  }
-                </Carousel>
+                <img src={truffle.images} alt={truffle.name} className='info-picture'/>
                 
               </div>
               <div className='right-side-display-page'>
@@ -157,6 +143,24 @@ const ProductsInfoPage = () => {
             </section>
 
             <section>
+              <Carousel>
+                {truffle.photos &&
+                    truffle.photos.map(item => {
+                      return (
+                        <Carousel.Item key={item.id}>
+                          <img 
+                            className="d-block w-100 h-120"
+                            src={item.imageurl} 
+                            alt={truffle.name} 
+                          />
+                        </Carousel.Item>
+                      )
+                    })
+                }
+              </Carousel>
+            </section>
+
+            <section>
               <h1 className='products-info-comment-heading'>COMMENTS</h1>
 
               <div>
@@ -166,19 +170,23 @@ const ProductsInfoPage = () => {
                       return (
                         <div key={item.id} className='outer-outer-comment-box'>
                           <div className='outer-comment-box'>
-                            {currentUserId === item.owner ? (
-                              <>
-                                <a href={`/opinions/${item.id}`}><FiEdit /></a>
-                              </>
-                            ) : (
-                              ''
-                            )}
-                            <p>User</p>
-                            <p>{convertAmericanDate(item.created_at.slice(11, 19))} {convertAmericanDate(item.created_at.slice(0, 10))}</p>
-                            <p>{star(item.rating)}</p>
+                            <div className='positioning-comments-display-page'>
+                              <p>User {item.name}</p>
+                              {currentUserId === item.owner ? (
+                                <>
+                                  <a href={`/opinions/${item.id}`}><FiEdit /></a>
+                                </>
+                              ) : (
+                                ''
+                              )}
+                            </div>
+                            <div className='positioning-comments-display-page'>
+                              <p>{star(item.rating)}</p>
+                              <p>{convertAmericanDate(item.created_at.slice(11, 19))} {convertAmericanDate(item.created_at.slice(0, 10))}</p>
+                            </div>
                           </div>
 
-                          <p>{item.text}</p>
+                          <p className='positioning-comments-display-page-two'>{item.text}</p>
                         </div>
                       )
                     })}
@@ -201,7 +209,8 @@ const ProductsInfoPage = () => {
 
         </div>
       ) :
-        <Error404Message />
+        ''
+        // <Error404Message /> 
       }
 
 

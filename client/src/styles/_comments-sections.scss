@@ -1,4 +1,28 @@
 textarea {
   padding: 5px;
   resize: none;
+  opacity: .7;
+}
+
+.text-area-styling-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.rating-number-text-two {
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+.rating-number-text-three {
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+.heading-delete-update.comment {
+  padding: 10px;
+}
+
+.text-area-update-delete {
+  width: 330px;
 }
