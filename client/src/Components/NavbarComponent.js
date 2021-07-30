@@ -44,7 +44,7 @@ const NavbarComponent = () => {
       </div>
 
       
-      <h1 className='page-heading' id='truffluxe-logo-navbar'>Truff<span className='logo-nav'>·l·</span>uxury</h1>
+      <a href='/' className='logo-logo-logo'><h1 className='page-heading' id='truffluxe-logo-navbar'>Truff<span className='logo-nav'>·l·</span>uxury</h1></a>
 
       <div className='navbar-wrapper'>
 
