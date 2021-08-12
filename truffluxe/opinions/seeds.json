@@ -1,2 +1,497 @@
 [
+{
+  "model": "opinions.opinion",
+  "pk": 2,
+  "fields": {
+    "text": "VANJA JE ZAKON 😎",
+    "rating": 5,
+    "created_at": "2021-07-29T09:30:29.324Z",
+    "truffle": 1,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 3,
+  "fields": {
+    "text": "I think I've finally managed to sort it. Or not?",
+    "rating": 5,
+    "created_at": "2021-07-25T03:01:56.836Z",
+    "truffle": 1,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 4,
+  "fields": {
+    "text": "VČASIH MI NAGAJA",
+    "rating": 1,
+    "created_at": "2021-07-25T03:02:14.567Z",
+    "truffle": 1,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 5,
+  "fields": {
+    "text": "VČASIH MI NAGAJA",
+    "rating": 1,
+    "created_at": "2021-07-25T03:03:38.999Z",
+    "truffle": 1,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 6,
+  "fields": {
+    "text": "ALELUJA, ALI KONČNO DELA?",
+    "rating": 5,
+    "created_at": "2021-07-25T18:53:52.782Z",
+    "truffle": 1,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 7,
+  "fields": {
+    "text": "ALELUJA, ALI KONČNO DELA?",
+    "rating": 5,
+    "created_at": "2021-07-25T18:57:17.073Z",
+    "truffle": 20,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 8,
+  "fields": {
+    "text": "ALELUJA, ALI KONČNO DELA?",
+    "rating": 5,
+    "created_at": "2021-07-25T18:57:30.206Z",
+    "truffle": 21,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 9,
+  "fields": {
+    "text": "ALELUJA, ALI KONČNO DELA?",
+    "rating": 5,
+    "created_at": "2021-07-25T18:57:34.138Z",
+    "truffle": 22,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 10,
+  "fields": {
+    "text": "ALELUJA, ALI KONČNO DELA?",
+    "rating": 5,
+    "created_at": "2021-07-25T18:57:37.815Z",
+    "truffle": 23,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 11,
+  "fields": {
+    "text": "ALELUJA, ALI KONČNO DELA?",
+    "rating": 5,
+    "created_at": "2021-07-25T18:57:41.283Z",
+    "truffle": 24,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 12,
+  "fields": {
+    "text": "ALELUJA, ALI KONČNO DELA?",
+    "rating": 5,
+    "created_at": "2021-07-25T18:57:44.901Z",
+    "truffle": 25,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 13,
+  "fields": {
+    "text": "ALELUJA, ALI KONČNO DELA?",
+    "rating": 5,
+    "created_at": "2021-07-25T18:57:48.636Z",
+    "truffle": 26,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 14,
+  "fields": {
+    "text": "ALELUJA, ALI KONČNO DELA?",
+    "rating": 5,
+    "created_at": "2021-07-25T18:58:01.347Z",
+    "truffle": 26,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 15,
+  "fields": {
+    "text": "Does the new update page look better?",
+    "rating": 1,
+    "created_at": "2021-07-25T21:25:35.281Z",
+    "truffle": 1,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 16,
+  "fields": {
+    "text": "Bacon ipsum dolor amet spare ribs t-bone beef ribs beef, ham hock boudin cow swine sirloin turducken leberkas tenderloin alcatra.",
+    "rating": 5,
+    "created_at": "2021-07-25T21:32:53.210Z",
+    "truffle": 12,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 17,
+  "fields": {
+    "text": "ALI sploh kaj naredi?",
+    "rating": 1,
+    "created_at": "2021-07-27T21:02:54.669Z",
+    "truffle": 18,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 18,
+  "fields": {
+    "text": "Bacon ipsum dolor amet spare ribs t-bone beef ribs beef, ham hock boudin cow swine sirloin turducken leberkas tenderloin alcatra.",
+    "rating": 5,
+    "created_at": "2021-07-25T21:45:09.628Z",
+    "truffle": 20,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 19,
+  "fields": {
+    "text": "Bacon ipsum dolor amet spare ribs t-bone beef ribs beef, ham hock boudin cow swine sirloin turducken leberkas tenderloin alcatra.",
+    "rating": 5,
+    "created_at": "2021-07-25T21:46:33.473Z",
+    "truffle": 20,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 20,
+  "fields": {
+    "text": "Bacon ipsum dolor amet spare ribs t-bone beef ribs beef, ham hock boudin cow swine sirloin turducken leberkas tenderloin alcatra.",
+    "rating": 5,
+    "created_at": "2021-07-25T21:46:44.700Z",
+    "truffle": 20,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 22,
+  "fields": {
+    "text": "WORKING AFTER UPDATE?",
+    "rating": 3,
+    "created_at": "2021-07-26T12:41:18.819Z",
+    "truffle": 16,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 23,
+  "fields": {
+    "text": "finally works",
+    "rating": 5,
+    "created_at": "2021-07-26T15:50:40.438Z",
+    "truffle": 23,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 24,
+  "fields": {
+    "text": "testing, if it is working?",
+    "rating": 1,
+    "created_at": "2021-07-26T17:14:06.315Z",
+    "truffle": 17,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 25,
+  "fields": {
+    "text": "EWEW",
+    "rating": 1,
+    "created_at": "2021-07-26T21:52:36.991Z",
+    "truffle": 17,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 26,
+  "fields": {
+    "text": "working bad",
+    "rating": 1,
+    "created_at": "2021-07-26T20:03:46.119Z",
+    "truffle": 20,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 27,
+  "fields": {
+    "text": "Is it working?",
+    "rating": 5,
+    "created_at": "2021-07-26T22:03:26.011Z",
+    "truffle": 16,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 28,
+  "fields": {
+    "text": "TEST",
+    "rating": 5,
+    "created_at": "2021-07-26T22:48:26.281Z",
+    "truffle": 19,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 32,
+  "fields": {
+    "text": "gfdgdg",
+    "rating": 5,
+    "created_at": "2021-07-27T21:46:45.284Z",
+    "truffle": 1,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 36,
+  "fields": {
+    "text": "TEST 2 WITH STARS ---- wi, wi, wi, it works!!!!!",
+    "rating": 1,
+    "created_at": "2021-07-28T23:24:06.372Z",
+    "truffle": 1,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 37,
+  "fields": {
+    "text": "I think, I have finally aced the rating system 😎",
+    "rating": 4,
+    "created_at": "2021-07-28T23:41:38.792Z",
+    "truffle": 1,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 38,
+  "fields": {
+    "text": "ewewe",
+    "rating": 1,
+    "created_at": "2021-07-29T00:09:42.156Z",
+    "truffle": 18,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 39,
+  "fields": {
+    "text": "LORE IPSUM",
+    "rating": 1,
+    "created_at": "2021-07-29T00:36:21.963Z",
+    "truffle": 17,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 40,
+  "fields": {
+    "text": "New function for a star",
+    "rating": 1,
+    "created_at": "2021-07-29T00:39:30.013Z",
+    "truffle": 17,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 41,
+  "fields": {
+    "text": "am, what is happening?",
+    "rating": 1,
+    "created_at": "2021-07-29T00:40:58.865Z",
+    "truffle": 17,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 42,
+  "fields": {
+    "text": "fd",
+    "rating": 1,
+    "created_at": "2021-07-29T00:42:18.729Z",
+    "truffle": 17,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 43,
+  "fields": {
+    "text": "jkj",
+    "rating": 4,
+    "created_at": "2021-07-29T00:42:41.493Z",
+    "truffle": 1,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 44,
+  "fields": {
+    "text": "1",
+    "rating": 1,
+    "created_at": "2021-07-29T00:44:07.207Z",
+    "truffle": 1,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 45,
+  "fields": {
+    "text": "www",
+    "rating": 1,
+    "created_at": "2021-07-29T00:44:16.132Z",
+    "truffle": 1,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 46,
+  "fields": {
+    "text": "SLOVENIA",
+    "rating": 1,
+    "created_at": "2021-07-29T00:46:35.037Z",
+    "truffle": 1,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 47,
+  "fields": {
+    "text": "dsdssd",
+    "rating": 5,
+    "created_at": "2021-07-29T00:49:36.174Z",
+    "truffle": 22,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 48,
+  "fields": {
+    "text": "New rating system",
+    "rating": 1,
+    "created_at": "2021-07-29T00:50:36.635Z",
+    "truffle": 22,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 49,
+  "fields": {
+    "text": "New rating system ?",
+    "rating": 1,
+    "created_at": "2021-07-29T00:51:02.594Z",
+    "truffle": 22,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 50,
+  "fields": {
+    "text": "eer",
+    "rating": 4,
+    "created_at": "2021-07-29T00:51:58.283Z",
+    "truffle": 22,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 51,
+  "fields": {
+    "text": "errerre",
+    "rating": 4,
+    "created_at": "2021-07-29T00:52:10.404Z",
+    "truffle": 22,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 52,
+  "fields": {
+    "text": "Trying new system.",
+    "rating": 5,
+    "created_at": "2021-07-30T10:24:50.503Z",
+    "truffle": 18,
+    "owner": 1
+  }
+},
+{
+  "model": "opinions.opinion",
+  "pk": 54,
+  "fields": {
+    "text": "uzuzouzouzouzououzozouzou",
+    "rating": 5,
+    "created_at": "2021-07-30T17:22:10.751Z",
+    "truffle": 1,
+    "owner": 36
+  }
+}
 ]

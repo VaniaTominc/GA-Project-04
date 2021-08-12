@@ -12,7 +12,7 @@ const Basket = () => {
     getBasketFromLocalStorage()
   }, [])
 
-  console.log('Incoming data >>>', basketItems)
+  // console.log('Incoming data >>>', basketItems)
   return (
     <>
       {basketItems && basketItems.map(item => {

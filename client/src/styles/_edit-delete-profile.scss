@@ -34,6 +34,10 @@ section.login-section .container .user .formBox input {
   display: flex;
 }
 
+.delete-buttons-space {
+  margin-right: 1rem !important;
+}
+
 img#doggysnifing {
   height: 100%;
   object-fit: cover;
@@ -53,10 +57,12 @@ img#doggysnifing {
   width: 40px;
 }
 
-.rating-rating-container {
+.rating-rating-container,
+.rating-rating-container-edit {
   display: flex;
   justify-content: flex-end;
 }
+
 
 .rating-number-text {
   padding-top: 3px;
@@ -65,5 +71,5 @@ img#doggysnifing {
 
 .adding-comment-style {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }

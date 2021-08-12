@@ -80,7 +80,7 @@ const Login = () => {
 
   return (
 
-    <>
+    <main className='content-container'>
       <section className='login-section'>
         <div className='container'>
 
@@ -177,7 +177,7 @@ const Login = () => {
         </div>
       </section>
 
-    </>
+    </main>
 
   )
 }

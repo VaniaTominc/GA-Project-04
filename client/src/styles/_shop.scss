@@ -44,6 +44,7 @@
 .outside-shop-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 5rem;
 }
 
 .shop-slider {
@@ -61,10 +62,9 @@
 }
 
 div.shop-top-margin {
-  margin-top: 1rem;
+  margin-top: 8.5rem;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 h1.shop-heading-1 {
@@ -94,12 +94,14 @@ div.shop-top-description {
 
 .shop-card-text {
   font-family: 'Antic Didone', serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin: 20px;
   opacity: 0;
   transition: opacity 1s;
   // color: rgba(254,245,223, .8);
-  color: white;
+  color: rgba(254,245,223, 1);
+  margin-top: 9rem;
+  letter-spacing: .1rem;
 }
 
 a.removing-a-underline {
@@ -135,5 +137,13 @@ a.removing-a-underline {
 }
 
 a.logo-logo-logo:hover {
+  color: #d39700;
+}
+
+.logo-nav:hover {
   color: black;
+}
+
+.shop-display {
+  display: flex;
 }

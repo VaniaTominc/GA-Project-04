@@ -1,8 +1,10 @@
+.content-container {
+  min-height: calc(90vh - 34px);
+}
+
 .footer {
-  height: 3rem;
-  bottom: .3rem;
-  width: 100%;
-  padding: 50px;
+  bottom: 0;
+  position: relative;
 }
 
 .footer-text {

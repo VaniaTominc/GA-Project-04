@@ -5,7 +5,6 @@ import { useParams } from 'react-router-dom'
 import AddComment from '../Comments/AddComment.js'
 // import Error404Message from '../Errors/Error404Message.js'
 import { checkUserIsAuthenticated, getPayload } from '../Authentication/auth'
-import { IoIosArrowUp } from 'react-icons/io'
 import { FiEdit } from 'react-icons/fi'
 import Carousel from 'react-bootstrap/Carousel'
 
@@ -64,52 +63,58 @@ const ProductsInfoPage = () => {
   
 
   return (
-    <>
+    <div className='content-container'>
       {truffle ? (
 
         
         <div className='main-info-page'>
-          <main>
-            <div className="container-display-page-1">
-              <div className='left-side-display-page'>
+          <div className='main-media-query'>
+            <div>
+              <section className='links'>
+                <div className='sidenav sidenav-width'>
+                  <a href={`/categories/product/${id}`}><h1 className='rotating-links rotate-links'>Product</h1></a>
+                </div>
+                <div className='sidenav dots-positioning'>
+                  <h1 className='rotating-links rotate-links dots-spacing'>····</h1>
+                </div>
+                <div className='sidenav'>
+                  <a href='#'><h1 className='rotating-links rotate-links'>Category</h1></a>
+                </div>
+                <div className='sidenav dots-positioning'>
+                  <h1 className='rotating-links rotate-links dots-spacing'>····</h1>
+                </div>
+                <div className='sidenav sidenav-width'>
+                  <a href='/shop'><h1 className='rotating-links rotate-links'>Shop</h1></a>
+                </div>
+              </section>
+              <div className="container-display-page-1">
+                <div className='left-side-display-page'>
                 
-                <img src={truffle.images} alt={truffle.name} className='info-picture'/>
+                  <img src={truffle.images} alt={truffle.name} className='info-picture'/>
                 
-              </div>
-              <div className='right-side-display-page'>
-                <div>
+                </div>
+                <div className='right-side-display-page'>
                   <div>
-                    <h1 className='truffle-name'>{truffle.name}</h1>
-                    <h3 className='truffle-price'>£{truffle.price}</h3>
-                    {
-                      truffle.price && 
+                    <div>
+                      <h1 className='truffle-name'>{truffle.name}</h1>
+                      <h3 className='truffle-price'>£{truffle.price}</h3>
+                      {
+                        truffle.price && 
                         <p className='short-description'>{(truffle.description).slice(0, 200)} ...</p>
                       
-                    }
-                  </div>
-                  <div className='general-button-2' id='truffle-button'>
-                    <input 
-                      type='submit' 
-                      onClick={addToCart}
-                      value={clickedBuy ? 'Added' : 'Add'} 
-                    />
+                      }
+                    </div>
+                    <div className='general-button-2' id='truffle-button'>
+                      <input 
+                        type='submit' 
+                        onClick={addToCart}
+                        value={clickedBuy ? 'Added' : 'Add'} 
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <section className='links'>
-              <div className='sidenav'>
-                <a href={`/categories/product/${id}`}><h1 className='rotating-links rotate-links'>Product</h1></a>
-              </div>
-              <IoIosArrowUp size={20} />
-              <div className='sidenav'>
-                <a href='#'><h1 className='rotating-links rotate-links'>Category</h1></a>
-              </div>
-              <IoIosArrowUp size={20} />
-              <div className='sidenav'>
-                <a href='/shop'><h1 className='rotating-links rotate-links'>Shop</h1></a>
-              </div>
-            </section>
             <section className='product-display-section'>
               <details>
                 <summary>Description</summary>
@@ -142,14 +147,14 @@ const ProductsInfoPage = () => {
               </details>
             </section>
 
-            <section>
+            <section className='carousel-width-media-query carousel-display-product'>
               <Carousel>
                 {truffle.photos &&
                     truffle.photos.map(item => {
                       return (
                         <Carousel.Item key={item.id}>
                           <img 
-                            className="d-block w-100 h-120"
+                            className='d-block w-100 carousel-height-display-page'
                             src={item.imageurl} 
                             alt={truffle.name} 
                           />
@@ -160,7 +165,7 @@ const ProductsInfoPage = () => {
               </Carousel>
             </section>
 
-            <section>
+            <section className='comments-width-media-query'>
               <h1 className='products-info-comment-heading'>COMMENTS</h1>
 
               <div>
@@ -203,7 +208,7 @@ const ProductsInfoPage = () => {
               </h3>
             )}
 
-          </main>
+          </div>
     
      
 
@@ -217,7 +222,7 @@ const ProductsInfoPage = () => {
         
 
           
-    </>
+    </div>
   )
 
 

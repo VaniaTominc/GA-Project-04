@@ -26,29 +26,32 @@
   outline: 0;
 }
 
-.modal {
+.modal-visible-custom {
   z-index: 100;
   background: white;
   position: relative;
   margin: 1.75rem auto;
   border-radius: 3px;
-  max-width: 500px;
-  padding: 3rem;
+  max-width: 700px;
+  padding: 3rem 3rem 1rem 3rem;
 }
 
-.modal-header {
+.modal-header-custom {
   display: flex;
   justify-content: flex-end;
 }
 
 .modal-close-button {
-  font-size: 1.4rem;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1;
   color: #000;
   opacity: .3;
   cursor: pointer;
   border: none;
+  background: transparent;
+  margin-top: -2.3rem;
+  margin-right: -2rem;
 }
 
 button {
@@ -64,4 +67,33 @@ button {
   background: transparent;
   color: rgba(211, 151, 0, 1);
   margin-bottom: 1rem;
+}
+
+.modal-display-result {
+  margin-top: 3rem;
+}
+
+.search-filter-styling {
+  display: flex;
+  align-items: center;
+}
+
+.search-filter-styling img {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin-right: 3rem;
+}
+
+.search-filter-anchor {
+  text-decoration: none;
+  color: black;
+}
+
+.search-filter-anchor:hover {
+  color: rgba(211, 151, 0, 1);
+}
+
+.search-filter-text {
+  font-weight: bolder;
 }

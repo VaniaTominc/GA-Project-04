@@ -1,1 +1,92 @@
 [
+{
+  "model": "categories.category",
+  "pk": 1,
+  "fields": {
+    "name": "alcohol",
+    "longname": "Alcohol",
+    "image": "https://i.ibb.co/Y2Ybr9T/productdisplayplaceholder.png"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 2,
+  "fields": {
+    "name": "fresh-products",
+    "longname": "Fresh products",
+    "image": "https://i.ibb.co/Y2Ybr9T/productdisplayplaceholder.png"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 3,
+  "fields": {
+    "name": "cheese-meat",
+    "longname": "Cheese & Meat",
+    "image": "https://i.ibb.co/Y2Ybr9T/productdisplayplaceholder.png"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 4,
+  "fields": {
+    "name": "whole-minced",
+    "longname": "Whole & Minced",
+    "image": "https://i.ibb.co/Y2Ybr9T/productdisplayplaceholder.png"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 6,
+  "fields": {
+    "name": "condiments",
+    "longname": "Condiments",
+    "image": "https://i.ibb.co/Y2Ybr9T/productdisplayplaceholder.png"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 10,
+  "fields": {
+    "name": "dry-goods",
+    "longname": "Dry goods",
+    "image": "https://i.ibb.co/Y2Ybr9T/productdisplayplaceholder.png"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 11,
+  "fields": {
+    "name": "spreads",
+    "longname": "Coming soon",
+    "image": "https://i.ibb.co/Y2Ybr9T/productdisplayplaceholder.png"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 12,
+  "fields": {
+    "name": "all",
+    "longname": "All",
+    "image": "https://i.ibb.co/Y2Ybr9T/productdisplayplaceholder.png"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 13,
+  "fields": {
+    "name": "oil-vinegar",
+    "longname": "Oil & Vinegar",
+    "image": "https://i.ibb.co/Y2Ybr9T/productdisplayplaceholder.png"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 14,
+  "fields": {
+    "name": "sweets",
+    "longname": "Sweet delicacies",
+    "image": "https://i.ibb.co/Y2Ybr9T/productdisplayplaceholder.png"
+  }
+}
+]

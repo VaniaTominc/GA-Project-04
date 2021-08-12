@@ -1,0 +1,328 @@
+// ! media-width: 1160px
+@media only screen and (max-width: 1160px) {
+  h1.greeting-user-profile-page {
+    font-size: 2rem;
+  }
+  h3.greeting-user-profile-page-two {
+    font-size: 1.5rem;
+  }
+  .carousel-display-product {
+    width: 120%;
+    margin-left: -5.6rem;
+  }
+}
+
+// ! max-width: 1150px
+@media only screen and (max-width: 1150px) {
+  .links {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    position: relative;
+    margin-top: -18rem;
+  }
+  .links-category {
+    z-index: -1;
+    flex-direction: row;
+    position: relative;
+    margin-top: -9.5rem;
+    height: 330px;
+    padding-top: 0;
+    margin-left: -1rem;
+  }
+  h1.shop-heading-0 {
+    margin-top: 1rem;
+  }
+  h1.shop-heading-1 {
+    margin-top: -8rem;
+  }
+  .rotate-links {
+    transform: rotate(270deg);
+  }
+  .outside-container {
+    margin-top: -1rem;
+  }
+  .shop-top-description-2 {
+    margin-bottom: 4rem;
+  }
+  .shop-top-description {
+    margin-top: -7.8rem;
+  }
+  .shop-heading-3-1 {
+    margin-top: 1rem;
+  }
+  .filtered-category-visible {
+    display: none;
+  }
+}
+
+// ! max-width: 1050
+@media only screen and (max-width: 1050px) {
+  .shop-display {
+    flex-direction: column;
+  }
+  .outside-shop-container {
+    margin-top: -3rem;
+    margin-bottom: 5rem;
+  }
+  .outer-box-user-profile {
+    flex-direction: column;
+  }
+  h1.greeting-user-profile-page {
+    font-size: 2rem;
+  }
+  .profile-page-bottom-media-query {
+    border: 1px dotted #d39700;
+    padding: 30px;
+  }
+  .outer-outer-box-user-profile {
+    border-bottom: none;
+  }
+  .ratin-rating-container-edit {
+    width: 95%;
+  }
+}
+
+// ! max-width: 900px
+@media only screen and (max-width: 900px) {
+  section.carousel-width-media-query, 
+  section.comments-width-media-query {
+    width: 75%;
+  }
+  .container-display-page-1 {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: none;
+  }
+  .main-media-query {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-info-page {
+    margin: 0;
+  }
+  #truffle-button {
+    border-bottom: 1px dotted #d39700;
+    padding-bottom: 2rem;
+  }
+  section.product-display-section {
+    padding-top: 0;
+    margin-top: -2rem;
+    width: 60%;
+  }
+  .right-side-display-page {
+    width: 75%;
+  }
+  section.carousel-width-media-query {
+    width: 110%;
+    margin-right: -1rem;
+  }
+  h1.products-info-comment-heading {
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+  }
+  .form-styling-card {
+    margin-bottom: 3rem,
+  }
+  img.main-media-carousel {
+    height: 500px !important;
+  }
+  .carousel-width-media-query {
+    height: 500px;
+  }
+  .carousel-height-display-page {
+    height: 600px;
+    padding-bottom: 8rem;
+  }
+  .links {
+    margin-top: -13rem;
+    margin-left: 3rem;
+  }
+}
+
+// ! max-width: 500px
+@media only screen and (max-width: 500px) {
+  .main-info-page {
+    margin-left: -.7rem;
+    padding-left: 1.5rem;
+  }
+  section.comments-width-media-query {
+    width: 100%;
+  }
+  img.info-picture {
+    width: 350px;
+    height: 350px;
+  }
+  section.product-display-section {
+    width: 85%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .main-media-query {
+    align-items: flex-end;
+    margin-left: 0;
+  }
+  .right-side-display-page {
+    width: 90%;
+    margin-top: 1rem;
+  }
+  .truffle-name {
+    font-size: 2rem;
+  }
+  .left-side-display-page {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .container-display-page-1 {
+    margin-left: .5rem;
+    padding-bottom: 0;
+  }
+  h1.products-info-comment-heading {
+    padding-top: 2.5rem;
+  }
+  .text-area-styling-2 {
+    width: 100%;
+  }
+  .form-styling-card {
+    width: 90%;
+    margin-top: -3rem;
+  }
+  .media-query-submit-comment-button {
+    margin-top: -1rem;
+  }
+  div.general-button-2 {
+    margin-top: 1rem;
+  }
+  .outer-outer-comment-box {
+    width: 90%
+  }
+  .rating-rating-container {
+    margin-right: -1rem;
+  }
+  h1.page-heading-media-query {
+    font-size: 2rem;
+    padding-top: .3rem;
+  }
+  img.main-media-carousel {
+    height: 300px !important;
+  }
+  .carousel-width-media-query {
+    height: 300px;
+  }
+  .home-text-container {
+    width: 350px;
+    height: 200px;
+  }
+  .home-page-outer-body {
+    margin-bottom: 3rem;
+  }
+  .truffluxry-heading {
+    font-size: 55px;
+  }
+  .truffluxry-second-heading {
+    font-size: 22px;
+  }
+  h3.shop-heading-3-1 {
+    font-size: 22px;
+    margin-bottom: 2rem;
+  }
+  .sorting-shop-category {
+    margin-top: 7rem;
+  }
+  .modal-visible-custom {
+    width: 95%;
+  }
+  .modal-close-button {
+    font-size: 2rem;
+    margin-top: -1.7rem;
+    margin-right: -2.5rem;
+  }
+  input.search-field[type="text"] {
+    font-size: 22px;
+    margin-left: -1rem;
+  }
+  .search-filter-styling img {
+    width: 150px;
+    height: 150px;
+    margin-right: 2rem;
+  }
+  .search-filter-text {
+    font-size: 20px;
+  }
+  .modal-display-result {
+    margin-left: -1rem;
+  }
+  .changing-according-profile {
+    width: 75%;
+  }
+  h1.greeting-user-profile-page {
+    font-size: 30px;
+    text-align: center;
+  }
+  h3.greeting-user-profile-page-two {
+    text-align: center;
+    font-size: 18px;
+  }
+  section.login-section .container {
+    margin-top: 1rem;
+  }
+  .profile-page-margin-bottom-media-query {
+    margin-bottom: -1.5rem;
+  }
+  .form-query-media {
+    width: 100%;
+  }
+  section.login-section .container .user .formBox {
+    padding: 10px;
+  }
+  h3.heading-delete-update-comment {
+    font-size: 22px;
+  }
+  .text-area-comment-edit {
+    width: 340px;
+  }
+  .positioning-text-area-500 {
+    display: flex;
+    justify-content: center;
+  }
+  .update-delete-buttons {
+    padding-left: 8px;
+  }
+  .rating-rating-container-edit {
+    margin-right: 10px;
+  }
+  .carousel-height-display-page {
+    height: 300px;
+    padding-bottom: 2rem;
+  }
+  .links {
+    margin-top: -.3rem;
+    margin-bottom: -1.5rem;
+    margin-left: 2rem;
+    padding-top: 0;
+  }
+  .links-category {
+    margin-bottom: -1.5rem;
+    margin-left: -1.6rem;
+  }
+  h1.rotating-links {
+    font-size: 12px;
+  }
+  .shop-top-description {
+    margin-bottom: 1rem;
+  }
+  h1.shop-heading-1 {
+    font-size: 1.5rem;
+  }
+  .outside-container {
+    margin-top: -3rem;
+  }
+  .content-container-basket {
+    width: 400px;
+  }
+  tr, th, td {
+    padding: 5px;
+  }
+}

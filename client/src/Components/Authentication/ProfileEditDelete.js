@@ -90,7 +90,7 @@ const ProfileEditDelete = () => {
 
   return (
 
-    <>
+    <div className='content-container profile-page-margin-bottom-media-query'>
       { userToEdit ?
 
         <div>
@@ -164,6 +164,7 @@ const ProfileEditDelete = () => {
                       type='submit' 
                       value='Update' 
                       onSubmit={handleSubmit}
+                      className='delete-buttons-space'
                     />
 
                     <input 
@@ -194,7 +195,7 @@ const ProfileEditDelete = () => {
 
       }
 
-    </>
+    </div>
 
   )
 

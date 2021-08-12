@@ -42,7 +42,7 @@ const ProfilePage = () => {
 
   return (
     
-    <>
+    <div className='content-container'>
 
       <>
 
@@ -56,10 +56,10 @@ const ProfilePage = () => {
                   <div className='outer-box-user-profile'>
                     <div className='positioning-left-box-user-profile'>
                       <h1 className='greeting-user-profile-page'>Welcome back <span className='logo-nav'>{currentUser.username}</span></h1>
-                      <h3>Member since: {convertAmericanDate(currentUser.date_joined.slice(0, 10))}</h3>
+                      <h3 className='greeting-user-profile-page-two'>Member since: {convertAmericanDate(currentUser.date_joined.slice(0, 10))}</h3>
                     </div>
 
-                    <div>
+                    <div className='profile-page-bottom-media-query'>
                       <h3 className='profile-page-subheading'>YOUR INFO</h3>
                       <p>Username: {currentUser.username}</p>
                       <p>Email: {currentUser.email}</p>
@@ -86,7 +86,7 @@ const ProfilePage = () => {
                       <h3 className='heading-3-profile-page'>YOU HAVE {currentUser.opinions.length} COMMENTS SO FAR</h3>
                       {
 
-                        <section>
+                        <section className='profile-section-styling'>
                           {currentUser.opinions.map(item => {
                             return (
                               <div key={item.id}>
@@ -124,7 +124,7 @@ const ProfilePage = () => {
           :
 
           <>
-            <Error404Message />
+            <p>Loading</p>
           </>
 
         }
@@ -133,7 +133,7 @@ const ProfilePage = () => {
 
         
 
-    </>
+    </div>
 
   )
 

@@ -19,10 +19,14 @@ textarea {
   padding-right: 10px;
 }
 
-.heading-delete-update.comment {
+.heading-delete-update-comment {
   padding: 10px;
 }
 
-.text-area-update-delete {
-  width: 330px;
+.text-area-comment-edit {
+  width: 370px;
+}
+
+#root > div.content-container > div > section > div > div > div.formBox > form > div.update-delete-buttons > input.update-delete-buttons-margin-right {
+  margin-right: 10px;
 }

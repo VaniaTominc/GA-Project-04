@@ -18,7 +18,7 @@ input#input-heart {
 }
 
 .hearth {
-  background-image: url('https://assets.codepen.io/23500/Hashflag-AppleEvent.svg');
+  background-image: url('https://svgshare.com/i/_7x.svg');
   background-size: calc(var(--size-like-button) * var(--frames-button)) var(--size-like-button);
   background-repeat: no-repeat;
   background-position-x: calc(var(--size-like-button) * (var(--frames-button) * -1 + 2));
@@ -85,15 +85,16 @@ body {
 .overlay {
   width: 109%;
   height: 100%;
-  margin-left: -4.5%;
-  background: rgba(77, 77, 77, .5);
+  margin-left: -4.3%;
+  background: rgba(0, 0, 0, .5);
   color: $bg;
   opacity: 0;
   transition: all 0.5s;
+  border-radius: 10px;
 }
 
 .category-writing-styling {
-  color: rgba(254,245,223, .8);
+  color: rgba(254,245,223, 1);
   z-index: 10;
 }
 
@@ -106,23 +107,25 @@ body {
   font-size: 30px;
   line-height: 40px;
   text-align: left;
-  padding-top: 20%;
+  padding-top: 10%;
   transform: translateY(40px);
   transition: all 0.7s;
   hr {
     display: block;
-    width: 0;
+    width: 150px;
     border: none;
     border-bottom: solid 2px $bg;
     position: absolute;
-    bottom: 0; left:20px;
+    bottom: 0; 
+    left:20px;
+    top: 100px;
     transition: all .5s;
   }
 }
 
 .price {
   text-align: left;
-  margin-top: 40%;
+  margin-top: 30%;
   font-size: 22px;
   line-height: 10px;
   font-weight: bold;  
@@ -175,7 +178,7 @@ body {
 
 .middle-category-container a {
   text-decoration: none;
-  color: rgba(254,245,223, .8);
+  color: rgba(254,245,223, 1);
 }
 
 * {
@@ -217,4 +220,34 @@ body {
 
 .positioning-arrow-to-middle {
   margin-left: .8rem;
+}
+
+.shop-top-margin-product {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.links-category {
+  padding-top: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  margin-top: 3rem;
+}
+
+h1.shop-heading-0 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container-border {
+  border-radius: 10px;
 }

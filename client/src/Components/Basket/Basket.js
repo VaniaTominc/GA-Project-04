@@ -10,7 +10,7 @@ const Basket = () => {
   useEffect(() => {
     const getBasketFromLocalStorage = () => {
       const items = JSON.parse(localStorage.getItem('test'))
-      console.log('items in basket', items.price)
+      // console.log('items in basket', items.price)
       setBasketItems(items)
       setUpdatedBasket(items)
     }
@@ -40,7 +40,7 @@ const Basket = () => {
     basketItems.map(item => {
       if (item.id === product.id) {
         item.updatedBasket = false
-        console.log('Removing from cart >>>', cartToRemove)
+        // console.log('Removing from cart >>>', cartToRemove)
       }
     })
     setBasketItems(cartToRemove)
@@ -54,22 +54,22 @@ const Basket = () => {
   const increaseQuantity = (product) => {
     const plus = basketItems.map(item => {
       if (product.id === item.id) {
-        console.log('Increasing the quantity')
-        item.qty = item.qty + 1
+        // console.log('Increasing the quantity')
+        item.quantity = item.quantity + 1
       }
       return item
     })
     setBasketItems(plus)
   }
 
-  console.log('Increasing cart >>>', updatedBasket)
+  // console.log('Increasing cart >>>', updatedBasket)
 
   // ! Decreasing the quantity
   const decreaseQuantity = (product) => {
     const minus = basketItems.map(item => {
-      if (product.id === item.id && item.qty > 1) {
-        console.log('Decreasing the quantity')
-        item.qty = item.qty - 1
+      if (product.id === item.id && item.quantity > 1) {
+        // console.log('Decreasing the quantity')
+        item.quantity = item.quantity - 1
       }
       return item
     })
@@ -94,15 +94,16 @@ const Basket = () => {
 
   return (
 
-    <div>
+    <div className='basket-container'>
+      <div className='content-container-basket'>
 
-      {/* {basketItems && basketItems.map(item => {
+        {/* {basketItems && basketItems.map(item => {
         return (
           <h1 key={item.id}>{item.name}</h1>
         )
       })} */}
 
-      <div>
+        {/* <div>
         {basketItems && basketItems.map(item => {
 
           return (
@@ -114,75 +115,76 @@ const Basket = () => {
           )
         })}
 
-      </div>
+      </div> */}
 
-      <div>
-        <table>
+        <div>
+          <table>
 
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Product</th>
-              <th>Product Name</th>
-              <th>Price</th>
-              <th>Quantity</th>
-              <th>Remove</th>
-            </tr>
-          </thead>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Product</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Remove</th>
+              </tr>
+            </thead>
 
-          <tbody>
-            {
-              basketItems && basketItems.map((i, index) => {
-                return (
+            <tbody>
+              {
+                basketItems && basketItems.map((i, index) => {
+                  return (
 
-                  < tr key={i.id}>
-                    <th scope='row'>{index + 1}</th>
-                    <th scope='row'>
-                    </th>
-                    <td>{i.name}</td>
-                    <td>
-                      {i.price}
-                    </td>
-                    <td>
+                    < tr key={i.id}>
+                      <th scope='row'>{index + 1}</th>
+                      <th scope='row'>
+                      </th>
+                      <td>{i.name}</td>
+                      <td>
+                        {i.price}
+                      </td>
+                      <td>
 
-                      <button
-                        onClick={() => decreaseQuantity(i)}
-                      >
+                        <button
+                          onClick={() => decreaseQuantity(i)}
+                        >
                       -
-                      </button>
+                        </button>
 
-                      {i.quantity}
+                        {i.quantity}
 
-                      <button
-                        onClick={() => increaseQuantity(i)}
-                      >
+                        <button
+                          onClick={() => increaseQuantity(i)}
+                        >
                       +
-                      </button>
+                        </button>
                       
-                    </td>
+                      </td>
 
-                    <td>
-                      <button onClick={() => removeFromBasket(i)}>
+                      <td>
+                        <button onClick={() => removeFromBasket(i)}>
                       Remove
-                      </button>
-                    </td >
-                  </tr >
+                        </button>
+                      </td >
+                    </tr >
                 
-                )
-              })
-            }
-          </tbody>
+                  )
+                })
+              }
+            </tbody>
 
-        </table>
-      </div>
+          </table>
+        </div>
 
-      <div>
+        <div>
 
-        <h4>TOTAL: £{totalPrice()}</h4>
+          <h4>TOTAL: £{totalPrice()}</h4>
 
-      </div>
+        </div>
 
-    </div >
+      </div >
+    </div>
   )
 
 

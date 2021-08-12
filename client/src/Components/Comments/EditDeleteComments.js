@@ -11,9 +11,9 @@ const EditDeleteComments = () => {
   // const [hasError, setHasError] = useState(false)
 
   const oldURL = document.referrer
-  console.log('oldurl >>>', oldURL)
+  // console.log('oldurl >>>', oldURL)
   const lastNumberId = oldURL.slice(21)
-  console.log('lastNumberId >>>', lastNumberId)
+  // console.log('lastNumberId >>>', lastNumberId)
 
 
 
@@ -92,7 +92,7 @@ const EditDeleteComments = () => {
 
   return (
   
-    <>
+    <div className='content-container'>
 
       { commentToEdit ?
       
@@ -116,10 +116,10 @@ const EditDeleteComments = () => {
                           <div className='user'>
                             <div className='formBox'>
 
-                              <form onSubmit={handleCommentChangeSubmit}>
-                                <h3 className='heading-delete-update.comment'>Update or Delete your comment!</h3>
+                              <form onSubmit={handleCommentChangeSubmit} className='form-query-media'>
+                                <h3 className='heading-delete-update-comment'>Update or Delete your comment!</h3>
 
-                                <div className='rating-rating-container'>
+                                <div className='rating-rating-container-edit'>
                                   <p className='rating-number-text-two'>Rate your experience from 1 to 5!</p>
                                   <div className='rating-box-three'>
                                     <input 
@@ -134,7 +134,7 @@ const EditDeleteComments = () => {
                                   </div>
                                 </div>
 
-                                <div className='text-area-update-delete'>
+                                <div className='positioning-text-area-500'>
                                   <textarea
                                     placeholder='This is where you write your review. Explain what happened, and leave out offensive words. Keep your feedback honest, helpful, and constructive.' 
                                     required 
@@ -143,6 +143,7 @@ const EditDeleteComments = () => {
                                     cols='40'
                                     value={commentToEdit.text}
                                     onChange={handleCommentChange}
+                                    className='text-area-comment-edit'
                                   />
                                 </div>
 
@@ -151,6 +152,7 @@ const EditDeleteComments = () => {
                                     type='submit' 
                                     value='Update' 
                                     // onSubmit={handleCommentChangeSubmit}
+                                    className='delete-buttons-space'
                                   />
 
                                   <input 
@@ -198,7 +200,7 @@ const EditDeleteComments = () => {
 
       }
       
-    </>
+    </div>
   
   )
 }

@@ -3,74 +3,30 @@
   "model": "truffles.truffle",
   "pk": 1,
   "fields": {
-    "name": "White truffle (Tuber magnatum pico)",
-    "taste": "LOREIPSUM DOLORIT",
-    "description": "Tuber magantum pico is definitely the most expensive and most prized mushroom in the whole world. Its appearance is mostly irregular in shape to completely round. It is yellowish in color, and its smell and taste are unique, which is why it captivates kitchens around the world. Harvest season: Mid-September to late December.",
+    "name": "Fresh black summer truffles",
+    "taste": "The earthy rich flavour develops as the season progresses, offering wild mushroom, hazelnut, ...",
+    "description": "Tuber Aestivum: Also known as the Truffe de la St. Jean. Although not held in such high regards as the winter variety, summer black truffles are still a delicious and versatile ingredient. They grow among oak, hazelnut, chestnut, elm and poplar trees, like the Winter variety. From the outside, it looks pretty much like the Winter Black truffle, with a knobby, roundish shape and dark brown skin. The flesh or interior of the truffle is yellowish-grey, with spidery white veins webbing around. Towards the end of the summer, the flesh turns a darker brown. The summer black truffle is not as spectacularly fragrant and aromatic as the white truffle, but it does have a very nice perfume, much more subtle, but still quite lovely. \r\n\r\nTo ensure you have the freshest possible truffles, typically we do not hold any stock but will supply them when we next have them – usually every week. This means in general, we do not send out truffles on the day that they are ordered.",
     "volume": "100 g",
-    "price": 400,
+    "price": 45,
     "use": "Suitable on any dish! They are best sliced if used raw, or grated if cooked. Largely used in Italian cuisine in stuffed pasta or in meat roulade sauces. They are however, fabulous on a slice of bread with a little extra virgin olive oil and a pinch of salt.",
-    "ingredients": "100% White Truffle",
+    "ingredients": "100% Fresh Black Summer Truffles",
     "alergies": "None",
     "life": "Within 7 day of delivery",
-    "images": "beli_tartuf.png",
-    "availability": "Winter",
+    "images": "https://i.ibb.co/W5CVRhj/crnsvetpoletnitartuf01.jpg",
+    "availability": "From the second half of June until the end of October.",
+    "cart": false,
+    "quantity": 1,
     "owner": 1,
     "categories": [
-      8,
+      12,
       2
     ],
-    "photos": []
-  }
-},
-{
-  "model": "truffles.truffle",
-  "pk": 2,
-  "fields": {
-    "name": "White truffle (Tuber magnatum pico)",
-    "taste": "LOREIPSUM DOLORIT",
-    "description": "Tuber magantum pico is definitely the most expensive and most prized mushroom in the whole world. Its appearance is mostly irregular in shape to completely round. It is yellowish in color, and its smell and taste are unique, which is why it captivates kitchens around the world. Harvest season: Mid-September to late December.",
-    "volume": "100 g",
-    "price": 250,
-    "use": "Suitable on any dish! They are best sliced if used raw, or grated if cooked. Largely used in Italian cuisine in stuffed pasta or in meat roulade sauces. They are however, fabulous on a slice of bread with a little extra virgin olive oil and a pinch of salt.",
-    "ingredients": "100% White Truffle",
-    "alergies": "None",
-    "life": "Within 7 day of delivery",
-    "images": "beli_tartuf.png",
-    "availability": "Winter",
-    "owner": 1,
-    "categories": [
-      2,
-      7
-    ],
     "photos": [
-      1
-    ]
-  }
-},
-{
-  "model": "truffles.truffle",
-  "pk": 11,
-  "fields": {
-    "name": "PLACEHOLDER",
-    "taste": "Bacon ipsum dolor amet",
-    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
-    "volume": "100 g",
-    "price": 200,
-    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
-    "ingredients": "Bacon ipsum dolor amet",
-    "alergies": "Bacon ipsum dolor amet",
-    "life": "Bacon ipsum dolor amet",
-    "images": "https://baconmockup.com/640/360",
-    "availability": "Bacon ipsum dolor amet",
-    "owner": 1,
-    "categories": [
-      12
-    ],
-    "photos": [
-      3,
-      4,
-      5,
-      6
+      131,
+      132,
+      133,
+      134,
+      135
     ]
   }
 },
@@ -78,26 +34,29 @@
   "model": "truffles.truffle",
   "pk": 12,
   "fields": {
-    "name": "PLACEHOLDER TWO",
-    "taste": "Bacon ipsum dolor amet",
-    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
-    "volume": "100 g",
-    "price": 200,
-    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
-    "ingredients": "Bacon ipsum dolor amet",
-    "alergies": "Bacon ipsum dolor amet",
-    "life": "Bacon ipsum dolor amet",
-    "images": "https://baconmockup.com/640/360",
-    "availability": "Bacon ipsum dolor amet",
+    "name": "White truffle olive oil",
+    "taste": "Intense garlic aroma. Powerful white truffle flavour throughout with a gentle olive oil finish.",
+    "description": "We shave the highest quality white truffles and expertly blend them with our unique flavour & cold-pressed olive oil. Cold-pressing produces less oil than heated pressing but ensures that the delicate flavours & aromas are not damaged. This blend is twice the strength of our standard truffle oils and is designed to be used sparingly. A few drops will bring dishes to life.",
+    "volume": "250 ml",
+    "price": 15,
+    "use": "It pairs well with white meat, fish and all kinds of salads, and you can easily drizzle it over truffle cheese or some other cheese.",
+    "ingredients": "Extra virgin olive oil, white truffle (Tuber magnatum pico) aroma.",
+    "alergies": "None",
+    "life": "13 Months",
+    "images": "https://i.ibb.co/6WQVqtC/whiteoliveoil01.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
     "owner": 1,
     "categories": [
-      12
+      12,
+      13
     ],
     "photos": [
-      3,
-      4,
-      5,
-      6
+      124,
+      125,
+      126,
+      127
     ]
   }
 },
@@ -105,26 +64,29 @@
   "model": "truffles.truffle",
   "pk": 13,
   "fields": {
-    "name": "PLACEHOLDER THREE",
-    "taste": "Bacon ipsum dolor amet",
-    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
-    "volume": "100 g",
-    "price": 200,
-    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
-    "ingredients": "Bacon ipsum dolor amet",
-    "alergies": "Bacon ipsum dolor amet",
-    "life": "Bacon ipsum dolor amet",
-    "images": "https://baconmockup.com/640/360",
-    "availability": "Bacon ipsum dolor amet",
+    "name": "Black truffle olive oil",
+    "taste": "Intense earthy aroma. Powerful black truffle flavour throughout with a gentle olive oil finish.",
+    "description": "We shave the highest quality black truffles and expertly blend them with our unique flavour & cold-pressed extra virgin olive oil. Cold-pressing produces less oil than heated pressing but ensures that the delicate flavours & aromas are not damaged. This blend is twice the strength of our standard truffle oils and is designed to be used sparingly A few drops will bring dishes to life.",
+    "volume": "250 ml",
+    "price": 15,
+    "use": "It pairs well with white meat, fish and all kinds of salads, and you can easily drizzle it over truffle cheese or some other cheese.",
+    "ingredients": "Extra virgin olive oil, black truffle (Tuber aestivum) 0.5%, aroma",
+    "alergies": "None",
+    "life": "13 Months",
+    "images": "https://i.ibb.co/kX4Z61p/blackoliveoil01.jpg",
+    "availability": "Coming soon",
+    "cart": false,
+    "quantity": 1,
     "owner": 1,
     "categories": [
-      12
+      12,
+      13
     ],
     "photos": [
-      3,
-      4,
-      5,
-      6
+      120,
+      121,
+      122,
+      123
     ]
   }
 },
@@ -132,26 +94,29 @@
   "model": "truffles.truffle",
   "pk": 14,
   "fields": {
-    "name": "PLACEHOLDER FOUR",
-    "taste": "Bacon ipsum dolor amet",
-    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
-    "volume": "100 g",
-    "price": 200,
-    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
-    "ingredients": "Bacon ipsum dolor amet",
-    "alergies": "Bacon ipsum dolor amet",
-    "life": "Bacon ipsum dolor amet",
-    "images": "https://baconmockup.com/640/360",
-    "availability": "Bacon ipsum dolor amet",
+    "name": "Balsamic truffle flavoured glaze",
+    "taste": "Velvety smooth texture, with delicate truffle aroma & woody overtones.",
+    "description": "We use the finest Barrel-Aged Balsamic Vinegar of Modena IGP.\r\n\r\nOnly specific varieties of grape vine can be used in its production and the finished product must be refined in high-quality wooden vessels. The result is a velvety smooth balsamic vinegar, that we expertly blend with our unique flavour & the highest quality white truffle.",
+    "volume": "250 ml",
+    "price": 13,
+    "use": "It is ideal as a spice for flavouring appetizers, main courses, and side dishes. It is suitable for fresh or cooked vegetables, asparagus, eggs and all kinds of salad. The superb taste of balsamic truffle flavored glaze elevates your dishes in a second.",
+    "ingredients": "Barrel-Aged Balsamic Vinegar of Modena IGP (White Vinegar (Sulphites), Cooked Grape Must), White Truffles, White Truffle Flavour.",
+    "alergies": "None",
+    "life": "18 Months",
+    "images": "https://i.ibb.co/QpzNZHc/accetobalsamico01.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
     "owner": 1,
     "categories": [
-      12
+      12,
+      13
     ],
     "photos": [
-      3,
-      4,
-      5,
-      6
+      128,
+      129,
+      130,
+      119
     ]
   }
 },
@@ -159,26 +124,29 @@
   "model": "truffles.truffle",
   "pk": 15,
   "fields": {
-    "name": "PLACEHOLDER FIVE",
-    "taste": "Bacon ipsum dolor amet",
-    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
-    "volume": "100 g",
-    "price": 200,
-    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
-    "ingredients": "Bacon ipsum dolor amet",
-    "alergies": "Bacon ipsum dolor amet",
-    "life": "Bacon ipsum dolor amet",
-    "images": "https://baconmockup.com/640/360",
-    "availability": "Bacon ipsum dolor amet",
+    "name": "Cow cheese with black truffles",
+    "taste": "This cheese is smooth and creamy in texture.",
+    "description": "Semi-hard cow cheese with sliced black truffles. It has a unique and flavourful taste, made according to a special recipe. It can be served as a cold appetizer with Istrian prosciutto, melted on polenta, or used to prepare truffle frittata. Cheese is the favourite delicacy for many gourmets, so treat yourself to it or give it as a gift to your loved one",
+    "volume": "1000 g",
+    "price": 75,
+    "use": "It’s the perfect addition to a luxurious cheeseboard. Try it on its own or melted on your favourite foods. It can be served as a cold appetizer with Istrian prosciutto, melted on polenta, or used to prepare truffle frittata.",
+    "ingredients": "Pasteurized cow milk, rennet, salt, black truffle (Tuber aestivum) 3%, bacterial culture.",
+    "alergies": "Food not good for lactose intolerance",
+    "life": "Keep refrigerated. Store for 7 days once opened. D",
+    "images": "https://i.ibb.co/DRTBx3C/Kravjisir01.jpg",
+    "availability": "All year round",
+    "cart": false,
+    "quantity": 1,
     "owner": 1,
     "categories": [
-      12
+      12,
+      3
     ],
     "photos": [
-      3,
-      4,
-      5,
-      6
+      102,
+      103,
+      106,
+      107
     ]
   }
 },
@@ -186,26 +154,29 @@
   "model": "truffles.truffle",
   "pk": 16,
   "fields": {
-    "name": "PLACEHOLDER SIX",
-    "taste": "Bacon ipsum dolor amet",
-    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
-    "volume": "100 g",
-    "price": 200,
-    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
-    "ingredients": "Bacon ipsum dolor amet",
-    "alergies": "Bacon ipsum dolor amet",
-    "life": "Bacon ipsum dolor amet",
-    "images": "https://baconmockup.com/640/360",
-    "availability": "Bacon ipsum dolor amet",
+    "name": "Goat cheese with  black truffles",
+    "taste": "t has a unique and flavourful taste, made according to a special recipe.",
+    "description": "Semi-hard goat cheese with sliced black truffles. It has a unique and flavourful taste, made according to a special recipe. It can be served as a cold appetizer with Istrian prosciutto, melted on polenta, or used to prepare truffle frittata. Cheese is the favourite delicacy for many gourmets, so treat yourself to it or give it as a gift to your loved ones.",
+    "volume": "1000 g",
+    "price": 90,
+    "use": "It can be served as a cold appetizer with Istrian prosciutto, melted on polenta, or used to prepare truffle frittata. It’s the perfect addition to a luxurious cheeseboard.",
+    "ingredients": "Pasteurized goat milk 88%, pasteurized cow milk 12%, rennet, salt, black truffle (Tuber aestivum) 3%, bacterial culture.",
+    "alergies": "Not suitable for lactose intolerant.",
+    "life": "Keep refrigerated. Store for 7 days once opened. D",
+    "images": "https://i.ibb.co/xfy5N9c/Kozjisir01.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
     "owner": 1,
     "categories": [
-      1
+      12,
+      3
     ],
     "photos": [
-      3,
-      4,
-      5,
-      6
+      102,
+      103,
+      104,
+      105
     ]
   }
 },
@@ -213,27 +184,29 @@
   "model": "truffles.truffle",
   "pk": 17,
   "fields": {
-    "name": "PLACEHOLDER SEVEN",
-    "taste": "Bacon ipsum dolor amet",
-    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
-    "volume": "100 g",
-    "price": 200,
-    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
-    "ingredients": "Bacon ipsum dolor amet",
-    "alergies": "Bacon ipsum dolor amet",
-    "life": "Bacon ipsum dolor amet",
-    "images": "https://baconmockup.com/640/360",
-    "availability": "Bacon ipsum dolor amet",
+    "name": "Sheep cheese with black truffles",
+    "taste": "It has a unique and flavourful taste, made according to a special recipe.",
+    "description": "Semi-hard sheep cheese with sliced black truffles. It has a unique and flavourful taste, made according to a special recipe. It can be served as a cold appetizer with Istrian prosciutto, melted on polenta, or used to prepare truffle frittata. Cheese is the favourite delicacy for many gourmets, so treat yourself to it or give it as a gift to your loved ones.",
+    "volume": "1000 g",
+    "price": 92,
+    "use": "It can be served as a cold appetizer with Istrian prosciutto, melted on polenta, or used to prepare truffle frittata. It’s the perfect addition to a luxurious cheeseboard.",
+    "ingredients": "Pasteurized sheep milk, rennet, salt, black truffle (Tuber aestivum) 3%, bacterial culture.",
+    "alergies": "Not suitable for lactose intolerant.",
+    "life": "Keep refrigerated. Store for 7 days once opened. D",
+    "images": "https://i.ibb.co/zfSF7TN/Ovcjisir01.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
     "owner": 1,
     "categories": [
-      2,
-      12
+      12,
+      3
     ],
     "photos": [
-      3,
-      4,
-      5,
-      6
+      102,
+      103,
+      110,
+      111
     ]
   }
 },
@@ -241,27 +214,29 @@
   "model": "truffles.truffle",
   "pk": 18,
   "fields": {
-    "name": "PLACEHOLDER EIGHT",
-    "taste": "Bacon ipsum dolor amet",
-    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
-    "volume": "100 g",
-    "price": 200,
-    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
-    "ingredients": "Bacon ipsum dolor amet",
-    "alergies": "Bacon ipsum dolor amet",
-    "life": "Bacon ipsum dolor amet",
-    "images": "https://baconmockup.com/640/360",
-    "availability": "Bacon ipsum dolor amet",
+    "name": "Cow cheese with white truffles",
+    "taste": "It has a unique and flavourful taste, made according to a special recipe.",
+    "description": "Cow cheese with sliced white truffles. It has a unique and flavourful taste, made according to a special recipe.",
+    "volume": "1000 g",
+    "price": 110,
+    "use": "It’s the perfect addition to a luxurious cheeseboard.",
+    "ingredients": "Pasteurized cow milk, rennet, salt, white truffle 3%, bacterial culture.",
+    "alergies": "Not suitable for lactose intolerant.",
+    "life": "Keep refrigerated. Store for 7 days once opened.",
+    "images": "https://i.ibb.co/RDWtbyz/Belikravjisir01.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
     "owner": 1,
     "categories": [
-      3,
-      12
+      12,
+      3
     ],
     "photos": [
-      3,
-      4,
-      5,
-      6
+      100,
+      101,
+      102,
+      103
     ]
   }
 },
@@ -269,27 +244,29 @@
   "model": "truffles.truffle",
   "pk": 19,
   "fields": {
-    "name": "PLACEHOLDER NINE",
-    "taste": "Bacon ipsum dolor amet",
-    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
-    "volume": "100 g",
-    "price": 200,
-    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
-    "ingredients": "Bacon ipsum dolor amet",
-    "alergies": "Bacon ipsum dolor amet",
-    "life": "Bacon ipsum dolor amet",
-    "images": "https://baconmockup.com/640/360",
-    "availability": "Bacon ipsum dolor amet",
+    "name": "Sheep & Cow’s cheese with truffles",
+    "taste": "It has a unique and flavourful taste, made according to a special recipe.",
+    "description": "Mixed sheep and cow’s cheese with black truffles. A decadent treat made from finest Istrian ingredients will make you want more and more.",
+    "volume": "1000 g",
+    "price": 90,
+    "use": "It’s the perfect addition to a luxurious cheeseboard.",
+    "ingredients": "Pasteurized sheep and cow’s milk, dairy culture, edible salt, coagulator, firming agent: calcium chloride, additive: lysozyme (delvozyme), black truffle (Tuber aestivum) 2%, aroma.",
+    "alergies": "Not suitable for lactose intolerant.",
+    "life": "Keep refrigerated. Store for 7 days once opened.",
+    "images": "https://i.ibb.co/tb0s7JR/Ovcjikravjisir01.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
     "owner": 1,
     "categories": [
-      4,
-      12
+      12,
+      3
     ],
     "photos": [
-      3,
-      4,
-      5,
-      6
+      102,
+      103,
+      108,
+      109
     ]
   }
 },
@@ -297,27 +274,29 @@
   "model": "truffles.truffle",
   "pk": 20,
   "fields": {
-    "name": "PLACEHOLDER TEN",
-    "taste": "Bacon ipsum dolor amet",
-    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
-    "volume": "100 g",
-    "price": 200,
-    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
-    "ingredients": "Bacon ipsum dolor amet",
-    "alergies": "Bacon ipsum dolor amet",
-    "life": "Bacon ipsum dolor amet",
-    "images": "https://baconmockup.com/640/360",
-    "availability": "Bacon ipsum dolor amet",
+    "name": "Istrian black truffle salami",
+    "taste": "The heady flavour of truffles is judiciously added to the sweet pork, to create a perfect balance.",
+    "description": "Istrian salami is a salami made from chopped pork and sliced black truffles. It is produced from the leanest part of the mature pig. The truffle is added in just the right quantity to complement and enhance the perfume and taste.",
+    "volume": "200 g",
+    "price": 15,
+    "use": "This delicacy is best enjoyed with a glass of finest red wine. It is served as an appetizer with various cheeses.",
+    "ingredients": "Pork 92%, black truffle (Tuber Aest. Vitt) 3%, table salt, acidity regulator E300, preservative E250, controlled natural edible casing.",
+    "alergies": "For allergens including those that contain gluten, see ingredients in bold.",
+    "life": "Keep refrigerated. Suitable for home freezing.",
+    "images": "https://i.ibb.co/BszJbfq/Istrskisalamin01.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
     "owner": 1,
     "categories": [
-      5,
-      12
+      12,
+      3
     ],
     "photos": [
-      3,
-      4,
-      5,
-      6
+      115,
+      116,
+      117,
+      118
     ]
   }
 },
@@ -325,27 +304,29 @@
   "model": "truffles.truffle",
   "pk": 21,
   "fields": {
-    "name": "PLACEHOLDER ELEVEN",
-    "taste": "Bacon ipsum dolor amet",
-    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
-    "volume": "100 g",
-    "price": 200,
-    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
-    "ingredients": "Bacon ipsum dolor amet",
-    "alergies": "Bacon ipsum dolor amet",
-    "life": "Bacon ipsum dolor amet",
-    "images": "https://baconmockup.com/640/360",
-    "availability": "Bacon ipsum dolor amet",
+    "name": "White Chocolate with white truffles",
+    "taste": "You just have to try it to taste the fantastic flavour.",
+    "description": "Perfect for every truffle lover who also loves chocolate. Handmade white chocolate with white truffles. You just have to try it to taste the fantastic flavour. Perfect for every truffle lover who also loves chocolate.",
+    "volume": "60 g",
+    "price": 8,
+    "use": "You just have to try it to taste the fantastic flavour.",
+    "ingredients": "white chocolate with 30% cocoa content (sugar, cocoa, butter 24%, whole milk powder 27%, white truffle (Tuber magnatum) 1%, extra virgin olive oil, emulsifier: soy lecitin, natural vanilla flavour, flavour.",
+    "alergies": "There may be traces of fruit, nuts (pistachios, indian walnuts, almonds, hazelnuts, walnuts), milk, soy, sesame, wheat and protein.",
+    "life": "Best before end: see date.",
+    "images": "https://i.ibb.co/R9LYy9Y/Bela-C-okolada01.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
     "owner": 1,
     "categories": [
-      6,
-      12
+      12,
+      14
     ],
     "photos": [
-      3,
-      4,
-      5,
-      6
+      57,
+      58,
+      59,
+      60
     ]
   }
 },
@@ -353,27 +334,29 @@
   "model": "truffles.truffle",
   "pk": 22,
   "fields": {
-    "name": "PLACEHOLDER TWELVE",
-    "taste": "Bacon ipsum dolor amet",
-    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
-    "volume": "100 g",
-    "price": 200,
-    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
-    "ingredients": "Bacon ipsum dolor amet",
-    "alergies": "Bacon ipsum dolor amet",
-    "life": "Bacon ipsum dolor amet",
-    "images": "https://baconmockup.com/640/360",
-    "availability": "Bacon ipsum dolor amet",
+    "name": "Dark Chocolate with black truffles",
+    "taste": "You just have to try it to taste the fantastic flavour.",
+    "description": "Handmade dark chocolate with dark truffles. With more than 70% of cocoa content. Perfect for a gift! You just have to try it to taste the fantastic flavour. Perfect for every truffle lover who also loves chocolate.",
+    "volume": "60 g",
+    "price": 9,
+    "use": "You just have to try it to taste the fantastic flavour.",
+    "ingredients": "dark chocolate with 71% cocoa content (cocoa mass, sugar, cocoa butter, emulsifier: soy lecithin, natural vanila flavour), black truffles (Tuber aestivum) 1%, extra virgin olive oil, flavour.",
+    "alergies": "There may be traces of fruit, nuts (pistachios, indian walnuts, almonds, hazelnuts, walnuts), milk, soy, sesame, wheat and protein.",
+    "life": "Best before end: see date.",
+    "images": "https://i.ibb.co/cwfBjpT/C-rna-C-okolada01.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
     "owner": 1,
     "categories": [
-      7,
-      12
+      12,
+      14
     ],
     "photos": [
-      3,
-      4,
-      5,
-      6
+      61,
+      62,
+      63,
+      64
     ]
   }
 },
@@ -381,27 +364,29 @@
   "model": "truffles.truffle",
   "pk": 23,
   "fields": {
-    "name": "PLACEHOLDER THIRTEEN",
-    "taste": "Bacon ipsum dolor amet",
-    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
-    "volume": "100 g",
-    "price": 200,
-    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
-    "ingredients": "Bacon ipsum dolor amet",
-    "alergies": "Bacon ipsum dolor amet",
-    "life": "Bacon ipsum dolor amet",
-    "images": "https://baconmockup.com/640/360",
-    "availability": "Bacon ipsum dolor amet",
+    "name": "Honey with white truffles",
+    "taste": "You just have to try it to taste the fantastic flavour.",
+    "description": "Picolino honey with white truffle is an excellent delicacy. Use it as a dressing for ice creams, cakes or truffle cheeses. No preservatives added / GMO free",
+    "volume": "140 g",
+    "price": 13,
+    "use": "Picolino honey with white truffle is an excellent delicacy used as a dressing for ice creams, cakes or truffle cheeses.",
+    "ingredients": "Black locust honey, white truffle (Tuber magnatum pico) 2%, aroma.",
+    "alergies": "/",
+    "life": "24 months.",
+    "images": "https://i.ibb.co/Bj3GpSk/Med01.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
     "owner": 1,
     "categories": [
-      8,
-      12
+      12,
+      14
     ],
     "photos": [
-      3,
-      4,
-      5,
-      6
+      65,
+      66,
+      67,
+      68
     ]
   }
 },
@@ -409,27 +394,29 @@
   "model": "truffles.truffle",
   "pk": 24,
   "fields": {
-    "name": "PLACEHOLDER FOURTEEN",
-    "taste": "Bacon ipsum dolor amet",
-    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
-    "volume": "100 g",
-    "price": 200,
-    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
-    "ingredients": "Bacon ipsum dolor amet",
-    "alergies": "Bacon ipsum dolor amet",
-    "life": "Bacon ipsum dolor amet",
-    "images": "https://baconmockup.com/640/360",
-    "availability": "Bacon ipsum dolor amet",
+    "name": "Extra pear jam with black truffle",
+    "taste": "You just have to try it to taste the fantastic flavour.",
+    "description": "An exclusive variant of the classic pear jam. Made with minimum 50g of fruit in 100g of product. A completely natural and unique product.",
+    "volume": "110 g",
+    "price": 9,
+    "use": "Serve jam and cream cheese on crackers. Use it as a simple pancake or waffle topping. Or, spread it between cake layers, for example, a Victoria sponge cake. It also makes a great gift.",
+    "ingredients": "Pear 55%, sugar, black summer truffle (Tuber aestivum Vitt.) 8%, mater of gellin: (fruit pektin), ginger, acid regulator: (citric acid), flavouring, piment.",
+    "alergies": "/",
+    "life": "Best before end: see lid.",
+    "images": "https://i.ibb.co/TwVsdtq/23-2048x.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
     "owner": 1,
     "categories": [
-      9,
-      12
+      12,
+      14
     ],
     "photos": [
-      3,
-      4,
-      5,
-      6
+      56,
+      53,
+      54,
+      55
     ]
   }
 },
@@ -437,27 +424,29 @@
   "model": "truffles.truffle",
   "pk": 25,
   "fields": {
-    "name": "PLACEHOLDER FIFTHTEEN",
-    "taste": "Bacon ipsum dolor amet",
-    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
-    "volume": "100 g",
-    "price": 200,
-    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
-    "ingredients": "Bacon ipsum dolor amet",
-    "alergies": "Bacon ipsum dolor amet",
-    "life": "Bacon ipsum dolor amet",
-    "images": "https://baconmockup.com/640/360",
-    "availability": "Bacon ipsum dolor amet",
+    "name": "White cream with truffles",
+    "taste": "You just have to try it to taste the fantastic flavour.",
+    "description": "The unique white chocolate truffle cream guarantees the perfect taste of chocolate with the original taste of Istrian truffles!",
+    "volume": "220 g",
+    "price": 8,
+    "use": "On the edge of the plate or as you want !",
+    "ingredients": "Sugar, vegetable oils and fats (palm and oilseed rape), lactose, whey powder, powdered skimmed milk 3.5%, dehydrated black summer truffles (Tuber aestivum Vitt.) 2% equivalent 10% of fresh truffle, emulsifier: sunflower lecithin, aromas.",
+    "alergies": "It may contain traces of soy, milk and nuts.",
+    "life": "Best before end: see lid.",
+    "images": "https://i.ibb.co/LpG2Ywq/Bijelakremasabijelimtartufima-NOVO-2048x.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
     "owner": 1,
     "categories": [
-      10,
-      12
+      12,
+      10
     ],
     "photos": [
-      3,
-      4,
-      5,
-      6
+      56,
+      53,
+      54,
+      55
     ]
   }
 },
@@ -465,28 +454,548 @@
   "model": "truffles.truffle",
   "pk": 26,
   "fields": {
-    "name": "PLACEHOLDER SIXSTEEN",
-    "taste": "Bacon ipsum dolor amet",
-    "description": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow. Chicken rump swine frankfurter cow burgdoggen pork chop, sirloin andouille pastrami. Bresaola chuck tail, venison ham rump hamburger andouille fatback chicken. Andouille pork belly kielbasa chicken ribeye. Beef ribs pork pastrami, ball tip shankle shank spare ribs chislic capicola pork chop fatback pork belly jowl.",
+    "name": "Hazelnut cream with truffle",
+    "taste": "You just have to try it to taste the fantastic flavour.",
+    "description": "The unique dark chocolate truffle cream guarantees the perfect taste of chocolate with the original taste of Istrian truffles!",
     "volume": "100 g",
     "price": 200,
-    "use": "Bacon ipsum dolor amet rump drumstick corned beef boudin ball tip ham. Jerky corned beef chicken drumstick kevin cow.",
-    "ingredients": "Bacon ipsum dolor amet",
-    "alergies": "Bacon ipsum dolor amet",
-    "life": "Bacon ipsum dolor amet",
-    "images": "https://baconmockup.com/640/360",
-    "availability": "Bacon ipsum dolor amet",
+    "use": "On the edge of the plate or as you want !",
+    "ingredients": "Sugar, vegetable oil (palm oil), hazelnut 13%, low fat cocoa powder 7%, powdered skimmed milk 5.5%, dehydrated black summer truffles (Tuber aestivum Vitt.) 2% equivalent 10% of fresh truffle, whey powder, lactose, emulsifier: sunflower lecithin, aromas.",
+    "alergies": "It may contain traces of soy and other nuts.",
+    "life": "Best before end: see lid.",
+    "images": "https://i.ibb.co/KF0zGRW/Ljesnjakovakremasacrnimtartufima-NOVAETIKETA-2048x.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
     "owner": 1,
     "categories": [
-      11,
-      12
+      12,
+      14
     ],
     "photos": [
-      3,
-      4,
-      5,
-      6
+      56,
+      53,
+      54,
+      55
     ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 27,
+  "fields": {
+    "name": "Teranino truffell",
+    "taste": "It has a lot to offer in terms of taste, starting with sweet spicy nuances up to elegant facets.",
+    "description": "We turned the authentic Istrian Teran wine of ruby red colour (the colour of hare’s blood) with purple tones, berry flavours and dominated by raspberry and pepper, into a liqueur with black truffles thanks to a unique recipe.",
+    "volume": "200 ml",
+    "price": 30,
+    "use": "The suggested serving temperature is 10 - 12°C. It should be served chilled and neat, no ice. Goes well in a combination with chocolate desserts or wild berry desserts or as a digestive after a rich meal.",
+    "ingredients": "Teran wine, fruit brandy, sugar, spices, truffle flavoring, pieces of white truffle (Tuber magnatum pico).",
+    "alergies": "/",
+    "life": "Best before end: see bottle.",
+    "images": "https://i.ibb.co/HT95wBH/teraninotruffelrdec.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
+    "owner": 1,
+    "categories": [
+      12,
+      1
+    ],
+    "photos": [
+      42,
+      43,
+      44
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 28,
+  "fields": {
+    "name": "White truffle gin",
+    "taste": "It has a flavour profile more usually associated with mature spirits.",
+    "description": "This is the first gin in the world with macerated white truffles. Created in tiny quantities, we've based this gin on the most incredible white truffle from Istria that we could source. Innovatively distilled to preserve the full flavour of the truffle, AurA White truffle gin achieves a flavour profile more usually associated with mature spirits, and is a complex and well-balanced spirit of unparalleled depth and complexity.",
+    "volume": "750 ml",
+    "price": 185,
+    "use": "White truffle gin makes a decadent digestif, which we encourage you to serve simply over ice.",
+    "ingredients": "Cereal distillate, juniper, white truffle (Tuber magnatum pico), coriander, thyme, orange peel, lemon peel, mint, lemon balm, ginger, anise, caraway.",
+    "alergies": "/",
+    "life": "Best before end: see bottle.",
+    "images": "https://i.ibb.co/Pwvs6VX/trufflegin01.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
+    "owner": 1,
+    "categories": [
+      12,
+      1
+    ],
+    "photos": [
+      45,
+      46,
+      47,
+      48
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 29,
+  "fields": {
+    "name": "Truffella honey brandy",
+    "taste": "It has thick, sweet and delicious tase.",
+    "description": "Medica is an Istrian brandy with 36% alcohol content, honey and white truffles. A special apèritif to drink on room temperature for it evokes noises of truffles and inspires all your senses.",
+    "volume": "200 ml",
+    "price": 30,
+    "use": "As an aperitif or digestive, it is used to improve circulation on cold winter evenings or as an added ingredient in flambéing dressings for desserts",
+    "ingredients": "Apple distillate, water distillate, acacia honey, truffle flavoring, pieces of white truffle (Tuber magnatum pico).",
+    "alergies": "/",
+    "life": "Best before end: see bottle.",
+    "images": "https://i.ibb.co/HtkkBKm/medicatruffle.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
+    "owner": 1,
+    "categories": [
+      12,
+      1
+    ],
+    "photos": [
+      53,
+      54,
+      55,
+      56
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 30,
+  "fields": {
+    "name": "Ketchup with truffles",
+    "taste": "Expect rich tomato flavours combined with earthy, savoury depth from the black truffle.",
+    "description": "A rich tomato ketchup made from sun ripened tomatoes and a blend of herbs and spices. The ketchup is then expertly blended with the highest quality Istrian Black Truffles (Tuber Aestivum) to produce a truly luxurious condiment.",
+    "volume": "200 g",
+    "price": 12,
+    "use": "Our black truffle ketchup adds a luxurious twist to just about anything. We recommend trying with chips, or as a secret ingredient in tomato soup.",
+    "ingredients": "Tomato, Spirit Vinegar, Olive Oil, Black Truffles (2.5%), Sugar, Salt, Spice and Herb Extract (contains Celery), Black Truffle Flavour, Spices",
+    "alergies": "For allergens including those that contain gluten, see ingredients in bold.",
+    "life": "9 Months",
+    "images": "https://i.ibb.co/z4RTw5d/truffleketchap.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
+    "owner": 1,
+    "categories": [
+      12,
+      6
+    ],
+    "photos": [
+      34,
+      35,
+      36,
+      37
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 31,
+  "fields": {
+    "name": "Mayonnaise with summer truffle",
+    "taste": "Rich and creamy texture with a mellow, savoury black truffle taste. Good depth of flavour.",
+    "description": "We begin with our unique mayonnaise which uses free-range eggs and locally sourced sunflower oil. The combination produces a luxuriously smooth and creamy mayonnaise, which we expertly infuse with the highest quality Black truffles (Tuber Aestivum).",
+    "volume": "80 g",
+    "price": 12,
+    "use": "Use our black truffle mayonnaise straight from the jar just like you would with a regular mayonnaise. We recommend using it to add a touch of luxury to your chips, or simply spread it on your favourite sandwich. If you’re feeling adventurous, try using it as a base for marie rose tartar, thousand island dressing or rémoulade sauces.",
+    "ingredients": "Mayonnaise (sunflower oil 70%, water, pasteurized yolk eggs 5%, wine vinegar, modified maize starch, salt, thickener: xanthan gum, lemon juice, flavourings), summer Truffle 3% (Tuber aestivum), Acidifying: E270.",
+    "alergies": "For allergens including those that contain gluten, see ingredients in bold.",
+    "life": "11 Months",
+    "images": "https://i.ibb.co/nQT7gbK/majonezatruffle01.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
+    "owner": 1,
+    "categories": [
+      12,
+      6
+    ],
+    "photos": [
+      25,
+      26,
+      27,
+      28
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 32,
+  "fields": {
+    "name": "Black truffle salt",
+    "taste": "Expect a mineral-rich salty hit, followed by an earthy black truffle flavour.",
+    "description": "Adriatic sea salt with the addition of black truffles is a unique refined addition to all kinds of dishes.",
+    "volume": "120 g",
+    "price": 15,
+    "use": "Gently rub a pinch of this delicacy over thinly sliced lard, on toast with a spread of black pig lard, pressed cracklings, sprinkle it over fried arugula with balsamic vinegar, add it to a lemon sorbetto or sprinkle it on top of extra dark chocolate and orange ice cream scoop.",
+    "ingredients": "Salt, black summer truffle (Tuber Aestivum, Vitt.) 2%, flavouring.",
+    "alergies": "For allergens including those that contain gluten, see ingredients in bold.",
+    "life": "18 Months",
+    "images": "https://i.ibb.co/H4FkyS9/tartufisol01.png",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
+    "owner": 1,
+    "categories": [
+      12,
+      6
+    ],
+    "photos": [
+      29,
+      30,
+      31,
+      33
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 33,
+  "fields": {
+    "name": "Truffler gold beer",
+    "taste": "Intense flavour and rich foam for a pleasant get-together in late afternoon hours.",
+    "description": "This special beer is a tireless effort to find a way to surprise you every year. Fresh black truffles are added to this beer after cooking. The beer is unfiltered, unpasteurised and unfermented in the bottle.\r\n\r\nAlcohol percentage: 7,1%.",
+    "volume": "330 cl",
+    "price": 18,
+    "use": "Served chilled between 5°C and 7°C in a special glass, poured at once. This beer is definitely recommended with all truffle dishes, and it’s definitely for a true fan of craft beer, truffles, and Istria.",
+    "ingredients": "Water, barley malt, hops, sugar, yeast, truffle aroma.",
+    "alergies": "For allergens including those that contain gluten, see ingredients in bold.",
+    "life": "Best before end: see bottle.",
+    "images": "https://i.ibb.co/rsSsWZW/pivotartudi01.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
+    "owner": 1,
+    "categories": [
+      12,
+      1
+    ],
+    "photos": [
+      39,
+      40,
+      41
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 34,
+  "fields": {
+    "name": "Popcorn with truffle flavour",
+    "taste": "Give it a try, we believe you will like it.",
+    "description": "Mushroom popcorn is one of the types of popcorn that, due to its shape, is ideal for enriching with various gourmet flavours. “Pietro & Pietro” mushroom popcorn is enriched with a fine powdered spice of Istrian truffle.",
+    "volume": "70 g",
+    "price": 4,
+    "use": "/",
+    "ingredients": "Corn 63%, sunflower oil 28%, Truffle powder 7% (salt, potato flour, rice flour, dehydrated summer truffle, dehydrated mushrooms, aromas), salt 2%.",
+    "alergies": "For allergens including those that contain gluten, see ingredients in bold.",
+    "life": "Best before end: see date.",
+    "images": "https://i.ibb.co/m4h0DRD/pokovkatartufi01.png",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
+    "owner": 1,
+    "categories": [
+      12,
+      10
+    ],
+    "photos": [
+      77,
+      78,
+      79,
+      80
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 35,
+  "fields": {
+    "name": "Truffle crisps",
+    "taste": "Its rich flavour is one-of-a-kind.",
+    "description": "Once you have tried the Zigante hand cooked crisps, no other crisp will be the same. Its rich flavour is one-of-a-kind. Hand cooked crisps (known also as kettle-style crisps) with pieces of black truffles, turn an everyday snack into a moment of indulgence and decadence",
+    "volume": "150 g",
+    "price": 6,
+    "use": "/",
+    "ingredients": "Potato, sunflower oil, salt, lyophilised black truffle (Tuber aestivum) 0.5% (equals to 2% of fresh black truffle), aroma.",
+    "alergies": "May contain traces of milk, peanuts, soy and wheat.",
+    "life": "Best before end: see date.",
+    "images": "https://i.ibb.co/CPgCr8G/cipstartufi01.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
+    "owner": 1,
+    "categories": [],
+    "photos": [
+      69,
+      70,
+      71,
+      72
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 36,
+  "fields": {
+    "name": "Linguine pasta with truffles",
+    "taste": "Expect restaurant quality pasta with a subtle hint of Black Truffle in each bite.",
+    "description": "Handmade Istrian linguine - a kind of pasta that has a wide, flat, and thin body and has a shape of thick spaghetti and a wide noodle. A treat on its own, when made with white and black truffles the taste becomes a sensation.",
+    "volume": "250 g",
+    "price": 12,
+    "use": "This pasta should be cooked in lightly salted boiling water for 4-5 minutes. Drain and toss with a tablespoon of Black Truffle Oil. Finish with finely grated parmigiana. Ideal quantity for 4 persons.",
+    "ingredients": "Semolina (WHEAT), durum wheat flour, black and white truffles.",
+    "alergies": "For allergens including those that contain gluten, see ingredients in bold.",
+    "life": "16 months.",
+    "images": "https://i.ibb.co/SyY6gTd/pastatartufi01.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
+    "owner": 1,
+    "categories": [
+      12,
+      10
+    ],
+    "photos": [
+      73,
+      74,
+      75,
+      76
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 37,
+  "fields": {
+    "name": "Tagliatelle with black truffles",
+    "taste": "Expect restaurant quality pasta with a subtle hint of Black Truffle in each bite.",
+    "description": "Pasta enriched with tartufata and black truffle, made from durum wheat meal type 400 is ideal as a separate meal with the addition of sauce, sometimes with just a drizzle of olive oil, a bit of grated semi-hard goat or sheep cheese or as a side dish to a meat dish.",
+    "volume": "250 g",
+    "price": 15,
+    "use": "This pasta should be cooked in lightly salted boiling water for 4-5 minutes. Drain and toss with a tablespoon of Black Truffle Oil. Finish with finely grated parmigiana. Ideal quantity for 4 persons.",
+    "ingredients": "Durum wheat meal type 400, tartufata 5%, black truffles 1.7%, white truffle flavouring 0.6%.",
+    "alergies": "For allergens including those that contain gluten, see ingredients in bold.",
+    "life": "16 months.",
+    "images": "https://i.ibb.co/x3TpKMG/taliatele01.png",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
+    "owner": 1,
+    "categories": [
+      12,
+      10
+    ],
+    "photos": [
+      81,
+      82,
+      83,
+      84
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 38,
+  "fields": {
+    "name": "Istrian sausage with truffles",
+    "taste": "The heady flavour of truffles is judiciously added to the sweet pork, to create a perfect balance.",
+    "description": "Traditional Istrian dry sausage enriched with black truffles. A unique addition to any charcuterie selection, most often served as an appetizer with homemade bread, cheese with truffles and a glass of Istrian Malvazija.",
+    "volume": "200 g",
+    "price": 15,
+    "use": "Most often served as an appetizer with homemade bread, cheese with truffles and a glass of Istrian Malvazija.",
+    "ingredients": "Pork, black truffles (Tuber Aestivum), salt, spices.",
+    "alergies": "For allergens including those that contain gluten, see ingredients in bold.",
+    "life": "Keep refrigerated. Suitable for home freezing.",
+    "images": "https://i.ibb.co/jgyw1ry/Istrskaklobasa01.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
+    "owner": 1,
+    "categories": [],
+    "photos": [
+      112,
+      113,
+      114,
+      115
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 39,
+  "fields": {
+    "name": "Minced black truffles",
+    "taste": "Our minced truffles are firm to the bite, followed by a rich & earthy truffle flavour.",
+    "description": "We mince & preserve our fresh truffles at the peak of the season, when they are at their most flavourful. Black Summer Truffles (Tuber aestivum) are usually only available from June to August. However, our preservation process extends the life of the truffle by as much as 18 months, allowing you to enjoy the incredible taste of truffle at any time of year",
+    "volume": "80 g",
+    "price": 35,
+    "use": "Minced black truffles, with a refined aroma and flavour and uniform consistency are ideal for the preparation of sauces, marinades, omelets, risottos, flavoured butter and spreads with black truffles.",
+    "ingredients": "Black truffle (Tuber Aestivum, vitt.) 70%, sunflower oil, salt, flavouring.",
+    "alergies": "For allergens including those that contain gluten, see ingredients in bold.",
+    "life": "18 Months",
+    "images": "https://i.ibb.co/xHrsPb4/zmiksancrnitartuf01.png",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
+    "owner": 1,
+    "categories": [
+      12,
+      4
+    ],
+    "photos": [
+      96,
+      97,
+      98,
+      99
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 40,
+  "fields": {
+    "name": "Minced white truffles",
+    "taste": "Our minced truffles are firm to the bite, followed by a rich & earthy truffle flavour.",
+    "description": "A wondrous, heady, pungent aroma of exquisite white truffle, whipped into a silky smooth paste - a divine premium addition to any savoury dish. Powerful stuff and goes a long way!!!",
+    "volume": "80 g",
+    "price": 45,
+    "use": "Minced white truffles, with a refined aroma and flavour and uniform consistency are ideal for the preparation of sauces, marinades, omelets, risottos, flavoured butter and spreads with white truffles.",
+    "ingredients": "White truffle (Tuber Borchii, Vitt.) 70%, sunflower oil, salt, flavouring.",
+    "alergies": "For allergens including those that contain gluten, see ingredients in bold.",
+    "life": "18 Months.",
+    "images": "https://i.ibb.co/DCztyNH/belizmesanitartuf01.png",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
+    "owner": 1,
+    "categories": [
+      12,
+      4
+    ],
+    "photos": [
+      89,
+      90,
+      91
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 41,
+  "fields": {
+    "name": "Preserved whole black truffles",
+    "taste": "The truffle is firm to the bite, followed by a rich & earthy black truffle flavour.",
+    "description": "We carefully select the highest quality truffles & preserve them at the peak of the season, when they are at their most flavourful. Our preservation process extends the life of the truffle by up to 18 months, allowing you to enjoy the incredible taste of truffle at any time of year. Unlike our minced or sliced truffles, this product is left whole for you to prepare as you wish.",
+    "volume": "50g",
+    "price": 40,
+    "use": "Slice the truffle straight from the jar to use as a luxury garnish, or finely chop to add texture to your meal. We recommend trying on scrambled eggs, pasta or salads.",
+    "ingredients": "Black Truffles (Tuber aestivum, 66.66%), Water, Salt.",
+    "alergies": "None",
+    "life": "18 Months",
+    "images": "https://i.ibb.co/DC2cWCJ/crnicelitartuf01.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
+    "owner": 1,
+    "categories": [
+      12,
+      4
+    ],
+    "photos": [
+      92,
+      93,
+      94,
+      95
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 42,
+  "fields": {
+    "name": "Preserved whole white truffles",
+    "taste": "The truffle is firm to the bite, followed by a rich & earthy black truffle flavour.",
+    "description": "We carefully select the highest quality truffles & preserve them at the peak of the season, when they are at their most flavourful. Our preservation process extends the life of the truffle by up to 18 months, allowing you to enjoy the incredible taste of truffle at any time of year. Unlike our minced or sliced truffles, this product is left whole for you to prepare as you wish.",
+    "volume": "90 g",
+    "price": 65,
+    "use": "Slice the truffle straight from the jar to use as a luxury garnish, or finely chop to add texture to your meal. We recommend trying on scrambled eggs, pasta or salads.",
+    "ingredients": "White spring truffle (Tuber borchii), extra virgin olive oil, salt.",
+    "alergies": "None",
+    "life": "18 Months.",
+    "images": "https://i.ibb.co/Bzw78Xz/belicelitartuf01.jpg",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
+    "owner": 1,
+    "categories": [
+      12,
+      4
+    ],
+    "photos": [
+      85,
+      86,
+      87,
+      88
+    ]
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 43,
+  "fields": {
+    "name": "Preserved black truffle slices",
+    "taste": "The truffle is firm to the bite, followed by a rich & earthy black truffle flavour.",
+    "description": "We slice & preserve our fresh truffles at the peak of the season, when they are at their most flavourful. Our preservation process extends the life of the truffle by as much as 18 months, allowing you to enjoy the incredible taste of truffle at any time of year. We select the highest quality truffles and shave them into 2mm thick slices. The slices are then soaked in a salt brine to enhance their natural flavour, before being preserved in olive oil.",
+    "volume": "80 g",
+    "price": 40,
+    "use": "Sliced black truffles, with a uniform consistency of shavings and preserved flavours are ideal for sprinkling over dishes and additional seasoning of dishes with black truffle sauce base, meat dishes, carpaccio, bruschette, pasta and salads.",
+    "ingredients": "Black summer truffle (Tuber Aestivum, Vitt.) 55%, extra virgin olive oil, sunflower oil, salt, flavouring.",
+    "alergies": "None",
+    "life": "18 Months.",
+    "images": "https://i.ibb.co/nkKt8Sg/Updated-Coming-Soon.png",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
+    "owner": 1,
+    "categories": [
+      12,
+      4
+    ],
+    "photos": []
+  }
+},
+{
+  "model": "truffles.truffle",
+  "pk": 44,
+  "fields": {
+    "name": "Preserved white truffle slices",
+    "taste": "The truffle is firm to the bite, followed by a rich & earthy black truffle flavour.",
+    "description": "We slice & preserve our fresh truffles at the peak of the season, when they are at their most flavourful. Our preservation process extends the life of the truffle by as much as 18 months, allowing you to enjoy the incredible taste of truffle at any time of year. We select the highest quality truffles and shave them into 2mm thick slices. The slices are then soaked in a salt brine to enhance their natural flavour, before being preserved in olive oil.",
+    "volume": "80 g",
+    "price": 45,
+    "use": "Sliced white truffles, with a uniform consistency of shavings and preserved flavours are ideal for sprinkling over dishes and additional seasoning of dishes with white truffle sauce base, meat dishes, carpaccio, bruschette, pasta and salads.",
+    "ingredients": "White truffle (Tuber Borchii, Vitt.) 55%, extra virgin olive oil, sunflower oil, salt, flavouring.",
+    "alergies": "None",
+    "life": "18 Months.",
+    "images": "https://i.ibb.co/nkKt8Sg/Updated-Coming-Soon.png",
+    "availability": "All year round.",
+    "cart": false,
+    "quantity": 1,
+    "owner": 1,
+    "categories": [],
+    "photos": []
   }
 }
 ]

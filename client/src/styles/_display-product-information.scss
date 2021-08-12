@@ -35,7 +35,7 @@ h4.xs-heading {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   object-fit: cover;
 }
@@ -123,7 +123,6 @@ h1.products-info-comment-heading {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  border-top: 1px dotted #d39700;
   padding-top: 2rem;
   padding-bottom: 1.5rem;
 }
@@ -225,24 +224,9 @@ div.embracing-comments {
   justify-content: space-evenly;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.carousel-height-display-page {
+  height: 1000px;
+}
 
 // ! Accordion
 section.product-display-section {
@@ -318,7 +302,7 @@ details p {
   top: 0;
   left: 0;
   overflow-x: hidden;
-  // padding-top: 20px;
+  margin-top: 3rem;
 }
 
 h1.rotating-links {
@@ -344,18 +328,19 @@ h1.rotating-links {
   color: #d39700;
 }
 
+.dots-positioning {
+  padding-left: 0.8rem;
+}
+
+.dots-spacing {
+  letter-spacing: .3rem;
+}
+
 .main-info-page {
   margin-left: 80px; /* Same as the width of the sidenav */
   margin-right: 80px;
   padding: 0px 10px;
   margin-top: 4rem;
-}
-
-@media only screen and (max-width: 900px)  {
-  .main-info-page {
-    width: 400%;
-    height: 100vh;
-  }
 }
 
 .positioning-comments-display-page {
@@ -377,4 +362,5 @@ img.info-picture {
   display: flex;
   flex-direction: column;
   width: 500px;
+  margin-bottom: 5rem;
 }

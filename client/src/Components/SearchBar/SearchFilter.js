@@ -67,20 +67,24 @@ const SearchFilter = () => {
         <input
           name='search'
           type='text'
-          placeholder="What're we looking for ?"
+          placeholder="What are we looking for ?"
           onKeyUp={filteredItem}
           className='search-field'
         />
 
       </div>
 
-      <div>
+      <div className='modal-display-result'>
 
         { (filteredTruffles.length > 0 ? filteredTruffles : emptyArray ).map(item => {
           return (
-            <div key={item.id}>
+            <div key={item.id} className='search-filter-styling'>
               <img src={item.images} alt={item.name} />
-              <a href={`/categories/product/${item.id}`}>{item.name}</a>
+              <a href={`/categories/product/${item.id}`} className='search-filter-anchor'>
+                <h3 className='search-filter-text'>
+                  {item.name}
+                </h3>
+              </a>
             </div>
           )
         })

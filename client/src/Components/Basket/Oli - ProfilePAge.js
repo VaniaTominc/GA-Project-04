@@ -58,15 +58,15 @@ const ProductsInfoPage = () => {
       // if (truffle.id === tr)
       const itemToAddFirst = [{ ...truffle }]
       localStorage.setItem('truffles', JSON.stringify(itemToAddFirst))
-      console.log('itemToAddFirst >>>', itemToAddFirst)
+      // console.log('itemToAddFirst >>>', itemToAddFirst)
     } else {
       const itemsToAdd = [...currentItems, { ...truffle }]
       localStorage.setItem('truffles', JSON.stringify(itemsToAdd))
-      console.log('itemToAdd >>>', itemsToAdd)
+      // console.log('itemToAdd >>>', itemsToAdd)
     }
-    console.log('currentItems', currentItems)
+    // console.log('currentItems', currentItems)
     
-    console.log('truffle', truffle)
+    // console.log('truffle', truffle)
   }
 
 

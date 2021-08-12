@@ -5,31 +5,33 @@ const Home = () => {
 
 
   return (
-    <div className='home-page-outer-body'>
+    <div className='content-container'>
 
-      <Carousel fade id='coursel-background'>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://i.ibb.co/pxqqLrg/Trufflue1.png"
-            alt="First slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://i.ibb.co/HgZcSwg/Truffle1-1.png"
-            alt="Second slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://i.ibb.co/pxqqLrg/Trufflue1.png"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-      </Carousel>
+      <section className='coursel-section'>
+        <Carousel fade id='coursel-background'>
+          <Carousel.Item>
+            <img
+              className='d-block w-100 carousel-width-media-query'
+              src='https://i.ibb.co/pxqqLrg/Trufflue1.png'
+              alt='First slide'
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className='d-block w-100 carousel-width-media-query'
+              src='https://i.ibb.co/HgZcSwg/Truffle1-1.png'
+              alt='Second slide'
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className='d-block w-100 carousel-width-media-query'
+              src='https://i.ibb.co/pxqqLrg/Trufflue1.png'
+              alt='Third slide'
+            />
+          </Carousel.Item>
+        </Carousel>
+      </section>
 
       <div className='home-page-card'>
         <div className='home-text-container'>

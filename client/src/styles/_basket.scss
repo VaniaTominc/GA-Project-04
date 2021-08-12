@@ -1,0 +1,24 @@
+span.carousel-control-prev-icon {
+  display: none;
+}
+span.carousel-control-next-icon {
+  display: none;
+}
+
+.content-container-basket {
+  min-height: calc(90vh - 34px);
+  display: flex;
+  width: 1000px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.basket-container {
+  display: flex;
+  justify-content: center;
+}
+
+tr, th, td {
+  padding: 15px;
+}

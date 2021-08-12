@@ -50,7 +50,7 @@ const Shop = () => {
 
   return (
 
-    <div className='pushing-content-down'>
+    <div className='shop-display content-container'>
       
       { categories ?
       
@@ -58,7 +58,7 @@ const Shop = () => {
 
           <div className='shop-top-margin'>
             <div className='shop-top-description'>
-              <h1 className='shop-heading-1'>Chose from many categories we have</h1>
+              <h1 className='shop-heading-0'>Chose from many categories we have</h1>
               <h3 className='shop-heading-3-1'>At <span className='logo-spacing'>Truff<span className='logo-nav'>·l·</span>uxury</span> we take the utmost care at selecting <span className='logo-nav'>THE BEST</span> and we provide products from reputable local <span className='logo-nav'>Istrian</span> providers!</h3>
             </div>
           </div>
@@ -108,13 +108,13 @@ const Shop = () => {
 
         hasError ?
 
-          <Error404Message />
+          <p>Loading ... </p>
 
           :
 
           <>
 
-            <img src='https://thumbs.gfycat.com/BareJoyousAsp.webp' alt='Rick And Morty'/>
+            <Error404Message />
             
           </>
 
