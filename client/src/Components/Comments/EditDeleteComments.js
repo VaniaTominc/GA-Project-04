@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
-import Error404Message from '../Errors/Error404Message'
-import Error422Message from '../Errors/Error422Message'
+import Error404Message from '../errors/Error404Message'
+import Error422Message from '../errors/Error422Message'
 import { checkUserIsAuthenticated } from '../authentication/auth'
 
 

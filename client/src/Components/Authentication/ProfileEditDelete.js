@@ -5,9 +5,9 @@ import { useParams, useHistory } from 'react-router-dom'
 
 import axios from 'axios'
 import { getCurrentUser, getTokenFromStorage } from './auth'
-import Error404Message from '../Errors/Error404Message'
+import Error404Message from '../errors/Error404Message'
 
-import { ProfileImageUpload } from './ProfileImageUpload'
+// import { ProfileImageUpload } from './ProfileImageUpload'
 
 
 const ProfileEditDelete = () => {

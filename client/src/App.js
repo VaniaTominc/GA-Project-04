@@ -1,24 +1,24 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import NavbarComponent from './Components/NavbarComponent'
-import Home from './Components/Home'
-import Footer from './Components/Footer'
+import NavbarComponent from './components/NavbarComponent'
+import Home from './components/Home'
+import Footer from './components/Footer'
 
 // Authentication components
-import Login from './Components/Authentication/Login'
-import ProfilePage from './Components/Authentication/ProfilePage'
+import Login from './components/authentication/Login'
+import ProfilePage from './components/authentication/ProfilePage'
 
 // Proper components
-import Shop from './Components/Products/Shop'
-import FilteredByCategory from './Components/Products/FilteredByCategory'
+import Shop from './components/products/Shop'
+import FilteredByCategory from './components/products/FilteredByCategory'
 
 // ! Dummy commponent
-import ProductsInfoPage from './Components/Products/ProductsInfoPage'
-import ProfileEditDelete from './Components/Authentication/ProfileEditDelete'
-import EditDeleteComments from './Components/Comments/EditDeleteComments'
-import Search from './Components/SearchBar/Search'
-import Basket from './Components/Basket/Basket'
+import ProductsInfoPage from './components/products/ProductsInfoPage'
+import ProfileEditDelete from './components/authentication/ProfileEditDelete'
+import EditDeleteComments from './components/comments/EditDeleteComments'
+import Search from './components/searchbar/Search'
+import Basket from './components/basket/Basket'
 
 
 const App = () => {

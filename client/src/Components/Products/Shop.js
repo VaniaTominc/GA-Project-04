@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import Error404Message from '../Errors/Error404Message'
+import Error404Message from '../errors/Error404Message'
 // import Slider from 'react-slick'
 
 

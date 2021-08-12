@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
 import { getCurrentUser, getPayload } from './auth'
-import { convertAmericanDate, star } from '../ExtraFunctions/ReusableFunctions.js'
-import Error404Message from '../Errors/Error404Message'
+import { convertAmericanDate, star } from '../extrafunctions/ReusableFunctions.js'
+// import Error404Message from '../Errors/Error404Message'
 
 
 

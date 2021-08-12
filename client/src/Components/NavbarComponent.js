@@ -1,6 +1,6 @@
 import React from 'react'
-import { getPayload } from './Authentication/auth'
-import Search from './SearchBar/Search'
+import { getPayload } from './authentication/auth'
+import Search from './searchbar/Search'
 import { IoBasketOutline } from 'react-icons/io5'
 
 

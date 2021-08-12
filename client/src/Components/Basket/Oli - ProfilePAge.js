@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { convertAmericanDate } from '../ExtraFunctions/ReusableFunctions.js'
+import { convertAmericanDate } from '../extraFunctions/ReusableFunctions.js'
 import { useParams } from 'react-router-dom'
 import AddComment from '../Comments/AddComment.js'
 import Error404Message from '../Errors/Error404Message.js'
