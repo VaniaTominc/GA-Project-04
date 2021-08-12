@@ -26,7 +26,7 @@ const Home = () => {
           <Carousel.Item>
             <img
               className='d-block w-100 carousel-width-media-query'
-              src='https://i.ibb.co/pxqqLrg/Trufflue1.png'
+              src='https://i.ibb.co/rf2xvHJ/Truffle2.png'
               alt='Third slide'
             />
           </Carousel.Item>
