@@ -12,7 +12,7 @@ const MovingGallery = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get(`/api/truffles/${id}`)
+        const { data } = await axios.get(`/api/truffles/${id}/`)
         setGallery(data)
       } catch (err) {
         console.log(

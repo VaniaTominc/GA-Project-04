@@ -32,7 +32,7 @@ export const getCurrentUser = async () => {
 
   const currentUserId = payload.sub
 
-  const { data } = await axios.get(`/api/auth/profiles/${currentUserId}`,
+  const { data } = await axios.get(`/api/auth/profiles/${currentUserId}/`,
     {
       headers: {
         Authorization: `Bearer ${getTokenFromStorage()}`,

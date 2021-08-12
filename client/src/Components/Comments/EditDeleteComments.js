@@ -79,7 +79,7 @@ const EditDeleteComments = () => {
   const deleteComment = async () => {
     try {
       const token = window.localStorage.getItem('token')
-      await axios.delete(`/api/opinions/${id}`, {
+      await axios.delete(`/api/opinions/${id}/`, {
         headers: {
           Authorization: `Bearer ${token}` },
       })

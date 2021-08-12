@@ -18,7 +18,7 @@ const FilteredByCategory = () => {
 
       try {
         // const { data } = await axios.get('/api/categories/2/')
-        const { data } = await axios.get(`/api/categories/${id}`)
+        const { data } = await axios.get(`/api/categories/${id}/`)
         // console.log('DATA FROM CATEGORIES >>>', data[1].truffles[0])
         // console.log('data.name', data.name)
         setCategories(data.truffles)
