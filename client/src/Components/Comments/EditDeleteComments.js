@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import Error404Message from '../Errors/Error404Message'
 import Error422Message from '../Errors/Error422Message'
-import { checkUserIsAuthenticated } from '../Authentication/auth'
+import { checkUserIsAuthenticated } from '../authentication/auth'
 
 
 const EditDeleteComments = () => {
