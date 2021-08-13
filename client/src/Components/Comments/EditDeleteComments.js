@@ -151,7 +151,7 @@ const EditDeleteComments = () => {
                                   <input 
                                     type='submit' 
                                     value='Update' 
-                                    onClick={handleCommentChangeSubmit}
+                                    onSubmit={handleCommentChangeSubmit}
                                     className='delete-buttons-space'
                                   />
                                   <input 

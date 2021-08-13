@@ -69,7 +69,7 @@ const ProfileEditDelete = () => {
 
   const handleLogout = () => {
     window.localStorage.removeItem('token')
-    location.assign('/home')
+    location.assign('/')
   }
 
   const deleteUser = async () => {
