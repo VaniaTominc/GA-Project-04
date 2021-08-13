@@ -72,7 +72,7 @@ const EditDeleteComments = () => {
     } catch (err) {
       // setHasError(true)
       console.log('Incoming error from submiting changed comment >>>', err.response)
-      window.alert('😱 Something has wrong with updating your comment 🆘')
+      // window.alert('😱 Something has wrong with updating your comment 🆘')
     }
   }
 
