@@ -83,7 +83,7 @@ const EditDeleteComments = () => {
         headers: {
           Authorization: `Bearer ${token}` },
       })
-      location.assign('/home')
+      location.assign('/home/')
     } catch (err) {
       console.log(err)
       // setHasError(true)
