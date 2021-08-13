@@ -11,9 +11,9 @@ const EditDeleteComments = () => {
   // const [hasError, setHasError] = useState(false)
   const history = useHistory()
 
-  const oldURL = document.referrer
+  // const oldURL = document.referrer
   // console.log('oldurl >>>', oldURL)
-  const lastNumberId = oldURL.slice(21)
+  // const lastNumberId = oldURL.slice(21)
   // console.log('lastNumberId >>>', lastNumberId)
 
 
@@ -68,7 +68,7 @@ const EditDeleteComments = () => {
         }
       )
 
-      history.push(lastNumberId)
+      history.push('/profile')
 
     } catch (err) {
       // setHasError(true)
@@ -84,7 +84,7 @@ const EditDeleteComments = () => {
         headers: {
           Authorization: `Bearer ${token}` },
       })
-      history.push('/')
+      history.push('/shop')
     } catch (err) {
       console.log(err)
       // setHasError(true)
