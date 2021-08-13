@@ -83,7 +83,7 @@ const EditDeleteComments = () => {
         headers: {
           Authorization: `Bearer ${token}` },
       })
-      location.assign('/home/')
+      location.assign('/')
     } catch (err) {
       console.log(err)
       // setHasError(true)
@@ -151,10 +151,9 @@ const EditDeleteComments = () => {
                                   <input 
                                     type='submit' 
                                     value='Update' 
-                                    // onSubmit={handleCommentChangeSubmit}
+                                    // onClick={handleCommentChangeSubmit}
                                     className='delete-buttons-space'
                                   />
-
                                   <input 
                                     type='submit' 
                                     value='Delete' 

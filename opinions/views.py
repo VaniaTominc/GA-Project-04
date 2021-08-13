@@ -48,7 +48,7 @@ class OpinionDetailView(APIView):
 
     # EDIT request
     def put(self, request, pk):
-        print('Something is happening >>>', request.data)
+        # print('Something is happening >>>', request.data)
         opinion_to_edit = self.get_opinion(pk=pk)
 
         if opinion_to_edit.owner != request.user:
