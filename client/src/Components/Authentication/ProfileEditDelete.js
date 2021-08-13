@@ -133,7 +133,7 @@ const ProfileEditDelete = () => {
                   <label className='label-edit-delete'>Last name</label>
                   <input 
                     type='text' 
-                    name='first_name'
+                    name='last_name'
                     placeholder='Last name' 
                     value={userToEdit.last_name}
                     onChange={handleUserEdit}
