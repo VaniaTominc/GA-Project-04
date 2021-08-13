@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useHistory } from 'react-router-dom'
 import axios from 'axios'
 import Error404Message from '../errors/Error404Message'
 import Error422Message from '../errors/Error422Message'
@@ -9,6 +9,7 @@ import { checkUserIsAuthenticated } from '../authentication/auth'
 const EditDeleteComments = () => {
 
   // const [hasError, setHasError] = useState(false)
+  const history = useHistory()
 
   const oldURL = document.referrer
   // console.log('oldurl >>>', oldURL)
@@ -67,7 +68,7 @@ const EditDeleteComments = () => {
         }
       )
 
-      location.assign(lastNumberId)
+      history.push(lastNumberId)
 
     } catch (err) {
       // setHasError(true)
@@ -83,7 +84,7 @@ const EditDeleteComments = () => {
         headers: {
           Authorization: `Bearer ${token}` },
       })
-      location.assign('/')
+      history.push('/')
     } catch (err) {
       console.log(err)
       // setHasError(true)
