@@ -1,8 +1,7 @@
-# [Project 04] with Genereal Assembly: Truff·l·uxury.
-## _Truff·l·uxury_
+# [Project 04] with Genereal Assembly: `Truff·l·uxury`.
 
 ## Overview
-Truff·l·uxury is an online store dedicated to the sale of Istrian truffles. The products are sourced from Istria (Croatia, Slovenia), which is considered one of the most important and best places for naturally grown truffles in the world. Customers can browse between different products in different categories, leave comments, and purchase products.
+**Truff·l·uxury** is an online store dedicated to the sale of Istrian truffles. The products are sourced from Istria (Croatia, Slovenia), which is considered one of the most important and best places for naturally grown truffles in the world. Customers can browse between different products in different categories, leave comments, and purchase products.
 
 - ### Timeframe
 
@@ -13,28 +12,28 @@ A 9 days solo project.
 https://truffluxury.herokuapp.com/
 
 ## Table of contents
-- Brief
-- Technologies used
-~ Backend
-~ Frontend
-~ Development tools
-- Installation
-- Process
-~ Planning
-Concept
-Organisation
-~ Backend
-~ Frontend
-Components
-Styling
-~ Project walkthrough
-- Bugs, challenges, wins
-~ Bugs
-~ Challenges
-~ Wins 
-- Extra features and key learnings
-~ Extra features
-~ Key learnings
++ Brief
++ Technologies used
+    - Backend
+    - Frontend
+    - Development tools
++ Installation
++ Process
+    - Planning
+        + Concept
+        + Organisation
+    - Backend
+    - Frontend
+        + Components
+        + Styling
+    - Project walkthrough
++ Bugs, challenges, wins
+    - Bugs
+    - Challenges
+    - Wins 
++ Extra features and key learnings
+    - Extra features
+    - Key learnings
 
 ## Brief
 
@@ -48,28 +47,28 @@ Styling
 
 ## Technologies used
 
-- **Frontend:**
-~ React.js,
-~ Axios,
-~ CSS3,
-~ React Bootstrap,
-~ SASS.
++ **Frontend:**
+    - React.js,
+    - Axios,
+    - CSS3,
+    - React Bootstrap,
+    - SASS.
 
-- **Backend:**
-~ Python,
-~ Django,
-~ Django REST framework,
-~ PyJWT.
++ **Backend:**
+    - Python,
+    - Django,
+    - Django REST framework,
+    - PyJWT.
 
-- **Development tools:**
-~ Visual Studio Code,
-~ Insomnia,
-~ Yarn,
-~ Git & GitHub,
-~ Google Chrome development tools,
-~ Trello board for planning,
-~ Adobe Photoshop,
-~ Heroku (deployment).
++ **Development tools:**
+    - Visual Studio Code,
+    - Insomnia,
+    - Yarn,
+    - Git & GitHub,
+    - Google Chrome development tools,
+    - Trello board for planning,
+    - Adobe Photoshop,
+    - Heroku (deployment).
 
 ## Installation
 
