@@ -1,4 +1,4 @@
-# [Project 04] with Genereal Assembly: `Truff·l·uxury`.
+# [General Assembly - Project 04] Truff·l·uxury
 
 ## Overview
 **Truff·l·uxury** is an online store dedicated to the sale of Istrian truffles. The products are sourced from Istria (Croatia, Slovenia), which is considered one of the most important and best places for naturally grown truffles in the world. Customers can browse between different products in different categories, leave comments, and purchase products.
@@ -105,10 +105,10 @@ https://truffluxury.herokuapp.com/
 
 + ### Planning
 
-#### Concept
+### Concept
 Before I started the course at General Assembly, I would never have imagined I could set up my online store at any time. The thought of it filled me with fear, especially the filtering functionality. It was the functionality I wanted to master from my second project onward. But, because I love impossible challenges, I decided to build an online store to prove I can do it and achieve whatever I want. After consulting with my GA instructors, who supported my proposal, I decided to do my last project by myself. I knew I wanted the final product to be as perfect as possible, so I started my final project optimistically. For the theme of my online store, I decided it would be a luxury store that sells Istrian truffles. 
 
-#### Organisation
+### Organisation
 When I received the final confirmation from GA teachers, I decided to plan immediately. I used the Trello board to organize my work plan, and in some cases, I also used the "classic" approach of using paper and pencils. Before I started programming, I sketched out how my website would look.
 
 **ADD PICTURE**
@@ -150,7 +150,7 @@ As soon as I set up the back-end, I successfully connected it to the front-end a
 
 **ADD PICTURE**
 
-#### Components
+### Components
 + ##### Navbar
 
 **ADD PICTURE**
@@ -223,7 +223,7 @@ During the project week, I also attempted to build a component for uploading ima
 
 The second component not included in the final product was a custom-made carousel. It was working fine, but then the code broke down when I installed React Bootstrap. Thankfully, Bootstrap gave me a better solution with its Carousel option, so I opted for Bootstrap Carousel.
 
-#### Styling (day 2 - day 9)
+### Styling (day 2 - day 9)
 
 In the beginning, I decided to use pure CSS for my website. I wanted to test my knowledge of CSS in practice, but also because I found excellent documentation for many things I wanted to implement in my project, including how to open burger icon with only CSS. My other reason for using pure CSS was because, in Project 2 and Project 3, I had many issues with different CSS frameworks, like Bulma or React Semantic UI. While they are brilliant tools for people who are not fond of pure CSS, they can cause problems for people who love pure CSS and like to experiment. Bulma and React Semantic UI are simply too limited when it comes to customization.
 
