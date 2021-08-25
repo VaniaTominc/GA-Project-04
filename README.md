@@ -281,6 +281,12 @@ My initial plan worked well at first. After reading the additional documentation
 
 **ADD GIFS**
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/130876135-fd821782-048f-4151-8478-356963fd400f.gif">
+    <img src="https://user-images.githubusercontent.com/83227280/130876414-90b61643-d112-49fd-8009-ed7a22a859a2.gif">
+</p>
+
+
 ## Bugs, Challenges, Wins
 + ### Bugs
     - Not a bug, per se, but when someone registers, he is not automatically logged in to the page. When I created my component, a user was logged in upon registration, then suddenly my code did not allow it anymore. I think it might be due to a minor change in my original code. I need to take a closer look into it. Nevertheless, I solved this "flaw" so that when the user registers successfully, he is redirected back to the login page and can log in.
