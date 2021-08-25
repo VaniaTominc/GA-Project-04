@@ -281,10 +281,46 @@ My initial plan worked well at first. After reading the additional documentation
 
 **ADD GIFS**
 
+#### ➡️  Home page & Search bar
+
+#### ➡️  Shop/Category page & Product description
+
+#### ➡️  Login/Register page & Register
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/130878326-0c9b46fb-9c1e-436a-91bc-05ea0fcf49d9.gif">
+  <img src="https://user-images.githubusercontent.com/83227280/130878334-35740fcf-fbd3-4d80-b390-35aaecaf2037.gif">
+</p>
+
+#### ➡️  Login/Logout page & Profile update
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/83227280/130876537-3df70f53-c930-4ab8-9ef4-d6d039af6470.gif">
-    <img src="https://user-images.githubusercontent.com/83227280/130876414-90b61643-d112-49fd-8009-ed7a22a859a2.gif">
+  <img src="https://user-images.githubusercontent.com/83227280/130876414-90b61643-d112-49fd-8009-ed7a22a859a2.gif">
 </p>
+
+#### ➡️ Profile delete & Post comment
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/130878436-7737624c-98bd-4278-b499-e53ef96e548a.gif">
+  ADD picture
+</p>
+
+#### ➡️ Update comment & Delete comment
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/130878539-3bdcf34b-5a0c-4641-a313-7bef7e9f5703.gif">
+  <img src="https://user-images.githubusercontent.com/83227280/130878574-c015bb26-34e7-4418-bc2b-653aa7c3b037.gif">
+</p>
+
+#### ➡️ Basket page
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/130878636-550f12fa-58eb-4308-92b3-4bb0500a7e38.gif">
+</p>
+
+
+
 
 
 
