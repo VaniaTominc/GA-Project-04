@@ -282,9 +282,10 @@ My initial plan worked well at first. After reading the additional documentation
 **ADD GIFS**
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/83227280/130876135-fd821782-048f-4151-8478-356963fd400f.gif">
+  <img src="https://user-images.githubusercontent.com/83227280/130876537-3df70f53-c930-4ab8-9ef4-d6d039af6470.gif">
     <img src="https://user-images.githubusercontent.com/83227280/130876414-90b61643-d112-49fd-8009-ed7a22a859a2.gif">
 </p>
+
 
 
 ## Bugs, Challenges, Wins
