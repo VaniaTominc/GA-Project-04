@@ -283,9 +283,19 @@ My initial plan worked well at first. After reading the additional documentation
 
 #### ➡️  Home page & Search bar
 
-#### ➡️  Shop/Category page & Product description
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/130879411-b830c1f8-2a07-4422-a1f8-35a785434f19.gif">
+  <img src="https://user-images.githubusercontent.com/83227280/130879414-3b36303a-e8d4-47ed-a96d-e9d0539d3c6f.gif">
+</p>
 
-#### ➡️  Login/Register page & Register
+#### ➡️  Shop/Category page & Product description page
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/130879569-bc41be01-c50a-493a-98db-6cd2d98b4cdf.gif">
+  <img src="https://user-images.githubusercontent.com/83227280/130879588-01f68230-7cb0-4b7e-b082-39d4cf203e04.gif">
+</p>
+
+#### ➡️  Login/Register page & Register page
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/83227280/130878326-0c9b46fb-9c1e-436a-91bc-05ea0fcf49d9.gif">
