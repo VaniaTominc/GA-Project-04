@@ -285,7 +285,7 @@ My initial plan worked well at first. After reading the additional documentation
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/83227280/130879411-b830c1f8-2a07-4422-a1f8-35a785434f19.gif">
-  <img src="https://user-images.githubusercontent.com/83227280/130879414-3b36303a-e8d4-47ed-a96d-e9d0539d3c6f.gif">
+  <img src="https://user-images.githubusercontent.com/83227280/130879732-40ba1203-19f2-4635-8482-ffd484c2c7be.gif">
 </p>
 
 #### ➡️  Shop/Category page & Product description page
