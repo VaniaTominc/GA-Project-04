@@ -313,7 +313,7 @@ My initial plan worked well at first. After reading the additional documentation
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/83227280/130878436-7737624c-98bd-4278-b499-e53ef96e548a.gif">
-  ADD picture
+  <img src="https://user-images.githubusercontent.com/83227280/130879811-e54d3e34-775c-4a26-8a2f-ccd48a8c7bda.gif">
 </p>
 
 #### ➡️ Update comment & Delete comment
