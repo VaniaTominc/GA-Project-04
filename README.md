@@ -261,9 +261,11 @@ To hackle my problem, I added the "quantity" and "cart" fields inside my truffle
 
 What is the problem? 
 
-**ADD GIFS TO ILLUSTRATE THE PROBLEM**
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/130880344-29029dc7-0ad8-4fa7-94ff-323040d4eef9.gif">
+</p>
 
-In the above gifs, we can see that one product is displayed twice. This happens when a customer wants to add the same product to the cart more than once. If the customer then wants to remove one of those double products from the basket, both products are removed. If the customer successfully removes the product, the cart price does not refresh properly. I am aware that in the first case, I should have added an if-else statement to check if the same product already exists in the basket, while in the second case, I think I need to change my code slightly, and then the cart price will be correctly displayed. I also need to make sure that any internal changes to the cart, like +, -, remove, are saved to the localstorage and a new status is displayed when the web page is refreshed. Due to all these minor problems, my cart currently does not work 100%.
+In the above gif, we can see that one product is displayed twice. This happens when a customer wants to add the same product to the cart more than once. If the customer then wants to remove one of those double products from the basket, both products are removed. If the customer successfully removes the product, the cart price does not refresh properly. I am aware that in the first case, I should have added an if-else statement to check if the same product already exists in the basket, while in the second case, I think I need to change my code slightly, and then the cart price will be correctly displayed. I also need to make sure that any internal changes to the cart, like +, -, remove, are saved to the localstorage and a new status is displayed when the web page is refreshed. Due to all these minor problems, my cart currently does not work 100%.
 
 #### ➡️  Other components
 
