@@ -5,7 +5,7 @@
 
 - ### Timeframe
 
-A 9 days solo project. 
+A 9 day solo project. 
 
 - ### Deployed version
 
@@ -13,33 +13,33 @@ https://truffluxury.herokuapp.com/
 
 ## Table of contents
 + Brief
-+ Technologies used
-    - Backend
-    - Frontend
-    - Development tools
++ Technologies used:
+    - Backend,
+    - Frontend,
+    - Development tools.
 + Installation
-+ Process
-    - Planning
-        + Concept
-        + Organisation
-    - Backend
-    - Frontend
-        + Components
-        + Styling
-    - Project walkthrough
-+ Bugs, challenges, wins
-    - Bugs
-    - Challenges
-    - Wins 
-+ Extra features and key learnings
-    - Extra features
-    - Key learnings
++ Process:
+    - Planning:
+        + Concept,
+        + Organisation.
+    - Backend,
+    - Frontend:
+        + Components,
+        + Styling.
+    - Project walkthrough.
++ Bugs, challenges, wins:
+    - Bugs,
+    - Challenges,
+    - Wins.
++ Future features and key learnings:
+    - Future features,
+    - Key learnings.
 
 ## Brief
 
 - **Build a full-stack application** by making your own backend and your own front-end.
 - **Use a Python Django API** using Django REST Framework to serve your data from a Postgres database.
-- **Consume your API with a separate front-end** built with React.
+- **Consume your API with a separate frontend** built with React.
 - **Be a complete product** which most likely means multiple relationships and CRUD functionality for at least a couple of models.
 - **Implement thoughtful user stories/wireframes** that are significant enough to help you know which features are core MVP and which you can cut.
 - **Have a visually impressive design** to kick your portfolio up a notch and have something to wow future clients & employers. **ALLOW** time for this.
@@ -247,7 +247,7 @@ The second component is ```EditDeleteComment```. The owner of the comments has t
   <img src="https://user-images.githubusercontent.com/83227280/130604165-97099ca4-c734-408f-808f-706c753e5bf1.png">
 </p>
 
-The above was my original code. But when it came time to deploy my project, my code stopped working. I could not update, nor delete comments. After checking the code and attempting to resolve the issue, I had to decide on an even less optimum solution. Now, when a user deletes his comment, he is redirected to the shop page. When he updates his comment, he is redirected to the profile page. I need to sort out this problem/glitch.
+The above was my original code. But when it came time to deploy my project, my code stopped working. I could not update, nor delete comments. After checking the code and attempting to resolve the issue, I had to decide on an even less optimal solution. Now, when a user deletes his comment, he is redirected to the shop page. When he updates his comment, he is redirected to the profile page. I need to sort out this problem/glitch.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/83227280/130604217-769a2d67-54e3-42a0-8a8e-a0c313e032c5.png">
@@ -257,7 +257,7 @@ The above was my original code. But when it came time to deploy my project, my c
 
 I originally intended to create ```Basket``` as another app in the back-end and connect it to the main truffle app. After I suggested this idea to the instructors, they told me it would be too easy for me, and I should aim to achieve the same functionality with the front-end instead. Here, however, I began to face problems that I could easily solve if I had more time.
 
-To hackle my problem, I added the "quantity" and "cart" fields inside my truffles ```model.py```. The first one got the value of 1, the second one was set to false. Because I wanted to check if my code would work, I originally used the GET request of all products and added buttons for **add**, **remove**, **increase**, **decrease** and the final **sum**. My initial code worked, the only issue I had was when the page was refreshed, all data was deleted. After reading the documentation, I figured it would be necessary to use localstorage to sort the problem of my "disappearing" data. I also decided to use a GET request for one product. In other words, if a customer views a particular product, he can click on the add button, and the product then appears inside the basket. Since I was unable to 100% imitate the previous logic to the new component, I changed my initial working code, which unfortunately slightly broke my code.  
+To tackle my problem, I added the "quantity" and "cart" fields inside my truffles ```model.py```. The first one got the value of 1, the second one was set to false. Because I wanted to check if my code would work, I originally used the GET request of all products and added buttons for **add**, **remove**, **increase**, **decrease** and the final **sum**. My initial code worked, the only issue I had was when the page was refreshed, all data was deleted. After reading the documentation, I figured it would be necessary to use localstorage to sort the problem of my "disappearing" data. I also decided to use a GET request for one product. In other words, if a customer views a particular product, he can click on the add button, and the product then appears inside the basket. Since I was unable to 100% imitate the previous logic to the new component, I changed my initial working code, which unfortunately slightly broke my code.  
 
 What is the problem? 
 
@@ -265,7 +265,7 @@ What is the problem?
   <img src="https://user-images.githubusercontent.com/83227280/130880344-29029dc7-0ad8-4fa7-94ff-323040d4eef9.gif">
 </p>
 
-In the above gif, we can see that one product is displayed twice. This happens when a customer wants to add the same product to the cart more than once. If the customer then wants to remove one of those double products from the basket, both products are removed. If the customer successfully removes the product, the cart price does not refresh properly. I am aware that in the first case, I should have added an if-else statement to check if the same product already exists in the basket, while in the second case, I think I need to change my code slightly, and then the cart price will be correctly displayed. I also need to make sure that any internal changes to the cart, like +, -, remove, are saved to the localstorage and a new status is displayed when the web page is refreshed. Due to all these minor problems, my cart currently does not work 100%.
+In the above gif, we can see that one product is displayed twice. This happens when customers add the item to the cart more than once. If they then want to remove the extra from the basket, both products are removed. The cart price also doesn’t refresh properly when products are removed. I am aware that in the first case, I should have added an if-else statement to check if the same product already exists in the basket, while in the second case, I think I need to change my code slightly, and then the cart price will be correctly displayed. I also need to make sure that any internal changes to the cart, like +, -, remove, are saved to the localstorage and a new status is displayed when the web page is refreshed. Due to all these minor problems, my cart currently does not work 100%.
 
 #### ➡️  Other components
 
@@ -277,11 +277,9 @@ The second component not included in the final product was a custom-made carouse
 
 In the beginning, I decided to use pure CSS for my website. I wanted to test my knowledge of CSS in practice, but also because I found excellent documentation for many things I wanted to implement in my project, including how to open burger icon with only CSS. My other reason for using pure CSS was because, in Project 2 and Project 3, I had many issues with different CSS frameworks, like Bulma or React Semantic UI. While they are brilliant tools for people who are not fond of pure CSS, they can cause problems for people who love pure CSS and like to experiment. Bulma and React Semantic UI are simply too limited when it comes to customization.
 
-My initial plan worked well at first. After reading the additional documentation, I did build my search bar modal and my carousel in FilteredCategories.js, among other things. I also tried to make the website as responsive as possible. However, as I ran out of time and my CSS suddenly stopped working the night before the deadline, I decided to use React Bootstrap in an emergency. On the one hand, God sends, in contrast, bigger headaches. Due to the similar naming of larger classes, Bootstrap and my customized CSS crashed badly. Some of my components became unusable, like Search Bar or my carousel, others completely changed their appearance. However, since the water was running down my throat, and I am headstrong by nature, there was no other way to bite late into the night and try to solve everything I could. To a large extent, I also managed to do that. Therefore, I do not regret my choice to use it at the last minute. And I definitely plan to use it in my future projects.
+My initial plan worked well at first. After reading the additional documentation, I did build my search bar modal and my carousel in FilteredCategories.js, among other things. I also tried to make the website as responsive as possible. However, as I ran out of time and my CSS suddenly stopped working the night before the deadline, I decided to use React Bootstrap instead. On the one hand, God sends, in contrast, bigger headaches. Due to the similar naming of larger classes, Bootstrap and my customized CSS crashed badly. Some of my components became unusable, like Search Bar or my carousel, others completely changed their appearance. However, since the water was running down my throat, and I am headstrong by nature, there was no other way to bite late into the night and try to solve everything I could. To a large extent, I also managed to do that. Therefore, I do not regret my choice to use it at the last minute and I definitely plan to use it in my future projects.
 
 + ### Project walkthrough
-
-**ADD GIFS**
 
 #### ➡️  Home page & Search bar
 
@@ -339,8 +337,8 @@ My initial plan worked well at first. After reading the additional documentation
 ## Bugs, Challenges, Wins
 + ### Bugs
     - Not a bug, per se, but when someone registers, he is not automatically logged in to the page. When I created my component, a user was logged in upon registration, then suddenly my code did not allow it anymore. I think it might be due to a minor change in my original code. I need to take a closer look into it. Nevertheless, I solved this "flaw" so that when the user registers successfully, he is redirected back to the login page and can log in.
-    - Before you add the first product to the basket, if you check the basket, it is empty and the page empty with no other content (navbar is missing).
-    - If the user wants to add the same product to the cart more than once, it is not added to the already existing same product, but is doubled. Consequently, it causes problems when a user attempts to remove one of the products, and both are removed.  
+    - Before you add the first product to the basket, if you check the basket, it is empty and the page empty with no other content (navbar is missing). 
+    - If the user wants to add the same product to the cart more than once, it is not added to the existing product, but is repeated underneath. Consequently, it causes problems when a user attempts to remove one of the products and both are removed.
     - The price does not refresh when you remove the product from the cart. 
     - In the deployed version, delete / update functionalities for comments stopped working. I had to change my code slightly, but it is still buggy.
 + ### Challenges
@@ -354,9 +352,9 @@ My initial plan worked well at first. After reading the additional documentation
     - This week I also learned a lot about myself. Namely, if I want to achieve something, I can do it. 
     - This week also showed me why I love coding and why I want to work as a software engineer.
 
-## Extra features and key learnings
+## Future features and key learnings
 
-+ ### Extra features
++ ### Future features
     - Adding the option where the site administrator can enter product information through the website itself. For now, it can only be done through the Django Administration.
     - Completing the basket component.
     - Finishing building the like system. When a customer likes a product, he can then view the liked product inside his profile page.
