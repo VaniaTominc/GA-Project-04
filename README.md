@@ -37,7 +37,7 @@ https://truffluxury.herokuapp.com/
 
 ## Brief
 
-- **Build a full-stack application** by making your own backend and your own front-end.
+- **Build a full-stack application** by making your own backend and your own frontend.
 - **Use a Python Django API** using Django REST Framework to serve your data from a Postgres database.
 - **Consume your API with a separate frontend** built with React.
 - **Be a complete product** which most likely means multiple relationships and CRUD functionality for at least a couple of models.
@@ -87,7 +87,7 @@ https://truffluxury.herokuapp.com/
 
 + Open project and open a terminal inside your chosen code editor.
     - Split terminal in two windows:
-        * Use 1st terminal for back-end by typing truffluxe and type:
+        * Use 1st terminal for backend by typing truffluxe and type:
             + ```pipenv``` to install Python packages,
             + ```pipenv shell``` to enter virtual environment,
             + ```python manage.py makemigrations``` to prepare migrations,
@@ -97,10 +97,10 @@ https://truffluxury.herokuapp.com/
             + ```python manage.py loaddata jwt_auth/seeds.json``` to seed data for users,
             + ```python manage.py loaddata opinions/seeds.json``` to seed data for opinions/comments.
             + ```python manage.py loaddata truffles/seeds.json``` to seed data for products,
-            + ```python manage.py runserver``` to run back-end server.
-        * Use 2nd terminal for front-end by typing client and type:
-            + ```yarn``` to install yarn packages on the front-end.
-            + ```yarn start``` to start the front-end server.
+            + ```python manage.py runserver``` to run backend server.
+        * Use 2nd terminal for frontend by typing client and type:
+            + ```yarn``` to install yarn packages on the frontend.
+            + ```yarn start``` to start the frontend server.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/83227280/130602294-bd566705-cd5d-41c0-be31-76b1392f2870.png">
@@ -124,9 +124,10 @@ When I received the final confirmation from GA teachers, I decided to plan immed
 
 + ### Backend
 
-As I worked on my project alone and knew that I wanted my online shop to be as close as possible to a real online shop, I first decided to build a back-end. From the outset, I knew what type of relationship I wanted between the main app ```truffles.py``` and others.
+As I worked on my project alone and knew that I wanted my online shop to be as close as possible to a real online shop, I first decided to build a back
+end. From the outset, I knew what type of relationship I wanted between the main app ```truffles.py``` and others.
 
-In the end, the folders of different apps on the back-end look like the below picture, and each folder has a similar structure to the truffle folder.
+In the end, the folders of different apps on the backend look like the below picture, and each folder has a similar structure to the truffle folder.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/83227280/130604586-1267c5b8-6e6c-40da-9848-17a46b45090f.png">
@@ -158,7 +159,7 @@ Each app has several options in ```views.py``` (example of truffles’ ```views.
   <img src="https://user-images.githubusercontent.com/83227280/130603247-78ad798f-934b-4e4d-b664-89bc6b32942e.png">
 </p>
 
-Other apps have the same functionalities. I decided to take this step because I wanted the back-end to have as many functionalities as possible. I was aware that due to insufficient time, I would not implement all the functions from the back-end to the front-end, but I did it with the future in mind. If I have time, I will implement everything I have created on the back-end. I tested all functionalities in Insomnia, where they worked 100%.
+Other apps have the same functionalities. I decided to take this step because I wanted the backend to have as many functionalities as possible. I was aware that due to insufficient time, I would not implement all the functions from the backend to the frontend, but I did it with the future in mind. If I have time, I will implement everything I have created on the backend. I tested all functionalities in Insomnia, where they worked 100%.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/83227280/130603284-6c572c6d-4cec-4025-b214-37706d64b064.png">
@@ -166,7 +167,7 @@ Other apps have the same functionalities. I decided to take this step because I 
 
 + ### Frontend
 
-As soon as I set up the back-end, I successfully connected it to the front-end and started building the front-end. In the Django administration, it looked like this.
+As soon as I set up the backend, I successfully connected it to the frontend and started building the frontend. In the Django administration, it looked like this.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/83227280/130603351-1b4878be-3e5d-48c4-b670-f365fd3de1e2.png">
@@ -255,7 +256,7 @@ The above was my original code. But when it came time to deploy my project, my c
 
 #### ➡️  Basket
 
-I originally intended to create ```Basket``` as another app in the back-end and connect it to the main truffle app. After I suggested this idea to the instructors, they told me it would be too easy for me, and I should aim to achieve the same functionality with the front-end instead. Here, however, I began to face problems that I could easily solve if I had more time.
+I originally intended to create ```Basket``` as another app in the backend and connect it to the main truffle app. After I suggested this idea to the instructors, they told me it would be too easy for me, and I should aim to achieve the same functionality with the frontend instead. Here, however, I began to face problems that I could easily solve if I had more time.
 
 To tackle my problem, I added the "quantity" and "cart" fields inside my truffles ```model.py```. The first one got the value of 1, the second one was set to false. Because I wanted to check if my code would work, I originally used the GET request of all products and added buttons for **add**, **remove**, **increase**, **decrease** and the final **sum**. My initial code worked, the only issue I had was when the page was refreshed, all data was deleted. After reading the documentation, I figured it would be necessary to use localstorage to sort the problem of my "disappearing" data. I also decided to use a GET request for one product. In other words, if a customer views a particular product, he can click on the add button, and the product then appears inside the basket. Since I was unable to 100% imitate the previous logic to the new component, I changed my initial working code, which unfortunately slightly broke my code.  
 
@@ -343,8 +344,8 @@ My initial plan worked well at first. After reading the additional documentation
     - In the deployed version, delete / update functionalities for comments stopped working. I had to change my code slightly, but it is still buggy.
 + ### Challenges
     - It was an amusing experience to use Bootstrap without reading its documentation properly. Thankfully, I managed to sort nearly all conflicting problems. It also taught me how to not use the latest technology one night before the presentation.
-    - Building a basket on the front-end and storing products inside localstorage. 
-    - Changing model on the back-end and then using commands ```python manage.py makemigrations``` and ```python manage.py migrate```. It was causing errors. The only way to sort, it was to dump data and reseed it again. Thankfully, it sorted my problems.
+    - Building a basket on the frontend and storing products inside localstorage. 
+    - Changing model on the backend and then using commands ```python manage.py makemigrations``` and ```python manage.py migrate```. It was causing errors. The only way to sort, it was to dump data and reseed it again. Thankfully, it sorted my problems.
 + ### Wins
     - For the time I had, I surprisingly built a lot. 
     - I am proud that I could build the type of website I wanted when I started the project. 
